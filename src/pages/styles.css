@@ -617,7 +617,7 @@ a {
 .form-container {
   display: flex;
   flex-direction: column;
-  padding: 0px 5rem;
+  padding: 0px 2rem;
 }
 
 .input-container {
@@ -682,7 +682,7 @@ a {
 /* --------------------------------Footer------------------ */
 .footer-courses {
   background-color: var(--footer-courses-bg);
-  padding: 2rem 5rem;
+  padding: 2rem 2rem;
   color: var(--bg-white);
 }
 
@@ -700,11 +700,12 @@ a {
   display: flex;
   flex-wrap: wrap;
   justify-content: space-evenly;
-  padding: 0px 5rem;
+  padding: 0px 2rem;
   color: var(--color-white);
 }
 
 .footer-card {
+  min-width: 200px;
   flex: 1;
   padding: 10px;
 }
@@ -737,6 +738,8 @@ a {
   margin-right: 10px;
 }
 .footer-card li {
+  width: fit-content;
+  user-select: none;
   transition: all 0.3s ease;
   cursor: pointer;
   margin-bottom: 10px;
@@ -780,8 +783,9 @@ a {
 .faculty-header,
 .corporate-header,
 .contact-header {
-  will-change: scroll-position;
+  will-change: auto;
   background-image: url(./assets/imgs/instructor.jpg);
+  height: auto;
   background-size: cover;
   background-clip: border-box;
   background-attachment: fixed;
@@ -789,9 +793,8 @@ a {
   text-align: center;
 }
 .faculty-header-inner {
-  padding: 2rem 5rem;
+  padding: 2rem 2rem;
   background-color: rgba(30, 30, 30, 0.5);
-  height: 235px;
 }
 
 .faculty-header h1,
@@ -825,7 +828,7 @@ a {
   justify-content: space-evenly;
   align-items: self-start;
   flex-wrap: wrap-reverse;
-  padding: 3rem 0rem;
+  padding: 3rem 2rem;
 }
 .faculty-form-container-sec1 h1 {
   font-weight: 500;
@@ -839,7 +842,7 @@ a {
 .faculty-form-container-sec2 {
   width: auto;
   max-width: 500px;
-  height: 500px;
+  margin-bottom: 40px;
   object-fit: contain;
 }
 
@@ -919,15 +922,14 @@ input[type="file"] {
 }
 
 .contact-conatiner {
-  padding: 1rem 2rem;
+  padding: 20px 20px;
   padding-bottom: 50px;
-  margin: 2rem;
+  margin: 20px;
   border-radius: 10px;
   box-shadow: 0 2px 4px rgba(0, 0, 0, 0.08), 0 4px 12px rgba(0, 0, 0, 0.08);
 }
 
-.contact-conatiner,
-.contact-info-container-inner {
+.contact-conatiner {
   display: flex;
   justify-content: space-between;
   align-items: flex-start;
@@ -935,15 +937,24 @@ input[type="file"] {
   gap: 30px;
 }
 
-.contact-info-container-inner {
-  justify-content: space-evenly;
-}
-
 .contact-info-container {
-  padding: 20px;
+  /* background-color: red; */
+  flex-grow: 1;
+  padding: 10px;
   display: flex;
   flex-direction: column;
   gap: 10px;
+  border: 1px solid lightgray;
+  border-radius: 5px;
+}
+
+.contact-info-container-inner {
+  /* background-color: red; */
+  display: flex;
+  justify-content: flex-start;
+  align-items: flex-start;
+  flex-wrap: wrap;
+  gap: 30px;
 }
 
 .contact-form-container {
@@ -981,6 +992,7 @@ input[type="file"] {
 
 .address-contact p {
   max-width: 300px;
+  line-height: 25px;
 }
 
 /* ------------------------------------------- */
@@ -1020,11 +1032,9 @@ input[type="file"] {
 @keyframes fadeIn {
   0% {
     opacity: 0;
-    transform: translateX(-100vw) translateY(-100vh);
   }
   100% {
     opacity: 1;
-    transform: translateX(0) translateY(0);
   }
 }
 

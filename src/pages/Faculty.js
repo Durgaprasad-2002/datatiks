@@ -13,7 +13,7 @@ export default function Faculty() {
 
   useEffect(() => {
     function Handle() {
-      setposY(() => document.documentElement.scrollTop / 3);
+      setposY(() => document.documentElement.scrollTop / 4);
     }
     // eslint-disable-next-line no-restricted-globals
     addEventListener("scroll", Handle);
@@ -39,7 +39,7 @@ export default function Faculty() {
             Your passion for sharing knowledge you have acquired with the young
             next-generation IT Professionals is appreciated.
           </p>
-          <button className="connect-btn">Connect with us</button>
+          {/* <button className="connect-btn">Connect with us</button> */}
         </div>
       </section>
       <section className="faculty-form-container">
