@@ -89,6 +89,11 @@ export default function Navbar() {
   const [isScrolled, setIsScrolled] = useState(false);
 
   useEffect(() => {
+    if (toggle) {
+      document.body.classList.add("remove-over");
+    } else {
+      document.body.classList.remove("remove-over");
+    }
     const handleScroll = () => {
       // Check if the user has scrolled down more than 50px
       setIsScrolled(window.scrollY > 50);
@@ -99,7 +104,7 @@ export default function Navbar() {
     return () => {
       window.removeEventListener("scroll", handleScroll);
     };
-  }, []);
+  }, [toggle]);
 
   return (
     <nav className={`navbar ${isScrolled ? "scrolled" : ""}`}>

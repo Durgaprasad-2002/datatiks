@@ -1,4 +1,4 @@
-import React, { useEffect, useRef } from "react";
+import React, { useEffect, useRef, useState } from "react";
 import Navbar from "./components/Navbar";
 import HomeSection1 from "./components/HomeSection1";
 import CourseCarousel from "./components/CourseCarousel";
@@ -50,7 +50,6 @@ export default function Home() {
     // Cleanup
     return () => {
       cardObserver.disconnect();
-
       timeouts.forEach(clearTimeout);
     };
   }, []);

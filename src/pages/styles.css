@@ -75,6 +75,7 @@ body {
 }
 
 .dropdown-item {
+  width: auto;
   position: relative;
   padding: 8px 10px;
   color: var(--bg-black);
@@ -179,6 +180,10 @@ body {
   overflow-x: auto;
 }
 
+.remove-over {
+  overflow: hidden;
+}
+
 .back-button {
   margin-bottom: 20px;
   background: none;
@@ -213,6 +218,7 @@ body {
 .nested-submenu {
   list-style: none;
   padding-left: 10px;
+  overflow: hidden;
 }
 
 .nested-submenu li {
@@ -221,6 +227,18 @@ body {
 
 .nested-item:hover .nested-submenu {
   display: block;
+  animation: sc-tp-side-ani 0.3s ease both;
+}
+
+@keyframes sc-tp-side-ani {
+  from {
+    opacity: 0;
+    transform: translateX(50px);
+  }
+  to {
+    opacity: 1;
+    transform: translateX(0px);
+  }
 }
 
 .brand-img {
@@ -312,10 +330,11 @@ a {
   content: "⇒ ";
 }
 .item-link {
+  transition: all 0.3s ease-in-out;
   padding: 5px 10px;
-  border-radius: 3px;
   color: var(--bg-dark-grey);
   position: relative;
+  border-left: 2px solid var(--bg-white);
 }
 
 .dropdown,
@@ -345,8 +364,7 @@ a {
 }
 
 .item-link:hover {
-  color: var(--bg-white);
-  background: var(--bg-dark-grey);
+  border-color: var(--bg-red);
 }
 
 /* ---------- */
@@ -476,8 +494,9 @@ a {
 
 .container {
   color: var(--color-white);
-  padding: 50px 20px;
+  padding: 50px 15px;
   background-color: var(--bg-black);
+  animation: sc-tp-ani 0.3s ease-in-out;
 }
 
 .title-home-1,
@@ -504,12 +523,11 @@ a {
 
 .text {
   width: max-content;
-  min-width: 10px;
+  min-width: 6px;
   font-size: 1.5rem;
   transition: all 0.3s ease;
   color: var(--bg-red);
   font-weight: bold;
-  font-size: 36px;
   opacity: 0;
   transform: translateY(10px);
   animation: fadeIn 0.5s ease forwards;
@@ -538,7 +556,7 @@ a {
 }
 .text.animate {
   opacity: 1;
-  scale: 1.2;
+  scale: 1.3;
   transform: translateY(0);
 }
 
@@ -597,9 +615,15 @@ a {
   cursor: pointer;
   background-color: var(--bg-skublue);
   color: var(--color-white);
-  padding: 5px 10px;
+  padding: 6px 12px;
   border-radius: 20px;
   box-shadow: 0px 0px 18px 1px var(--box-shadow-color);
+  /* transition: all 0.3s ease; */
+}
+
+.techs:hover {
+  background: #0d81cf;
+  outline: 1.5px solid lightgray;
 }
 
 .techs a {
@@ -1568,6 +1592,10 @@ html {
   transition: all 0.3s ease-in-out;
 }
 
+.nested-item::before {
+  color: var(--bg-dark-grey);
+}
+
 .expand-title:hover {
   background-color: #111111c4;
 }
@@ -1660,5 +1688,12 @@ html {
   background-color: #3498db;
   color: white;
   text-decoration: none;
+}
+
+.enroll-desc {
+  padding: 20px;
+  background-color: rgb(247, 244, 244);
+  border-radius: 3px;
+  border: 1px solid lightgray;
 }
 /* ------------------scr animation --------------*/

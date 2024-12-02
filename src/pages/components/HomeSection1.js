@@ -1,12 +1,51 @@
 import React from "react";
-import { useEffect } from "react";
+import { useEffect, useState } from "react";
 
 import { IoSearch } from "react-icons/io5";
 
 import { techStackArray1, techStackArray2 } from "../assets/data/homeData";
 import { Link } from "react-router-dom";
 
+import { courses } from "../assets/data/courses";
+
+import { useNavigate } from "react-router-dom";
+import { toast } from "react-toastify";
+
 export default function HomeSection1() {
+  const navigate = useNavigate();
+  const [search, setSearch] = useState("");
+
+  function handleSearch(e) {
+    setSearch(() => e.target.value);
+  }
+
+  async function handleSubmit() {
+    // Trim and normalize input
+    const temp = search.trim().toLowerCase();
+
+    // Search through courses
+    const address = courses.find((course) => {
+      const { courseId, heading } = course;
+      return (
+        courseId.toLowerCase().includes(temp) || // Match courseId
+        heading.title.toLowerCase().includes(temp) || // Match title
+        heading.description.toLowerCase().includes(temp) // Match description
+      );
+    });
+
+    if (address) {
+      navigate(`/services/${address.courseId}`);
+    } else {
+      toast.error("The Course you are Looking for is not found!");
+    }
+  }
+
+  function handleKeyDown(e) {
+    if (e.key === "Enter") {
+      handleSubmit();
+    }
+  }
+
   useEffect(() => {
     const textElements = document.querySelectorAll(".title-home-2 .text");
 
@@ -70,9 +109,11 @@ export default function HomeSection1() {
             <input
               className="input-search"
               type="text"
-              placeholder="Search here..."
+              placeholder="Search for a Course..."
+              onChange={handleSearch}
+              onKeyDown={handleKeyDown}
             />
-            <IoSearch className="search-icon" />
+            <IoSearch onClick={handleSubmit} className="search-icon" />
           </div>
           <div className="tech-stack-container">
             {techStackArray2.map((tech, ind) => (

@@ -70,16 +70,6 @@ const techStackArray1 = [
   { name: "Flutter", link: "/services/flutter" },
   { name: "Testing", link: "/services/testing" },
   { name: "Cyber Security", link: "/services/cyber_security" },
-  {
-    name: "Sap Fi/Co",
-    link: "/services/sap_fico",
-  },
-  { name: "Sap Hana", link: "/services/sap_hana" },
-  {
-    name: "Generative AI",
-    link: "/services/generative_ai",
-  },
-  { name: "AI/ML", link: "/services/ai_ml" },
 ];
 
 const techStackArray2 = [
@@ -93,6 +83,16 @@ const techStackArray2 = [
   {
     name: "Medical Coding",
     link: "/services/medical_coding",
+  },
+  { name: "Sap Hana", link: "/services/sap_hana" },
+  {
+    name: "Generative AI",
+    link: "/services/generative_ai",
+  },
+  { name: "AI/ML", link: "/services/ai_ml" },
+  {
+    name: "Sap Fi/Co",
+    link: "/services/sap_fico",
   },
 ];
 

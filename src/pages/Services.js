@@ -74,16 +74,20 @@ export default function Services() {
         </section>
         <div className="stat">
           <ul className="topics-container">
-            {["Pre-Requisites", "Who can Learn", "Why DataTiks", "FAQs"].map(
-              (topic, index) => (
-                <a
-                  key={index}
-                  href={`#${topic.toLowerCase().replace(/ /g, "-")}`}
-                >
-                  <li className="topic-item">{topic}</li>
-                </a>
-              )
-            )}
+            {[
+              "Pre-Requisites",
+              "Who can Learn",
+              "Why DataTiks",
+              "FAQs",
+              "Enroll Now",
+            ].map((topic, index) => (
+              <a
+                key={index}
+                href={`#${topic.toLowerCase().replace(/ /g, "-")}`}
+              >
+                <li className="topic-item">{topic}</li>
+              </a>
+            ))}
           </ul>
         </div>
         <section className="services-body">
@@ -180,6 +184,15 @@ export default function Services() {
                   id={ind}
                 />
               ))}
+            </div>
+
+            <div className="pre-req-container" id="enroll-now">
+              <h3 className="course-section-title">
+                Enroll <span className="col-red">Now!</span>
+              </h3>
+              <p className="enroll-desc">
+                {courseDetails?.body?.enroll?.description}
+              </p>
             </div>
           </div>
           <div className="services-body-2">
