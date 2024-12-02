@@ -11,6 +11,9 @@ import "./styles.css";
 import { useParams, Link } from "react-router-dom";
 
 export default function Services() {
+  useEffect(() => {
+    document.documentElement.scrollTop = 0;
+  }, []);
   // state Hooks
   const { course } = useParams();
   const [courseDetails, setCourseDetails] = useState(null);
@@ -21,7 +24,6 @@ export default function Services() {
     setLoading(true);
     const foundCourse = courses.find((data) => data.courseId === course);
 
-    console.log(foundCourse);
     setTimeout(() => {
       setCourseDetails(foundCourse || null);
       setLoading(false);
@@ -72,20 +74,16 @@ export default function Services() {
         </section>
         <div className="stat">
           <ul className="topics-container">
-            {[
-              "Pre-Requisites",
-              "Who can Learn",
-              "Course Content",
-              "Why DataTiks",
-              "FAQs",
-            ].map((topic, index) => (
-              <a
-                key={index}
-                href={`#${topic.toLowerCase().replace(/ /g, "-")}`}
-              >
-                <li className="topic-item">{topic}</li>
-              </a>
-            ))}
+            {["Pre-Requisites", "Who can Learn", "Why DataTiks", "FAQs"].map(
+              (topic, index) => (
+                <a
+                  key={index}
+                  href={`#${topic.toLowerCase().replace(/ /g, "-")}`}
+                >
+                  <li className="topic-item">{topic}</li>
+                </a>
+              )
+            )}
           </ul>
         </div>
         <section className="services-body">
@@ -130,6 +128,7 @@ export default function Services() {
                 Why <span className="col-red">DataTiks</span>
               </h3>
               <ExpandContainer
+                ind={courseDetails?.body?.Why?.description}
                 type="why"
                 id={1}
                 title="Why Choose Us"
@@ -158,12 +157,17 @@ export default function Services() {
               </h3>
               {courseDetails?.body?.Faq?.map((faq, ind) => (
                 <ExpandContainer
-                  key={ind}
+                  ind={ind}
                   title={faq.qn}
                   desc={
                     <ul className="map-conatiner-services">
                       {faq?.ans?.map((field, ind) => {
-                        if (ind === 0) return <p>{field}</p>;
+                        if (ind === 0)
+                          return (
+                            <p key={ind} className="faq-p">
+                              {field}
+                            </p>
+                          );
                         return (
                           <li key={ind} className="map-item">
                             {field}
@@ -188,10 +192,10 @@ export default function Services() {
                 className="iframe-video"
                 src="https://www.youtube.com/embed/Xl6O8jS1Hho?si=n09mI28Hq9y8-HEm"
                 title="YouTube video player"
-                frameborder="0"
+                frameBorder="0"
                 allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
-                referrerpolicy="strict-origin-when-cross-origin"
-                allowfullscreen
+                referrerPolicy="strict-origin-when-cross-origin"
+                allowFullScreen
               ></iframe>
 
               <EnrollButton />

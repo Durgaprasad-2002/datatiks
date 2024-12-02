@@ -3,7 +3,7 @@ import { useEffect } from "react";
 
 import { IoSearch } from "react-icons/io5";
 
-import { techStackArray1, techStackArray2 } from "../Data/homeData";
+import { techStackArray1, techStackArray2 } from "../assets/data/homeData";
 import { Link } from "react-router-dom";
 
 export default function HomeSection1() {

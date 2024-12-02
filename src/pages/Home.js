@@ -2,7 +2,7 @@ import React, { useEffect, useRef } from "react";
 import Navbar from "./components/Navbar";
 import HomeSection1 from "./components/HomeSection1";
 import CourseCarousel from "./components/CourseCarousel";
-import { achievements, benefits, trainings } from "./Data/homeData";
+import { achievements, benefits, trainings } from "./assets/data/homeData";
 import {
   BenefitCard,
   AcheivementCard,
@@ -14,6 +14,10 @@ import "./styles.css";
 
 export default function Home() {
   const cardRefs = useRef([]);
+
+  useEffect(() => {
+    document.documentElement.scrollTop = 0;
+  }, []);
 
   useEffect(() => {
     let timeouts = []; // Track multiple timeouts for cleanup

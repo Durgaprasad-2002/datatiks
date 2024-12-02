@@ -22,98 +22,66 @@ export default function Navbar() {
     {
       name: "Frontend Development",
       subcategories: [
-        { name: "Angular", link: "/services/angular" },
         { name: "React", link: "/services/react" },
-        { name: "Vue.js", link: "/services/vue" },
-        {
-          name: "Digital Marketing",
-          link: "/services/digital-marketing",
-        },
+        { name: "MERN Stack", link: "/services/mern_stack" },
+        { name: "MEAN Stack", link: "/services/mean_stack" },
+        { name: "React Native", link: "/services/react_native" },
       ],
     },
     {
       name: "Backend Development",
       subcategories: [
-        { name: "Node.js", link: "/services/nodejs" },
-        {
-          name: "Express.js",
-          link: "/services/express",
-        },
-        { name: "Django", link: "/services/django" },
-        {
-          name: "Python Libraries",
-          link: "/services/python-libraries",
-        },
+        { name: "Java Full Stack", link: "/services/java_full_stack" },
+        { name: "Python Full Stack", link: "/services/python_full_stack" },
+        { name: "Azure", link: "/services/azure" },
+        { name: "Snowflake", link: "/services/snowflake" },
       ],
     },
     {
       name: "Cloud Computing & Platforms",
       subcategories: [
-        { name: "AWS", link: "/services/aws" },
-        { name: "Azure", link: "/services/azure" },
+        { name: "AWS Devops", link: "/services/aws_Devops" },
+        { name: "Azure Devops", link: "/services/azure_devops" },
         { name: "GCP", link: "/services/gcp" },
-        {
-          name: "Cloud Environments",
-          link: "/services/cloud-environments",
-        },
-        {
-          name: "Cloud and Platform Management",
-          link: "/services/platform-management",
-        },
+        { name: "Blockchain", link: "/services/blockchain" },
       ],
     },
     {
       name: "DevOps & Infrastructure",
-      subcategories: [{ name: "DevOps", link: "/services/devops" }],
+      subcategories: [
+        { name: "ServiceNow", link: "/services/servicenow" },
+        { name: "Cyber Security", link: "/services/cyber_security" },
+        { name: "Testing", link: "/services/testing" },
+      ],
     },
     {
       name: "Salesforce Development & Administration",
       subcategories: [
-        {
-          name: "Salesforce Development",
-          link: "/services/development",
-        },
-        {
-          name: "Salesforce Administration",
-          link: "/services/administration",
-        },
-        {
-          name: "Salesforce Lightning",
-          link: "/services/lightning",
-        },
-        { name: "Salesforce CPQ", link: "/services/cpq" },
+        { name: "Salesforce", link: "/services/salesforce" },
+        { name: "Generative AI", link: "/services/generative_ai" },
+        { name: "AI/ML", link: "/services/ai_ml" },
       ],
     },
     {
       name: "Data Science & Analytics",
       subcategories: [
-        {
-          name: "Data Science",
-          link: "/services/data-science",
-        },
-        { name: "Analytics", link: "/services/analytics" },
+        { name: "Tableau", link: "/services/tableau" },
+        { name: "Powerbi", link: "/services/powerbi" },
       ],
     },
     {
       name: "Cybersecurity & Ethical Hacking",
       subcategories: [
-        { name: "CHFI", link: "/services/chfi" },
-        { name: "CND", link: "/services/cnd" },
-        { name: "CEH", link: "/services/ceh" },
+        { name: "Sap Fi/Co", link: "/services/sap_fico" },
+        { name: "Sap Hana", link: "/services/sap_hana" },
       ],
     },
     {
       name: "Digital Transformation & Management",
       subcategories: [
-        { name: "EDM", link: "/services/edm" },
-        {
-          name: "Digital Transformation",
-          link: "/services/digital-transformation",
-        },
-        {
-          name: "Coding & App Development",
-          link: "/services/coding-app-development",
-        },
+        { name: "Digital Marketing", link: "/services/digital_marketing" },
+        { name: "Medical Coding", link: "/services/medical_coding" },
+        { name: "Flutter", link: "/services/flutter" },
       ],
     },
   ];
@@ -136,11 +104,13 @@ export default function Navbar() {
   return (
     <nav className={`navbar ${isScrolled ? "scrolled" : ""}`}>
       <div className="brand">
-        <img
-          className="brand-img"
-          src="https://www.datatiks.com/uploads/e8d1a40cfe85879a6006a0ac852007c0.png"
-          alt="brand-logo"
-        />
+        <Link to="/">
+          <img
+            className="brand-img"
+            src="https://www.datatiks.com/uploads/e8d1a40cfe85879a6006a0ac852007c0.png"
+            alt="brand-logo"
+          />
+        </Link>
       </div>
 
       <div

@@ -1,7 +1,7 @@
 import React from "react";
 import "../styles.css";
 
-import { courses } from "../Data/homeData";
+import { courses } from "../assets/data/homeData";
 
 function CourseCard({ course }) {
   return (

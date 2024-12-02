@@ -137,15 +137,21 @@ const courses = [
         },
         {
           qn: "What type of projects are provided as part of Training?",
-          ans: "DataTiks is offering you the most refreshed, significant, and high-esteem genuine projects as a part of the training program. Along these lines, you can implement the learning that you have acquired in a real-world industry setup. All preparing accompany.",
+          ans: [
+            "DataTiks is offering you the most refreshed, significant, and high-esteem genuine projects as a part of the training program. Along these lines, you can implement the learning that you have acquired in a real-world industry setup. All preparing accompany.",
+          ],
         },
         {
           qn: "What are the different modes of training in DataTiks?",
-          Ans: "We provide Both Online,Hybrid and Classroom Training in DataTiks",
+          ans: [
+            "We provide Both Online,Hybrid and Classroom Training in DataTiks",
+          ],
         },
         {
           qn: "What if I have queries after the training is completed?",
-          ans: "You will have access to trainer's whatsapp number, for any quries you can ping to trainers number. And also you can contact through mail ID.",
+          ans: [
+            "You will have access to trainer's whatsapp number, for any quries you can ping to trainers number. And also you can contact through mail ID.",
+          ],
         },
       ],
       enroll: {
@@ -199,23 +205,33 @@ const courses = [
       Faq: [
         {
           qn: "Why should I get trained from DataTiks?",
-          ans: "DataTiks is the expert among Business Intelligence tools preparation stages. Power BI is a strong Business Intelligence tool from Microsoft that allows you to remove information from various and fluctuated information sources and convert it into business.",
+          ans: [
+            "DataTiks is the expert among Business Intelligence tools preparation stages. Power BI is a strong Business Intelligence tool from Microsoft that allows you to remove information from various and fluctuated information sources and convert it into business.",
+          ],
         },
         {
           qn: "How do I enroll for this course?",
-          ans: "You can contact our support number at +91 99899 99969/ Directly can go through DataTiks.website or directly walk-in to Office in Hyderabad",
+          ans: [
+            "You can contact our support number at +91 99899 99969/ Directly can go through DataTiks.website or directly walk-in to Office in Hyderabad",
+          ],
         },
         {
           qn: "What assistance can you provide from DataTiks if I need to understand the topics better?",
-          ans: "DataTiks is the best training institute in Hyderabad which is providing 24/7 support, and you can raise a ticket with the dedicated support team whenever. You can profit from email support for every one of your questions. On the off chance that your questions are not replied to, you can straightforwardly contact our mentors.",
+          ans: [
+            "DataTiks is the best training institute in Hyderabad which is providing 24/7 support, and you can raise a ticket with the dedicated support team whenever. You can profit from email support for every one of your questions. On the off chance that your questions are not replied to, you can straightforwardly contact our mentors.",
+          ],
         },
         {
           qn: "What about Power BI Training in Hyderbad Demo Classes?",
-          ans: "You can attend demo classes at DataTiks and understand the method of teaching before enrolling yourself in the Power BI course.",
+          ans: [
+            "You can attend demo classes at DataTiks and understand the method of teaching before enrolling yourself in the Power BI course.",
+          ],
         },
         {
           qn: "What if i have queries after the training is completed?",
-          ans: "You will have access to trainer's whatsapp number, for any quries you can ping to trainers number. And also you can contact through mail ID.",
+          ans: [
+            "You will have access to trainer's whatsapp number, for any quries you can ping to trainers number. And also you can contact through mail ID.",
+          ],
         },
       ],
       enroll: {
@@ -269,19 +285,27 @@ const courses = [
       Faq: [
         {
           qn: "Who can opt for the Snowflake course?",
-          ans: "Any individual who needs to learn about the Snowflake analytics tool must get put on an undertaking utilizing this tool. The course is intended for fledglings, intermediates, and high-level experts",
+          ans: [
+            "Any individual who needs to learn about the Snowflake analytics tool must get put on an undertaking utilizing this tool. The course is intended for fledglings, intermediates, and high-level experts",
+          ],
         },
         {
           qn: "Do I really want any earlier specialized Knowledge to learn Snowflakes?",
-          ans: "On the off chance that you have any specialized knowledge, it will be an additional benefit for you. Nonetheless, we will organize a couple of extra meetings to prepare you for the basics.",
+          ans: [
+            "On the off chance that you have any specialized knowledge, it will be an additional benefit for you. Nonetheless, we will organize a couple of extra meetings to prepare you for the basics.",
+          ],
         },
         {
           qn: "How much time does it require to become capable of utilizing Snowflake?",
-          ans: "Everything relies upon you. The speed at which you become familiar with the tool is altogether dependent upon you. Certain individuals learn in a day and some others might require over a month. Everything relies upon your dedication and responsibility.",
+          ans: [
+            "Everything relies upon you. The speed at which you become familiar with the tool is altogether dependent upon you. Certain individuals learn in a day and some others might require over a month. Everything relies upon your dedication and responsibility.",
+          ],
         },
         {
           qn: "How do I enroll for the course in DataTiks?",
-          ans: "You can contact our support number at +91 99899 99969/ Directly can go through DataTiks.website or directly walk-in to Office in Hyderabad",
+          ans: [
+            "You can contact our support number at +91 99899 99969/ Directly can go through DataTiks.website or directly walk-in to Office in Hyderabad",
+          ],
         },
       ],
       enroll: {
@@ -331,27 +355,39 @@ const courses = [
       Faq: [
         {
           qn: "Can I learn Azure without having any Programming Skill ?",
-          ans: "It will be useful for a student in the event that he knows about any programming abilities, however, it isn't important to be familiar with programming abilities to acquire Microsoft Azure. Thus, yes you can learn Microsoft Azure without having any extra fee.",
+          ans: [
+            "It will be useful for a student in the event that he knows about any programming abilities, however, it isn't important to be familiar with programming abilities to acquire Microsoft Azure. Thus, yes you can learn Microsoft Azure without having any extra fee.",
+          ],
         },
         {
           qn: "What are the main benefits of Azure course?",
-          ans: "Azure is an adaptable cloud computing device that furnishes a bunch of new services with expanded information capacity. Compared with its rivals, Azure is a lot less expensive and offers various applications simultaneously. It serves well as a possibile",
+          ans: [
+            "Azure is an adaptable cloud computing device that furnishes a bunch of new services with expanded information capacity. Compared with its rivals, Azure is a lot less expensive and offers various applications simultaneously. It serves well as a possibile",
+          ],
         },
         {
           qn: "What is the duration of the Azure training?",
-          ans: "Around 40 Hrs, we provide classes both end of the week and on Weekdays.",
+          ans: [
+            "Around 40 Hrs, we provide classes both end of the week and on Weekdays.",
+          ],
         },
         {
           qn: "What are the best oppurtunities can we get after training?",
-          ans: "However Microsoft Azure offers a heap of activities with it, yet everything thing one can manage with Azure are Storage, Web and Mobile Applications, Data and Analytics, and Internet of Things (IoT) in Microsoft Azure.",
+          ans: [
+            "However Microsoft Azure offers a heap of activities with it, yet everything thing one can manage with Azure are Storage, Web and Mobile Applications, Data and Analytics, and Internet of Things (IoT) in Microsoft Azure.",
+          ],
         },
         {
           qn: "What sort of projects you provide during Training?",
-          ans: "You will be dealing with exciting projects that will help you in enhancing your skills, improve your practical knowledge, and will make you industry ready",
+          ans: [
+            "You will be dealing with exciting projects that will help you in enhancing your skills, improve your practical knowledge, and will make you industry ready",
+          ],
         },
         {
           qn: "What if I have queries after the training is completed?",
-          ans: "You will have access to trainer's whatsapp number, for any quries you can ping to trainers number. And also you can contact through mail ID.",
+          ans: [
+            "You will have access to trainer's whatsapp number, for any quries you can ping to trainers number. And also you can contact through mail ID.",
+          ],
         },
       ],
       enroll: {
@@ -401,11 +437,15 @@ const courses = [
       Faq: [
         {
           qn: "What is the Duration for this training?",
-          ans: "Python Full Stack training takes around 45 days we provide both weekend & weekday batches.",
+          ans: [
+            "Python Full Stack training takes around 45 days we provide both weekend & weekday batches.",
+          ],
         },
         {
           qn: "How do I enroll for the course in DataTiks?",
-          ans: "You can contact our support number at +91 99899 99969/ Directly can go through DataTiks. Website or directly walk-in to Office in Hyderabad",
+          ans: [
+            "You can contact our support number at +91 99899 99969/ Directly can go through DataTiks. Website or directly walk-in to Office in Hyderabad",
+          ],
         },
       ],
       enroll: {
@@ -455,11 +495,15 @@ const courses = [
       Faq: [
         {
           qn: "What is the Duration for this training?",
-          ans: "Java Full Stack training takes around 45 days we provide both weekend & weekday batches.",
+          ans: [
+            "Java Full Stack training takes around 45 days we provide both weekend & weekday batches.",
+          ],
         },
         {
           qn: "How do I enroll for the course in DataTiks?",
-          ans: "You can contact our support number at +91 99899 99969/ Directly can go through DataTiks. Website or directly walk-in to Office in Hyderabad",
+          ans: [
+            "You can contact our support number at +91 99899 99969/ Directly can go through DataTiks. Website or directly walk-in to Office in Hyderabad",
+          ],
         },
       ],
       enroll: {
@@ -673,97 +717,121 @@ const courses = [
       Faq: [
         {
           qn: "What is the Duration for this training?",
-          ans: "MEAN Stack training takes around 45 days we provide both weekend & weekday batches.",
+          ans: [
+            "MEAN Stack training takes around 45 days we provide both weekend & weekday batches.",
+          ],
         },
         {
           qn: "How do I enroll for the course in DataTiks?",
-          ans: "You can contact our support number at +91 99899 99969/ Directly can go through DataTiks. Website or directly walk-in to Office in Hyderabad",
+          ans: [
+            "You can contact our support number at +91 99899 99969/ Directly can go through DataTiks. Website or directly walk-in to Office in Hyderabad",
+          ],
         },
 
         {
           qn: "What is the MEAN stack, and why is it called so?",
-          ans: "The MEAN stack is a web development stack comprising MongoDB, Express.js, Angular, and Node.js. It is named after the initials of its components.",
+          ans: [
+            "The MEAN stack is a web development stack comprising MongoDB, Express.js, Angular, and Node.js. It is named after the initials of its components.",
+          ],
         },
         {
           qn: "Is this course suitable for beginners with no prior programming experience?",
-          ans: "Yes, the course starts from basics. However, a basic understanding of JavaScript is helpful but not mandatory.",
+          ans: [
+            "Yes, the course starts from basics. However, a basic understanding of JavaScript is helpful but not mandatory.",
+          ],
         },
         {
           qn: "What are the main benefits of MEAN stack development?",
-          ans: "MEAN stack development is a full-stack JavaScript solution that helps in building robust web applications. It is highly flexible and scalable, making it a preferred choice for developers.",
+          ans: [
+            "MEAN stack development is a full-stack JavaScript solution that helps in building robust web applications. It is highly flexible and scalable, making it a preferred choice for developers.",
+          ],
         },
         {
           qn: "What are the job opportunities after completing the MEAN stack course?",
-          ans: "After completing the MEAN stack Training, you'll be equipped with skills highly valued in the tech industry, you can work as a Full Stack Developer, Frontend Developer, Backend Developer, or a MEAN Stack Developer.",
+          ans: [
+            "After completing the MEAN stack Training, you'll be equipped with skills highly valued in the tech industry, you can work as a Full Stack Developer, Frontend Developer, Backend Developer, or a MEAN Stack Developer.",
+          ],
         },
         {
           qn: "What is the structure of the course?",
-          ans: {
-            description: "The course is divided into four modules:",
-            fields: [
-              "MongoDB (Database)",
-              "Express.js (Backend framework)",
-              "Angular (Frontend development)",
-              "Node.js (Runtime environment)",
-            ],
-          },
+          ans: [
+            "The course is divided into four modules:",
+            "MongoDB (Database)",
+            "Express.js (Backend framework)",
+            "Angular (Frontend development)",
+            "Node.js (Runtime environment)",
+          ],
         },
         {
           qn: "Do you provide online or offline classes? Are recordings of the sessions available?",
-          ans: "Both online and offline classes are available. Online sessions are recorded, and students receive access to recordings for future reference.",
+          ans: [
+            "Both online and offline classes are available. Online sessions are recorded, and students receive access to recordings for future reference.",
+          ],
         },
         {
           qn: "How much hands-on practice will we get? Is it a theory-heavy or project-oriented course?",
-          ans: "The course is 70% hands-on and project-oriented. You’ll practice coding during live sessions and work on assignments after every module.",
+          ans: [
+            "The course is 70% hands-on and project-oriented. You’ll practice coding during live sessions and work on assignments after every module.",
+          ],
         },
         {
           qn: "What kind of projects will we work on during the training?",
-          ans: {
-            description: "Projects include:",
-            fields: [
-              "A to-do app",
-              "A blogging platform",
-              "An e-commerce application with user authentication and payment integration",
-            ],
-          },
+          ans: [
+            "Projects include:",
+            "A to-do app",
+            "A blogging platform",
+            "An e-commerce application with user authentication and payment integration",
+          ],
         },
         {
           qn: "Are the projects industry-relevant?",
-          ans: "Yes, all projects are designed to mimic real-world scenarios and help you build a strong portfolio for job applications.",
+          ans: [
+            "Yes, all projects are designed to mimic real-world scenarios and help you build a strong portfolio for job applications.",
+          ],
         },
         {
           qn: "Is there an option for one-on-one mentoring or doubt clarification?",
-          ans: "Yes, we offer weekly one-on-one sessions for doubt clarification. There’s also a dedicated Slack/WhatsApp group for immediate support.",
+          ans: [
+            "Yes, we offer weekly one-on-one sessions for doubt clarification. There’s also a dedicated Slack/WhatsApp group for immediate support.",
+          ],
         },
         {
           qn: "What tools and software do I need before starting the training?",
-          ans: {
-            description: "You’ll need:",
-            fields: [
-              "A computer with Node.js, MongoDB, and a code editor like VS Code installed.",
-              "Internet access for online tools and resources.",
-            ],
-          },
+          ans: [
+            "You’ll need:",
+            "A computer with Node.js, MongoDB, and a code editor like VS Code installed.",
+            "Internet access for online tools and resources.",
+          ],
         },
         {
           qn: "Will you provide learning materials?",
-          ans: "Yes, we provide study materials, cheat sheets, and access to curated resources.",
+          ans: [
+            "Yes, we provide study materials, cheat sheets, and access to curated resources.",
+          ],
         },
         {
           qn: "Will I receive a certificate after completing the training?",
-          ans: "es, you’ll receive a certificate of completion, which is recognized by many companies in the IT industry.",
+          ans: [
+            "yes, you’ll receive a certificate of completion, which is recognized by many companies in the IT industry.",
+          ],
         },
         {
           qn: "Are there mock tests or quizzes to check our understanding?",
-          ans: "Yes, we conduct weekly quizzes and coding challenges to assess and reinforce your learning.",
+          ans: [
+            "Yes, we conduct weekly quizzes and coding challenges to assess and reinforce your learning.",
+          ],
         },
         {
           qn: "Does this training program include placement assistance?",
-          ans: "Yes, we provide resume-building sessions, mock interviews, and access to job opportunities through our hiring partners.",
+          ans: [
+            "Yes, we provide resume-building sessions, mock interviews, and access to job opportunities through our hiring partners.",
+          ],
         },
         {
           qn: "Can I use the projects built during the training for my portfolio?",
-          ans: "Absolutely! These projects are designed to showcase your skills and will help you stand out to potential employers.",
+          ans: [
+            "Absolutely! These projects are designed to showcase your skills and will help you stand out to potential employers.",
+          ],
         },
       ],
       enroll: {
@@ -814,116 +882,148 @@ const courses = [
       Faq: [
         {
           qn: "What is the Duration for this training?",
-          ans: "React Native training takes around 45 days we provide both weekend & weekday batches.",
+          ans: [
+            "React Native training takes around 45 days we provide both weekend & weekday batches.",
+          ],
         },
         {
           qn: "How do I enroll for the course in DataTiks?",
-          ans: "You can contact our support number at +91 99899 99969/ Directly can go through DataTiks. Website or directly walk-in to Office in Hyderabad",
+          ans: [
+            "You can contact our support number at +91 99899 99969/ Directly can go through DataTiks. Website or directly walk-in to Office in Hyderabad",
+          ],
         },
         {
           qn: "Is this course suitable for beginners?",
-          ans: "Yes, it is beginner-friendly. While basic programming knowledge is helpful, we start from the fundamentals of JavaScript and guide you through each React Native Core components.",
+          ans: [
+            "Yes, it is beginner-friendly. While basic programming knowledge is helpful, we start from the fundamentals of JavaScript and guide you through each React Native Core components.",
+          ],
         },
         {
           qn: "What is React Native, and why should I learn it?",
-          ans: "React Native is a popular framework for building cross-platform mobile apps using JavaScript and React. It allows developers to create apps for both iOS and Android with a single codebase, saving time and effort.",
+          ans: [
+            "React Native is a popular framework for building cross-platform mobile apps using JavaScript and React. It allows developers to create apps for both iOS and Android with a single codebase, saving time and effort.",
+          ],
         },
         {
           qn: "Is this course beginner-friendly?",
-          ans: "Yes, the course is designed for beginners. However, prior knowledge of JavaScript and React.js basics will make the learning curve easier.",
+          ans: [
+            "Yes, the course is designed for beginners. However, prior knowledge of JavaScript and React.js basics will make the learning curve easier.",
+          ],
         },
         {
           qn: "What platforms can I develop apps for using React Native?",
-          ans: "React Native allows you to develop mobile apps for iOS and Android platforms.",
+          ans: [
+            "React Native allows you to develop mobile apps for iOS and Android platforms.",
+          ],
         },
         {
           qn: "Will the course teach advanced concepts like animations or performance optimization?",
-          ans: "Yes, topics like animations (using React Native Reanimated) and performance optimization are included in the advanced modules.",
+          ans: [
+            "Yes, topics like animations (using React Native Reanimated) and performance optimization are included in the advanced modules.",
+          ],
         },
         {
           qn: "Does the training include app deployment to app stores?",
-          ans: "Yes, the course covers how to publish apps to the Google Play Store and Apple App Store.",
+          ans: [
+            "Yes, the course covers how to publish apps to the Google Play Store and Apple App Store.",
+          ],
         },
 
         {
           qn: "What are the job opportunities after completing the MEAN stack course?",
-          ans: "After completing the MEAN stack Training, you'll be equipped with skills highly valued in the tech industry, you can work as a Full Stack Developer, Frontend Developer, Backend Developer, or a MEAN Stack Developer.",
+          ans: [
+            "After completing the MEAN stack Training, you'll be equipped with skills highly valued in the tech industry, you can work as a Full Stack Developer, Frontend Developer, Backend Developer, or a MEAN Stack Developer.",
+          ],
         },
         {
           qn: "What topics are covered in this course?",
-          ans: {
-            description: "The course covers:",
-            fields: [
-              "React Native fundamentals (components, props, state, navigation).",
-              "UI design with Flexbox and styling.",
-              "API integration and state management (using Redux or Context API).",
-              "Native device features (camera, location, notifications).",
-              "App testing, debugging, and deployment.",
-            ],
-          },
+          ans: [
+            "The course covers:",
+            "React Native fundamentals (components, props, state, navigation).",
+            "UI design with Flexbox and styling.",
+            "API integration and state management (using Redux or Context API).",
+            "Native device features (camera, location, notifications).",
+            "App testing, debugging, and deployment.",
+          ],
         },
         {
           qn: "Do you provide online or offline classes? Are recordings of the sessions available?",
-          ans: "Both online and offline classes are available. Online sessions are recorded, and students receive access to recordings for future reference.",
+          ans: [
+            "Both online and offline classes are available. Online sessions are recorded, and students receive access to recordings for future reference.",
+          ],
         },
         {
           qn: "How much hands-on practice will we get? Is it a theory-heavy or project-oriented course?",
-          ans: "The course is 70% hands-on and project-oriented. You’ll practice coding during live sessions and work on assignments after every module.",
+          ans: [
+            "The course is 70% hands-on and project-oriented. You’ll practice coding during live sessions and work on assignments after every module.",
+          ],
         },
         {
           qn: "What kind of projects will we work on during the training?",
-          ans: {
-            description: "Projects include:",
-            fields: [
-              "A to-do app",
-              "A blogging platform",
-              "An e-commerce application with user authentication and payment integration",
-            ],
-          },
+          ans: [
+            "Projects include:",
+            "A to-do app",
+            "A blogging platform",
+            "An e-commerce application with user authentication and payment integration",
+          ],
         },
         {
           qn: "Are the projects industry-relevant?",
-          ans: "Yes, all projects are designed to mimic real-world scenarios and help you build a strong portfolio for job applications.",
+          ans: [
+            "Yes, all projects are designed to mimic real-world scenarios and help you build a strong portfolio for job applications.",
+          ],
         },
         {
           qn: "Is there an option for one-on-one mentoring or doubt clarification?",
-          ans: "Yes, we offer weekly one-on-one sessions for doubt clarification. There’s also a dedicated WhatsApp group for immediate support.",
+          ans: [
+            "Yes, we offer weekly one-on-one sessions for doubt clarification. There’s also a dedicated WhatsApp group for immediate support.",
+          ],
         },
         {
           qn: "What tools do I need for this training?",
-          ans: {
-            description: "You’ll need:",
-            fields: [
-              "A computer with Node.js and npm installed.",
-              "Android Studio (for Android development) or Xcode (for iOS development).",
-              "A modern text editor like Visual Studio Code.",
-              "Expo CLI for simpler app testing and deployment (for beginners).",
-            ],
-          },
+          ans: [
+            "You’ll need:",
+            "A computer with Node.js and npm installed.",
+            "Android Studio (for Android development) or Xcode (for iOS development).",
+            "A modern text editor like Visual Studio Code.",
+            "Expo CLI for simpler app testing and deployment (for beginners).",
+          ],
         },
         {
           qn: "Are learning materials and resources provided?",
-          ans: "Yes, we provide access to course materials, sample code, cheat sheets, and recommended resources like documentation and tutorials.",
+          ans: [
+            "Yes, we provide access to course materials, sample code, cheat sheets, and recommended resources like documentation and tutorials.",
+          ],
         },
         {
           qn: "Will I receive a certificate after completing the training?",
-          ans: "Yes, you’ll receive a certificate of completion, which is recognized by many companies in the IT industry.",
+          ans: [
+            "Yes, you’ll receive a certificate of completion, which is recognized by many companies in the IT industry.",
+          ],
         },
         {
           qn: "Are there mock tests or quizzes to check our understanding?",
-          ans: "Yes, we conduct weekly quizzes and coding challenges to assess and reinforce your learning.",
+          ans: [
+            "Yes, we conduct weekly quizzes and coding challenges to assess and reinforce your learning.",
+          ],
         },
         {
           qn: "Does this training program include placement assistance?",
-          ans: "Yes, we provide resume-building sessions, mock interviews, and access to job opportunities through our hiring partners.",
+          ans: [
+            "Yes, we provide resume-building sessions, mock interviews, and access to job opportunities through our hiring partners.",
+          ],
         },
         {
           qn: "Can I use the projects built during the training for my portfolio?",
-          ans: "Absolutely! These projects are designed to showcase your skills and will help you stand out to potential employers.",
+          ans: [
+            "Absolutely! These projects are designed to showcase your skills and will help you stand out to potential employers.",
+          ],
         },
         {
           qn: "Can I freelance after completing this course?",
-          ans: "Absolutely! React Native is in high demand for freelance mobile app projects, and this course equips you with the skills needed to start.",
+          ans: [
+            "Absolutely! React Native is in high demand for freelance mobile app projects, and this course equips you with the skills needed to start.",
+          ],
         },
       ],
       enroll: {
@@ -974,88 +1074,118 @@ const courses = [
       Faq: [
         {
           qn: "What is the Duration for this training?",
-          ans: "React Native training takes around 45 days we provide both weekend & weekday batches.",
+          ans: [
+            "React Native training takes around 45 days we provide both weekend & weekday batches.",
+          ],
         },
         {
           qn: "How do I enroll for the course in DataTiks?",
-          ans: "You can contact our support number at +91 99899 99969/ Directly can go through DataTiks. Website or directly walk-in to Office in Hyderabad",
+          ans: [
+            "You can contact our support number at +91 99899 99969/ Directly can go through DataTiks Website or directly walk-in to Office in Hyderabad.",
+          ],
         },
-
         {
           qn: "What is Flutter, and why should I learn it?",
-          ans: "Flutter is a popular open-source framework by Google for building high-quality, cross-platform mobile apps with a single codebase. It’s fast, developer-friendly, and widely used in the industry, making it an excellent choice for mobile app development.",
+          ans: [
+            "Flutter is a popular open-source framework by Google for building high-quality, cross-platform mobile apps with a single codebase. It’s fast, developer-friendly, and widely used in the industry, making it an excellent choice for mobile app development.",
+          ],
         },
         {
           qn: "Do I need programming experience to learn Flutter?",
-          ans: "Basic knowledge of programming and object-oriented concepts is helpful but not mandatory, as most training programs include an introduction to Dart, the language used in Flutter.",
+          ans: [
+            "Basic knowledge of programming and object-oriented concepts is helpful but not mandatory, as most training programs include an introduction to Dart, the language used in Flutter.",
+          ],
         },
         {
           qn: "What tools and software do I need to get started?",
-          ans: "You’ll need a computer with Flutter SDK installed, Android Studio or Visual Studio Code for development, and an Android/iOS emulator or a real device for testing.",
+          ans: [
+            "You’ll need a computer with Flutter SDK installed, Android Studio or Visual Studio Code for development, and an Android/iOS emulator or a real device for testing.",
+          ],
         },
         {
           qn: "Can I build apps for both Android and iOS with Flutter?",
-          ans: "Yes, Flutter allows you to create high-performance apps for both platforms using a single codebase, saving time and effort.",
+          ans: [
+            "Yes, Flutter allows you to create high-performance apps for both platforms using a single codebase, saving time and effort.",
+          ],
         },
         {
           qn: "What kind of projects will I work on during the course?",
-          ans: "Most courses include projects like a to-do app, weather app, or e-commerce app, focusing on real-world use cases and practical implementation.",
+          ans: [
+            "Most courses include projects like a to-do app, weather app, or e-commerce app, focusing on real-world use cases and practical implementation.",
+          ],
         },
-
         {
           qn: "Is Flutter better than other frameworks like React Native?",
-          ans: "Both have their strengths, but Flutter offers faster performance, a rich set of customizable widgets, and better native feel, making it a preferred choice for many developers.",
+          ans: [
+            "Both have their strengths, but Flutter offers faster performance, a rich set of customizable widgets, and better native feel, making it a preferred choice for many developers.",
+          ],
         },
         {
           qn: "Will I receive certification after the training?",
-          ans: "Yes, most programs provide a certification of completion that can boost your resume and job prospects.",
+          ans: [
+            "Yes, most programs provide a certification of completion that can boost your resume and job prospects.",
+          ],
         },
         {
           qn: "Does the training include job placement support?",
-          ans: "Many training providers offer career support, including mock interviews, resume building, and job referrals through their network.",
+          ans: [
+            "Many training providers offer career support, including mock interviews, resume building, and job referrals through their network.",
+          ],
         },
         {
           qn: "How long does it take to learn Flutter?",
-          ans: " It typically takes 2-3 months to learn the basics and build small apps, depending on your prior experience and learning pace.",
+          ans: [
+            "It typically takes 2-3 months to learn the basics and build small apps, depending on your prior experience and learning pace.",
+          ],
         },
         {
           qn: "Can I learn Flutter if I don’t have a background in mobile development?",
-          ans: "Absolutely! Flutter is beginner-friendly and designed to simplify mobile development, making it accessible to learners with no prior experience.",
+          ans: [
+            "Absolutely! Flutter is beginner-friendly and designed to simplify mobile development, making it accessible to learners with no prior experience.",
+          ],
         },
         {
           qn: "What tools do I need for this training?",
-          ans: {
-            description: "You’ll need:",
-            fields: [
-              "A computer with Flutter Software Development Kit installed.",
-              "Android Studio (for Android development) or Xcode (for iOS development).",
-              "A modern text editor like Visual Studio Code.",
-              "Expo CLI for simpler app testing and deployment (for beginners).",
-            ],
-          },
+          ans: [
+            "You’ll need:",
+            "A computer with Flutter Software Development Kit installed.",
+            "Android Studio (for Android development) or Xcode (for iOS development).",
+            "A modern text editor like Visual Studio Code.",
+            "Expo CLI for simpler app testing and deployment (for beginners).",
+          ],
         },
         {
           qn: "Are learning materials and resources provided?",
-          ans: "Yes, we provide access to course materials, sample code, cheat sheets, and recommended resources like documentation and tutorials.",
+          ans: [
+            "Yes, we provide access to course materials, sample code, cheat sheets, and recommended resources like documentation and tutorials.",
+          ],
         },
-
         {
           qn: "Are there mock tests or quizzes to check our understanding?",
-          ans: "Yes, we conduct weekly quizzes and coding challenges to assess and reinforce your learning.",
+          ans: [
+            "Yes, we conduct weekly quizzes and coding challenges to assess and reinforce your learning.",
+          ],
         },
         {
           qn: "Does this training program include placement assistance?",
-          ans: "Yes, we provide resume-building sessions, mock interviews, and access to job opportunities through our hiring partners.",
+          ans: [
+            "Yes, we provide resume-building sessions, mock interviews, and access to job opportunities through our hiring partners.",
+          ],
         },
         {
           qn: "Can I use the projects built during the training for my portfolio?",
-          ans: "Absolutely! These projects are designed to showcase your skills and will help you stand out to potential employers.",
+          ans: [
+            "Absolutely! These projects are designed to showcase your skills and will help you stand out to potential employers.",
+          ],
         },
         {
           qn: "Can I freelance after completing this course?",
-          ans: "Absolutely! React Native is in high demand for freelance mobile app projects, and this course equips you with the skills needed to start.",
+          ans: [
+            "Absolutely! React Native is in high demand for freelance mobile app projects, and this course equips you with the skills needed to start.",
+          ],
         },
       ],
+
       enroll: {
         description:
           "Enroll in this course based on Flutter course training in Hyderabad-India to get started on your path to becoming an expert. Flutter course training in Hyderabad-India has become necessary for cross-platform Application developers who want to work in the industry. In the hands-on sessions, you will learn about the architecture, components, and advanced ideas involved in building rich mobile applications using Flutter. This class will likely fill up rapidly, so get your registration in Datatiks as soon as possible!",
@@ -1104,88 +1234,118 @@ const courses = [
       Faq: [
         {
           qn: "What is the Duration for this training?",
-          ans: "React Native training takes around 45 days we provide both weekend & weekday batches.",
+          ans: [
+            "React Native training takes around 45 days we provide both weekend & weekday batches.",
+          ],
         },
         {
           qn: "How do I enroll for the course in DataTiks?",
-          ans: "You can contact our support number at +91 99899 99969/ Directly can go through DataTiks. Website or directly walk-in to Office in Hyderabad",
+          ans: [
+            "You can contact our support number at +91 99899 99969/ Directly can go through DataTiks Website or directly walk-in to Office in Hyderabad.",
+          ],
         },
-
         {
           qn: "What is Flutter, and why should I learn it?",
-          ans: "Flutter is a popular open-source framework by Google for building high-quality, cross-platform mobile apps with a single codebase. It’s fast, developer-friendly, and widely used in the industry, making it an excellent choice for mobile app development.",
+          ans: [
+            "Flutter is a popular open-source framework by Google for building high-quality, cross-platform mobile apps with a single codebase. It’s fast, developer-friendly, and widely used in the industry, making it an excellent choice for mobile app development.",
+          ],
         },
         {
           qn: "Do I need programming experience to learn Flutter?",
-          ans: "Basic knowledge of programming and object-oriented concepts is helpful but not mandatory, as most training programs include an introduction to Dart, the language used in Flutter.",
+          ans: [
+            "Basic knowledge of programming and object-oriented concepts is helpful but not mandatory, as most training programs include an introduction to Dart, the language used in Flutter.",
+          ],
         },
         {
           qn: "What tools and software do I need to get started?",
-          ans: "You’ll need a computer with Flutter SDK installed, Android Studio or Visual Studio Code for development, and an Android/iOS emulator or a real device for testing.",
+          ans: [
+            "You’ll need a computer with Flutter SDK installed, Android Studio or Visual Studio Code for development, and an Android/iOS emulator or a real device for testing.",
+          ],
         },
         {
           qn: "Can I build apps for both Android and iOS with Flutter?",
-          ans: "Yes, Flutter allows you to create high-performance apps for both platforms using a single codebase, saving time and effort.",
+          ans: [
+            "Yes, Flutter allows you to create high-performance apps for both platforms using a single codebase, saving time and effort.",
+          ],
         },
         {
           qn: "What kind of projects will I work on during the course?",
-          ans: "Most courses include projects like a to-do app, weather app, or e-commerce app, focusing on real-world use cases and practical implementation.",
+          ans: [
+            "Most courses include projects like a to-do app, weather app, or e-commerce app, focusing on real-world use cases and practical implementation.",
+          ],
         },
-
         {
           qn: "Is Flutter better than other frameworks like React Native?",
-          ans: "Both have their strengths, but Flutter offers faster performance, a rich set of customizable widgets, and better native feel, making it a preferred choice for many developers.",
+          ans: [
+            "Both have their strengths, but Flutter offers faster performance, a rich set of customizable widgets, and better native feel, making it a preferred choice for many developers.",
+          ],
         },
         {
           qn: "Will I receive certification after the training?",
-          ans: "Yes, most programs provide a certification of completion that can boost your resume and job prospects.",
+          ans: [
+            "Yes, most programs provide a certification of completion that can boost your resume and job prospects.",
+          ],
         },
         {
           qn: "Does the training include job placement support?",
-          ans: "Many training providers offer career support, including mock interviews, resume building, and job referrals through their network.",
+          ans: [
+            "Many training providers offer career support, including mock interviews, resume building, and job referrals through their network.",
+          ],
         },
         {
           qn: "How long does it take to learn Flutter?",
-          ans: " It typically takes 2-3 months to learn the basics and build small apps, depending on your prior experience and learning pace.",
+          ans: [
+            "It typically takes 2-3 months to learn the basics and build small apps, depending on your prior experience and learning pace.",
+          ],
         },
         {
           qn: "Can I learn Flutter if I don’t have a background in mobile development?",
-          ans: "Absolutely! Flutter is beginner-friendly and designed to simplify mobile development, making it accessible to learners with no prior experience.",
+          ans: [
+            "Absolutely! Flutter is beginner-friendly and designed to simplify mobile development, making it accessible to learners with no prior experience.",
+          ],
         },
         {
           qn: "What tools do I need for this training?",
-          ans: {
-            description: "You’ll need:",
-            fields: [
-              "A computer with Flutter Software Development Kit installed.",
-              "Android Studio (for Android development) or Xcode (for iOS development).",
-              "A modern text editor like Visual Studio Code.",
-              "Expo CLI for simpler app testing and deployment (for beginners).",
-            ],
-          },
+          ans: [
+            "You’ll need:",
+            "A computer with Flutter Software Development Kit installed.",
+            "Android Studio (for Android development) or Xcode (for iOS development).",
+            "A modern text editor like Visual Studio Code.",
+            "Expo CLI for simpler app testing and deployment (for beginners).",
+          ],
         },
         {
           qn: "Are learning materials and resources provided?",
-          ans: "Yes, we provide access to course materials, sample code, cheat sheets, and recommended resources like documentation and tutorials.",
+          ans: [
+            "Yes, we provide access to course materials, sample code, cheat sheets, and recommended resources like documentation and tutorials.",
+          ],
         },
-
         {
           qn: "Are there mock tests or quizzes to check our understanding?",
-          ans: "Yes, we conduct weekly quizzes and coding challenges to assess and reinforce your learning.",
+          ans: [
+            "Yes, we conduct weekly quizzes and coding challenges to assess and reinforce your learning.",
+          ],
         },
         {
           qn: "Does this training program include placement assistance?",
-          ans: "Yes, we provide resume-building sessions, mock interviews, and access to job opportunities through our hiring partners.",
+          ans: [
+            "Yes, we provide resume-building sessions, mock interviews, and access to job opportunities through our hiring partners.",
+          ],
         },
         {
           qn: "Can I use the projects built during the training for my portfolio?",
-          ans: "Absolutely! These projects are designed to showcase your skills and will help you stand out to potential employers.",
+          ans: [
+            "Absolutely! These projects are designed to showcase your skills and will help you stand out to potential employers.",
+          ],
         },
         {
           qn: "Can I freelance after completing this course?",
-          ans: "Absolutely! React Native is in high demand for freelance mobile app projects, and this course equips you with the skills needed to start.",
+          ans: [
+            "Absolutely! React Native is in high demand for freelance mobile app projects, and this course equips you with the skills needed to start.",
+          ],
         },
       ],
+
       enroll: {
         description:
           "Enroll in this course based on Flutter course training in Hyderabad-India to get started on your path to becoming an expert. Flutter course training in Hyderabad-India has become necessary for cross-platform Application developers who want to work in the industry. In the hands-on sessions, you will learn about the architecture, components, and advanced ideas involved in building rich mobile applications using Flutter. This class will likely fill up rapidly, so get your registration in Datatiks as soon as possible!",
@@ -1233,43 +1393,63 @@ const courses = [
       Faq: [
         {
           qn: "What is the Duration for this training?",
-          ans: "Cyber Security training takes approximately 60 days, with both weekend & weekday batches available.",
+          ans: [
+            "Cyber Security training takes approximately 60 days, with both weekend & weekday batches available.",
+          ],
         },
         {
           qn: "How do I enroll for this course?",
-          ans: "You can contact our support number at +91 99899 99969, visit our website, or walk into our office in Hyderabad.",
+          ans: [
+            "You can contact our support number at +91 99899 99969, visit our website, or walk into our office in Hyderabad.",
+          ],
         },
         {
           qn: "What are the timings for Cyber Security Training?",
-          ans: "Weekend batches are from 9:00 AM to 1:00 PM, and weekday batches are from 9:00 AM to 10:00 AM.",
+          ans: [
+            "Weekend batches are from 9:00 AM to 1:00 PM, and weekday batches are from 9:00 AM to 10:00 AM.",
+          ],
         },
         {
           qn: "What is the mode of training?",
-          ans: "We offer both online and offline training sessions for this course.",
+          ans: [
+            "We offer both online and offline training sessions for this course.",
+          ],
         },
         {
           qn: "Do you provide placement assistance?",
-          ans: "Yes, we offer 100% placement assistance until you secure a job offer letter.",
+          ans: [
+            "Yes, we offer 100% placement assistance until you secure a job offer letter.",
+          ],
         },
         {
           qn: "Do I need prior IT experience to join this course?",
-          ans: "While prior IT experience is not mandatory, basic knowledge of networking concepts and operating systems can be helpful.",
+          ans: [
+            "While prior IT experience is not mandatory, basic knowledge of networking concepts and operating systems can be helpful.",
+          ],
         },
         {
           qn: "Will I get hands-on training during the course?",
-          ans: "Yes, the course includes practical sessions where you will work on live projects and simulations to apply your learning.",
+          ans: [
+            "Yes, the course includes practical sessions where you will work on live projects and simulations to apply your learning.",
+          ],
         },
         {
           qn: "Is this course suitable for beginners in Cyber Security?",
-          ans: "Yes, the course is designed for beginners and covers all the fundamentals of cyber security.",
+          ans: [
+            "Yes, the course is designed for beginners and covers all the fundamentals of cyber security.",
+          ],
         },
         {
           qn: "What certifications will I receive after completing the course?",
-          ans: "You will receive a course completion certificate from our institution. Additionally, we provide guidance for certifications like CISSP and CEH.",
+          ans: [
+            "You will receive a course completion certificate from our institution. Additionally, we provide guidance for certifications like CISSP and CEH.",
+          ],
         },
         {
           qn: "Can I take this course if I want to focus on ethical hacking?",
-          ans: "Yes, the course covers ethical hacking, network security, and penetration testing as part of the curriculum.",
+          ans: [
+            "Yes, the course covers ethical hacking, network security, and penetration testing as part of the curriculum.",
+          ],
         },
       ],
       enroll: {
@@ -1315,23 +1495,33 @@ const courses = [
       Faq: [
         {
           qn: "What is the Duration for this training?",
-          ans: "SAP FICO training lasts approximately 60-75 days, with flexible weekend and weekday batches.",
+          ans: [
+            "SAP FICO training lasts approximately 60-75 days, with flexible weekend and weekday batches.",
+          ],
         },
         {
           qn: "What are the timings for SAP FICO Training?",
-          ans: "Weekend batches are from 9:00 AM to 1:00 PM, and weekday batches are from 9:00 AM to 10:00 AM.",
+          ans: [
+            "Weekend batches are from 9:00 AM to 1:00 PM, and weekday batches are from 9:00 AM to 10:00 AM.",
+          ],
         },
         {
           qn: "Do you provide placement assistance?",
-          ans: "Yes, we provide 100% placement assistance until you secure a job offer letter.",
+          ans: [
+            "Yes, we provide 100% placement assistance until you secure a job offer letter.",
+          ],
         },
         {
           qn: "What is the mode of training?",
-          ans: "We offer both online and offline training sessions for this course.",
+          ans: [
+            "We offer both online and offline training sessions for this course.",
+          ],
         },
         {
           qn: "Is prior accounting knowledge required for this course?",
-          ans: "Basic accounting knowledge is recommended but not mandatory. We will cover the necessary concepts during the training.",
+          ans: [
+            "Basic accounting knowledge is recommended but not mandatory. We will cover the necessary concepts during the training.",
+          ],
         },
       ],
       enroll: {
@@ -1377,19 +1567,27 @@ const courses = [
       Faq: [
         {
           qn: "What is the Duration for this training?",
-          ans: "SAP HANA training lasts approximately 60 days, with both weekend and weekday batches.",
+          ans: [
+            "SAP HANA training lasts approximately 60 days, with both weekend and weekday batches.",
+          ],
         },
         {
           qn: "What is the mode of training?",
-          ans: "We provide both online and offline training sessions for this course.",
+          ans: [
+            "We provide both online and offline training sessions for this course.",
+          ],
         },
         {
           qn: "Do I need prior SAP experience to join this course?",
-          ans: "Basic knowledge of databases and SQL is helpful but not mandatory. We'll cover all relevant topics during the training.",
+          ans: [
+            "Basic knowledge of databases and SQL is helpful but not mandatory. We'll cover all relevant topics during the training.",
+          ],
         },
         {
           qn: "Do you provide placement assistance?",
-          ans: "Yes, we offer 100% placement assistance until you get a job offer letter.",
+          ans: [
+            "Yes, we offer 100% placement assistance until you get a job offer letter.",
+          ],
         },
       ],
       enroll: {
@@ -1435,19 +1633,25 @@ const courses = [
       Faq: [
         {
           qn: "What is the Duration for this training?",
-          ans: "Generative AI training takes around 45-60 days, with weekend and weekday batches available.",
+          ans: [
+            "Generative AI training takes around 45-60 days, with weekend and weekday batches available.",
+          ],
         },
         {
           qn: "What is the mode of training?",
-          ans: "Both online and offline training options are available.",
+          ans: ["Both online and offline training options are available."],
         },
         {
           qn: "Do I need prior experience in AI or machine learning?",
-          ans: "Yes, a basic understanding of AI and machine learning is necessary for this course.",
+          ans: [
+            "Yes, a basic understanding of AI and machine learning is necessary for this course.",
+          ],
         },
         {
           qn: "Do you provide placement assistance?",
-          ans: "Yes, we offer placement assistance until you secure a job offer.",
+          ans: [
+            "Yes, we offer placement assistance until you secure a job offer.",
+          ],
         },
       ],
       enroll: {
@@ -1493,19 +1697,25 @@ const courses = [
       Faq: [
         {
           qn: "What is the Duration for this training?",
-          ans: "AI/ML training takes around 60 days, with both weekday and weekend batches available.",
+          ans: [
+            "AI/ML training takes around 60 days, with both weekday and weekend batches available.",
+          ],
         },
         {
           qn: "What is the mode of training?",
-          ans: "We offer both online and offline training sessions.",
+          ans: ["We offer both online and offline training sessions."],
         },
         {
           qn: "Do I need prior knowledge of AI or ML?",
-          ans: "Basic programming knowledge and understanding of statistics are helpful but not mandatory.",
+          ans: [
+            "Basic programming knowledge and understanding of statistics are helpful but not mandatory.",
+          ],
         },
         {
           qn: "Do you provide placement assistance?",
-          ans: "Yes, we offer placement assistance until you secure a job offer.",
+          ans: [
+            "Yes, we offer placement assistance until you secure a job offer.",
+          ],
         },
       ],
       enroll: {
@@ -1551,19 +1761,25 @@ const courses = [
       Faq: [
         {
           qn: "What is the Duration for this training?",
-          ans: "Azure DevOps training lasts about 45-60 days, with weekend and weekday batches available.",
+          ans: [
+            "Azure DevOps training lasts about 45-60 days, with weekend and weekday batches available.",
+          ],
         },
         {
           qn: "What is the mode of training?",
-          ans: "We provide both online and offline training options.",
+          ans: ["We provide both online and offline training options."],
         },
         {
           qn: "Do I need prior knowledge of Azure?",
-          ans: "Basic knowledge of cloud computing concepts is helpful, but we will cover everything from scratch.",
+          ans: [
+            "Basic knowledge of cloud computing concepts is helpful, but we will cover everything from scratch.",
+          ],
         },
         {
           qn: "Do you provide placement assistance?",
-          ans: "Yes, we offer placement assistance until you get placed in a relevant role.",
+          ans: [
+            "Yes, we offer placement assistance until you get placed in a relevant role.",
+          ],
         },
       ],
       enroll: {
@@ -1609,19 +1825,25 @@ const courses = [
       Faq: [
         {
           qn: "What is the Duration for this training?",
-          ans: "AWS DevOps training takes around 45-60 days, with weekend and weekday batches available.",
+          ans: [
+            "AWS DevOps training takes around 45-60 days, with weekend and weekday batches available.",
+          ],
         },
         {
           qn: "What is the mode of training?",
-          ans: "Both online and offline training are available.",
+          ans: ["Both online and offline training are available."],
         },
         {
           qn: "Do I need prior knowledge of AWS?",
-          ans: "Basic knowledge of AWS is helpful, but we will cover everything necessary during the course.",
+          ans: [
+            "Basic knowledge of AWS is helpful, but we will cover everything necessary during the course.",
+          ],
         },
         {
           qn: "Do you provide placement assistance?",
-          ans: "Yes, we offer placement assistance until you secure a job offer.",
+          ans: [
+            "Yes, we offer placement assistance until you secure a job offer.",
+          ],
         },
       ],
       enroll: {
@@ -1667,19 +1889,25 @@ const courses = [
       Faq: [
         {
           qn: "What is the Duration for this training?",
-          ans: "GCP training takes around 45-60 days, with weekend and weekday batches available.",
+          ans: [
+            "GCP training takes around 45-60 days, with weekend and weekday batches available.",
+          ],
         },
         {
           qn: "What is the mode of training?",
-          ans: "We offer both online and offline training options.",
+          ans: ["We offer both online and offline training options."],
         },
         {
           qn: "Do I need prior experience with Google Cloud?",
-          ans: "Basic knowledge of cloud computing concepts is recommended, but not required.",
+          ans: [
+            "Basic knowledge of cloud computing concepts is recommended, but not required.",
+          ],
         },
         {
           qn: "Do you provide placement assistance?",
-          ans: "Yes, we offer placement assistance until you get a job offer letter.",
+          ans: [
+            "Yes, we offer placement assistance until you get a job offer letter.",
+          ],
         },
       ],
       enroll: {
@@ -1725,19 +1953,25 @@ const courses = [
       Faq: [
         {
           qn: "What is the Duration for this training?",
-          ans: "Salesforce training lasts approximately 40-45 days, with weekend and weekday batches available.",
+          ans: [
+            "Salesforce training lasts approximately 40-45 days, with weekend and weekday batches available.",
+          ],
         },
         {
           qn: "What is the mode of training?",
-          ans: "We provide both online and offline training sessions.",
+          ans: ["We provide both online and offline training sessions."],
         },
         {
           qn: "Do I need prior experience with Salesforce?",
-          ans: "No prior Salesforce experience is required. Basic knowledge of business processes is beneficial.",
+          ans: [
+            "No prior Salesforce experience is required. Basic knowledge of business processes is beneficial.",
+          ],
         },
         {
           qn: "Do you provide placement assistance?",
-          ans: "Yes, we provide placement assistance until you receive a job offer.",
+          ans: [
+            "Yes, we provide placement assistance until you receive a job offer.",
+          ],
         },
       ],
       enroll: {
@@ -1783,19 +2017,25 @@ const courses = [
       Faq: [
         {
           qn: "What is the Duration for this training?",
-          ans: "Blockchain training typically lasts around 45-60 days, with both weekend and weekday batches available.",
+          ans: [
+            "Blockchain training typically lasts around 45-60 days, with both weekend and weekday batches available.",
+          ],
         },
         {
           qn: "What is the mode of training?",
-          ans: "We offer both online and offline training options.",
+          ans: ["We offer both online and offline training options."],
         },
         {
           qn: "Do I need prior blockchain experience?",
-          ans: "No prior blockchain knowledge is required, but programming experience is essential.",
+          ans: [
+            "No prior blockchain knowledge is required, but programming experience is essential.",
+          ],
         },
         {
           qn: "Do you provide placement assistance?",
-          ans: "Yes, we offer placement assistance until you are successfully placed.",
+          ans: [
+            "Yes, we offer placement assistance until you are successfully placed.",
+          ],
         },
       ],
       enroll: {
@@ -1841,19 +2081,25 @@ const courses = [
       Faq: [
         {
           qn: "What is the Duration for this training?",
-          ans: "ServiceNow training lasts around 45-60 days, with flexible weekend and weekday batch timings.",
+          ans: [
+            "ServiceNow training lasts around 45-60 days, with flexible weekend and weekday batch timings.",
+          ],
         },
         {
           qn: "What is the mode of training?",
-          ans: "We offer both online and offline training options.",
+          ans: ["We offer both online and offline training options."],
         },
         {
           qn: "Do I need prior experience with ITSM?",
-          ans: "No prior ITSM experience is necessary, but knowledge of basic IT service processes will help.",
+          ans: [
+            "No prior ITSM experience is necessary, but knowledge of basic IT service processes will help.",
+          ],
         },
         {
           qn: "Do you provide placement assistance?",
-          ans: "Yes, we provide placement assistance until you secure a relevant job role.",
+          ans: [
+            "Yes, we provide placement assistance until you secure a relevant job role.",
+          ],
         },
       ],
       enroll: {
@@ -1899,19 +2145,25 @@ const courses = [
       Faq: [
         {
           qn: "What is the Duration for this training?",
-          ans: "Digital marketing training takes approximately 45-60 days, with weekend and weekday batches.",
+          ans: [
+            "Digital marketing training takes approximately 45-60 days, with weekend and weekday batches.",
+          ],
         },
         {
           qn: "What is the mode of training?",
-          ans: "We offer both online and offline training sessions.",
+          ans: ["We offer both online and offline training sessions."],
         },
         {
           qn: "Do I need prior digital marketing knowledge?",
-          ans: "No prior digital marketing experience is required. Basic internet usage knowledge is sufficient.",
+          ans: [
+            "No prior digital marketing experience is required. Basic internet usage knowledge is sufficient.",
+          ],
         },
         {
           qn: "Do you provide placement assistance?",
-          ans: "Yes, we offer placement assistance to help you secure a job in digital marketing.",
+          ans: [
+            "Yes, we offer placement assistance to help you secure a job in digital marketing.",
+          ],
         },
       ],
       enroll: {
@@ -1957,19 +2209,25 @@ const courses = [
       Faq: [
         {
           qn: "What is the Duration for this training?",
-          ans: "Medical coding training typically lasts around 45-60 days, with both weekend and weekday batches available.",
+          ans: [
+            "Medical coding training typically lasts around 45-60 days, with both weekend and weekday batches available.",
+          ],
         },
         {
           qn: "What is the mode of training?",
-          ans: "We offer both online and offline training options.",
+          ans: ["We offer both online and offline training options."],
         },
         {
           qn: "Do I need prior experience in healthcare?",
-          ans: "Basic understanding of medical terminology and healthcare processes is beneficial but not mandatory.",
+          ans: [
+            "Basic understanding of medical terminology and healthcare processes is beneficial but not mandatory.",
+          ],
         },
         {
           qn: "Do you provide placement assistance?",
-          ans: "Yes, we provide placement assistance until you are successfully employed.",
+          ans: [
+            "Yes, we provide placement assistance until you are successfully employed.",
+          ],
         },
       ],
       enroll: {
