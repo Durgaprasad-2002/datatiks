@@ -1,99 +1,127 @@
-import React from "react";
-
-import Navbar from "./components/Navbar";
-import Footer from "./components/Footer";
-
-import { useState, useEffect } from "react";
-
-import InputField from "./components/InputField";
+import React, { useState, useRef, useEffect } from "react";
 
 import { FaWhatsapp } from "react-icons/fa";
 import { IoCallOutline, IoMailOutline } from "react-icons/io5";
+import { toast } from "react-toastify";
+import axios from "axios";
+
+import Navbar from "./components/Navbar";
+import Footer from "./components/Footer";
+import InputField from "./components/InputField";
+import HeaderSectionBackground from "./components/HeaderSectionBackground";
+
+import "./styles.css";
 
 export default function Contact() {
-  const [posY, setposY] = useState(0);
-
   useEffect(() => {
-    function Handle() {
-      setposY(() => document.documentElement.scrollTop / 3);
-    }
-    // eslint-disable-next-line no-restricted-globals
-    addEventListener("scroll", Handle);
-
-    return () => {
-      // eslint-disable-next-line no-restricted-globals
-      removeEventListener("scroll", Handle);
-    };
+    document.documentElement.scrollTop = 0;
   }, []);
 
-  function handleChange(params) {}
+  // state hooks
+  const form = useRef(null);
+  const [loading, setLoading] = useState(false);
+  const [formData, setFormData] = useState({
+    name: "",
+    mobileNo: "",
+    email: "",
+    subject: "",
+    message: "",
+  });
+
+  // handles the input value change
+  function handleChange(e) {
+    setFormData((prev) => ({ ...prev, [e.target.name]: e.target.value }));
+  }
+
+  // handle the form submission
+  function handleSubmit(e) {
+    e.preventDefault();
+
+    setLoading(() => true);
+    axios
+      .post("http://localhost:5000/api/contact", { ...formData })
+      .then((data) => {
+        const { message } = data?.data;
+        toast.success(message);
+        form.current.reset();
+      })
+      .catch((err) => {
+        console.log(err);
+        const message = err?.response?.data?.message || "Failed to Reach Team";
+        toast.error(`${message}, Try again!`);
+      })
+      .finally(() => setLoading(() => false));
+  }
+
   return (
     <>
       <Navbar />
-      <section
-        className="contact-header"
-        style={{ backgroundPositionY: `${-posY}px` }}
-      >
-        <div className="faculty-header-inner">
-          <h1>
-            Contact <span className="col-red">Us</span>{" "}
-          </h1>
-          <p>
-            We'd love to hear from you! Whether you have a question, feedback,
-            or need assistance, we're here to help.
-          </p>
-          {/* <button className="connect-btn">Connect with us</button> */}
-        </div>
-      </section>
+      <HeaderSectionBackground
+        name={"contact"}
+        title1={"Contact"}
+        title2={"Us"}
+        desc={
+          " We'd love to hear from you! Whether you have a question, feedback, or need assistance, we're here to help."
+        }
+      />
       <section className="contact-conatiner">
-        {/* <div className="contact-form-container"> */}
         <div className="faculty-form-container-sec1">
           <h1>
             Contact <span className="col-red"> Us</span>{" "}
           </h1>
-          <form>
+          <form onSubmit={handleSubmit} ref={form}>
             <div className="input-container">
               <InputField
+                name="name"
+                required={true}
                 type={"text"}
                 placeholder={"Name"}
-                val={""}
                 handleChange={handleChange}
               />
             </div>
             <div className="input-container">
               <InputField
+                name="mobileNo"
+                required={true}
                 type={"tel"}
                 placeholder={"Mobile Number"}
-                val={""}
                 handleChange={handleChange}
               />
             </div>
             <div className="input-container">
               <InputField
+                name="email"
+                required={true}
                 type={"email"}
                 placeholder={"Email"}
-                val={""}
                 handleChange={handleChange}
               />
             </div>
             <div className="input-container">
               <InputField
+                name="subject"
+                required={true}
                 type={"text"}
                 placeholder={"Subject"}
-                val={""}
                 handleChange={handleChange}
               />
             </div>
 
             <div className="input-container">
-              <textarea className="text-area" placeholder="Comment" rows={10} />
+              <textarea
+                name="message"
+                onChange={handleChange}
+                className="text-area"
+                placeholder="Comment"
+                rows={10}
+              />
             </div>
-            <button className="submit-btn" type="submit">
-              Submit
+            <button className="submit-btn" type="submit" disabled={loading}>
+              {loading ? "Sending..." : "Submit"}
             </button>
           </form>
         </div>
-        {/* </div> */}
+
         <div className="contact-info-container">
           <div className="contact-info-container-inner">
             <div className="contact-info-container-sec">
@@ -130,9 +158,8 @@ export default function Contact() {
               className="maps-iframe"
               title="Office Location"
               src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d7612.838144096683!2d78.445993!3d17.439645!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3bcb917cafabf2ad%3A0xa1937b15c86740ef!2sDatatiks%20Software%20Training%20Institute!5e0!3m2!1sen!2sin!4v1732359175646!5m2!1sen!2sin"
-              allowfullscreen=""
               loading="lazy"
-              referrerpolicy="no-referrer-when-downgrade"
+              referrerPolicy="no-referrer-when-downgrade"
             ></iframe>
           </div>
         </div>

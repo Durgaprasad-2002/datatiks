@@ -1,42 +1,68 @@
 import React from "react";
+import { useEffect } from "react";
 
 import { IoSearch } from "react-icons/io5";
 
 import { techStackArray1, techStackArray2 } from "../Data/homeData";
+import { Link } from "react-router-dom";
 
 export default function HomeSection1() {
+  useEffect(() => {
+    const textElements = document.querySelectorAll(".title-home-2 .text");
+
+    const animateText = () => {
+      textElements.forEach((element, index) => {
+        setTimeout(() => {
+          element.classList.add("animate");
+          setTimeout(() => {
+            element.classList.remove("animate");
+          }, 200);
+        }, index * 300);
+      });
+
+      setTimeout(animateText, textElements.length * 300);
+    };
+
+    animateText();
+  }, []);
   return (
     <>
       <section className="outer">
         <div className="container">
           <h1 className="title-home-1">A Leading Service Provider of IT</h1>
           <ul className="title-home-2">
-            <li>T</li>
-            <li>r</li>
-            <li>a</li>
-            <li>i</li>
-            <li>n</li>
-            <li>i</li>
-            <li>n</li>
-            <li>g</li>
-            <li>s</li>
-            <li> </li>
-            <li>W</li>
-            <li>o</li>
-            <li>r</li>
-            <li>l</li>
-            <li>d</li>
-            <li>w</li>
-            <li>i</li>
-            <li>d</li>
-            <li>e</li>
+            {[
+              "T",
+              "r",
+              "a",
+              "i",
+              "n",
+              "i",
+              "n",
+              "g",
+              "s",
+              "",
+              "{}W",
+              "o",
+              "r",
+              "l",
+              "d",
+              "w",
+              "i",
+              "d",
+              "e",
+            ].map((data, ind) => (
+              <li className="text" key={ind}>
+                {data.replace("{}", " ")}
+              </li>
+            ))}
           </ul>
           <br />
-          <h2>Quick Search</h2>
+          <h2 className="qs">Quick Search</h2>
           <div className="tech-stack-container">
             {techStackArray1.map((tech, ind) => (
               <span className="techs" key={ind}>
-                {tech}
+                <Link to={tech.link}>{tech.name}</Link>
               </span>
             ))}
           </div>
@@ -51,7 +77,7 @@ export default function HomeSection1() {
           <div className="tech-stack-container">
             {techStackArray2.map((tech, ind) => (
               <span className="techs" key={ind}>
-                {tech}
+                <Link to={tech.link}>{tech.name}</Link>
               </span>
             ))}
           </div>

@@ -1,8 +1,8 @@
 import React, { useState, useEffect } from "react";
-import sc_1 from "../assets/imgs/sc_1.jpg";
-import sc_2 from "../assets/imgs/sc_2.jpg";
-import sc_3 from "../assets/imgs/sc_3.jpg";
-import sc_4 from "../assets/imgs/sc_4.jpg";
+import sc_1 from "../assets/imgs/sc_1.webp";
+import sc_2 from "../assets/imgs/sc_2.webp";
+import sc_3 from "../assets/imgs/sc_3.webp";
+import sc_4 from "../assets/imgs/sc_4.webp";
 
 import "../styles.css";
 
@@ -17,15 +17,15 @@ export default function Scrolling() {
 
   useEffect(() => {
     const interval = setInterval(() => {
-      setIsTransitioning(true); // Start the transition
+      setIsTransitioning(false); // Start the transition
       setCurrentIndex(nextIndex);
       setNextIndex((nextIndex + 1) % imgArray.length); // Set the next image index
-    }, 3000); // Change image every 3 seconds
+    }, 5000); // Change image every 3 seconds
 
     // Reset transition state after animation
     const transitionTimeout = setTimeout(() => {
-      setIsTransitioning(false);
-    }, 1000); // Match this with animation duration
+      setIsTransitioning(true);
+    }, 4000); // Match this with animation duration
 
     return () => {
       clearInterval(interval);
@@ -35,7 +35,7 @@ export default function Scrolling() {
 
   return (
     <div className="scroll-container">
-      <div className={`img-box ${isTransitioning ? "fade-out" : "fade-in"}`}>
+      <div className={`img-box ${isTransitioning ? "fade-out" : ""}`}>
         <img
           className="scroll-img"
           alt={`scroll-img-${currentIndex}`}
