@@ -1,0 +1,59 @@
+@import url("https://fonts.googleapis.com/css?family=Libre+Franklin:300,400,600,700,800&display=swap");
+
+@import "bootstrap/dist/css/bootstrap.min.css";
+
+html,
+body {
+  font-family: "Libre Franklin", sans-serif;
+}
+
+@media (max-width: 767px) {
+  .carousel-inner .carousel-item > div {
+    display: none;
+  }
+  .carousel-inner .carousel-item > div:first-child {
+    display: block;
+  }
+}
+
+.carousel-inner .carousel-item.active,
+.carousel-inner .carousel-item-next,
+.carousel-inner .carousel-item-prev {
+  display: flex;
+}
+
+/* medium and up screens */
+@media (min-width: 768px) {
+  .carousel-inner .carousel-item-end.active,
+  .carousel-inner .carousel-item-next {
+    transform: translateX(33%);
+  }
+
+  .carousel-inner .carousel-item-start.active,
+  .carousel-inner .carousel-item-prev {
+    transform: translateX(-33%);
+  }
+}
+
+.carousel-inner .carousel-item-end,
+.carousel-inner .carousel-item-start {
+  transform: translateX(0);
+}
+
+/* ---------- */
+
+.col-1 a {
+  text-decoration: none;
+}
+
+.carousel-nav-icon {
+  margin: 0;
+  padding: 0;
+  text-decoration: none;
+  color: black;
+  font-size: 4rem;
+}
+
+.container {
+  background: none;
+}

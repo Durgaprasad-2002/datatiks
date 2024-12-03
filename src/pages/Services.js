@@ -82,6 +82,7 @@ export default function Services() {
               "Enroll Now",
             ].map((topic, index) => (
               <a
+                style={{ textDecoration: "none" }}
                 key={index}
                 href={`#${topic.toLowerCase().replace(/ /g, "-")}`}
               >

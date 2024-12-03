@@ -107,109 +107,113 @@ export default function Navbar() {
   }, [toggle]);
 
   return (
-    <nav className={`navbar ${isScrolled ? "scrolled" : ""}`}>
-      <div className="brand">
-        <Link to="/">
-          <img
-            className="brand-img"
-            src="https://www.datatiks.com/uploads/e8d1a40cfe85879a6006a0ac852007c0.png"
-            alt="brand-logo"
-          />
-        </Link>
-      </div>
-
-      <div
-        className={`nav-links-container ${
-          toggle ? "show-links" : "hide-links"
-        }`}
-      >
-        <ul className="lists">
+    <>
+      <nav className={`navbar-1 ${isScrolled ? "scrolled" : ""}`}>
+        <div className="brand">
           <Link to="/">
-            <li className="nav-link">Home</li>
+            <img
+              className="brand-img"
+              src="https://www.datatiks.com/uploads/e8d1a40cfe85879a6006a0ac852007c0.png"
+              alt="brand-logo"
+            />
           </Link>
-          <li
-            className="nav-link services"
-            onMouseEnter={() => setShowDropdown(true)} // Show dropdown on hover
-            onMouseLeave={() => setShowDropdown(false)} // Hide dropdown on leave
-            onClick={() => openNestedMenu("services")} // Open for mobile view
-          >
-            Services
-            {showDropdown && (
-              <ul className="dropdown">
-                {services.map((service) => (
-                  <li key={service.name} className="dropdown-item">
-                    <Link to="#" className="item-link">
-                      {service.name}
-                    </Link>
-                    <ul className="dropdown-submenu">
+        </div>
+
+        <div
+          className={`nav-links-container ${
+            toggle ? "show-links" : "hide-links"
+          }`}
+        >
+          <ul className="lists">
+            <Link to="/">
+              <li className="nav-link">Home</li>
+            </Link>
+            <li
+              className="nav-link services"
+              onMouseEnter={() => setShowDropdown(true)} // Show dropdown on hover
+              onMouseLeave={() => setShowDropdown(false)} // Hide dropdown on leave
+              onClick={() => openNestedMenu("services")} // Open for mobile view
+            >
+              Services
+              {showDropdown && (
+                <ul className="dropdown">
+                  {services.map((service) => (
+                    <li key={service.name} className="dropdown-item">
+                      <Link to="#" className="item-link">
+                        {service.name}
+                      </Link>
+                      <ul className="dropdown-submenu">
+                        {service.subcategories.map((subService) => (
+                          <li key={subService.name} className="submenu-item">
+                            <Link to={subService.link} className="item-link">
+                              {subService.name}
+                            </Link>
+                          </li>
+                        ))}
+                      </ul>
+                    </li>
+                  ))}
+                </ul>
+              )}
+            </li>
+            <Link to="/faculty">
+              <li className="nav-link">Faculty</li>
+            </Link>
+            <Link to="/corporate/partner">
+              <li className="nav-link">Corporate Partner</li>
+            </Link>
+            <Link to="/contact">
+              <li className="nav-link">Contact Us</li>
+            </Link>
+          </ul>
+        </div>
+
+        {/* Mobile Nested Menu for Services */}
+        {nestedMenu === "services" && (
+          <div className="nested-menu">
+            <button className="back-button" onClick={closeNestedMenu}>
+              ← Back
+            </button>
+            <ul className="nested-lists">
+              {services.map((service) => (
+                <li key={service.name} className="nested-item">
+                  <span
+                    onClick={() =>
+                      setActiveSubcategory(
+                        activeSubcategory === service.name ? null : service.name
+                      )
+                    }
+                  >
+                    {service.name}
+                  </span>
+                  {/* Display subcategories separately */}
+                  {activeSubcategory === service.name && (
+                    <div className="nested-submenu">
                       {service.subcategories.map((subService) => (
-                        <li key={subService.name} className="submenu-item">
-                          <Link to={subService.link} className="item-link">
-                            {subService.name}
+                        <li key={subService.name} className="inner-list">
+                          <Link to={subService.link}>
+                            {"" + subService.name}
                           </Link>
                         </li>
                       ))}
-                    </ul>
-                  </li>
-                ))}
-              </ul>
-            )}
-          </li>
-          <Link to="/faculty">
-            <li className="nav-link">Faculty</li>
-          </Link>
-          <Link to="/corporate/partner">
-            <li className="nav-link">Corporate Partner</li>
-          </Link>
-          <Link to="/contact">
-            <li className="nav-link">Contact Us</li>
-          </Link>
-        </ul>
-      </div>
+                    </div>
+                  )}
+                </li>
+              ))}
+            </ul>
+          </div>
+        )}
 
-      {/* Mobile Nested Menu for Services */}
-      {nestedMenu === "services" && (
-        <div className="nested-menu">
-          <button className="back-button" onClick={closeNestedMenu}>
-            ← Back
-          </button>
-          <ul className="nested-lists">
-            {services.map((service) => (
-              <li key={service.name} className="nested-item">
-                <span
-                  onClick={() =>
-                    setActiveSubcategory(
-                      activeSubcategory === service.name ? null : service.name
-                    )
-                  }
-                >
-                  {service.name}
-                </span>
-                {/* Display subcategories separately */}
-                {activeSubcategory === service.name && (
-                  <div className="nested-submenu">
-                    {service.subcategories.map((subService) => (
-                      <li key={subService.name} className="inner-list">
-                        <Link to={subService.link}>{"" + subService.name}</Link>
-                      </li>
-                    ))}
-                  </div>
-                )}
-              </li>
-            ))}
-          </ul>
+        <div
+          className={`toggle-container ${toggle ? "closeToggle" : ""}`}
+          onClick={handleToggle}
+        >
+          <div className="toggle-bar"></div>
+          <div className="toggle-bar"></div>
+          <div className="toggle-bar"></div>
         </div>
-      )}
-
-      <div
-        className={`toggle-container ${toggle ? "closeToggle" : ""}`}
-        onClick={handleToggle}
-      >
-        <div className="toggle-bar"></div>
-        <div className="toggle-bar"></div>
-        <div className="toggle-bar"></div>
-      </div>
-    </nav>
+      </nav>
+    </>
   );
 }
 
