@@ -113,7 +113,7 @@ export default function Contact() {
                 onChange={handleChange}
                 className="text-area"
                 placeholder="Comment"
-                rows={10}
+                rows="4"
               />
             </div>
             <button className="submit-btn" type="submit" disabled={loading}>

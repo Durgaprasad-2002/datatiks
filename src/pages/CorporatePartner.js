@@ -188,7 +188,7 @@ export default function CorporatePartner() {
                   name="message"
                   required={true}
                   onChange={handleChange}
-                  rows={10}
+                  rows="4"
                 />
               </div>
             </>

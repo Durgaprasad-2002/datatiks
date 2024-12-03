@@ -79,6 +79,7 @@ export default function Services() {
               "Who can Learn",
               "Why DataTiks",
               "FAQs",
+              "Course Content",
               "Enroll Now",
             ].map((topic, index) => (
               <a
@@ -185,6 +186,21 @@ export default function Services() {
                   id={ind}
                 />
               ))}
+            </div>
+
+            <div className="pre-req-container" id="course-content">
+              <h3 className="course-section-title">
+                Course <span className="col-red">Content</span>
+              </h3>
+              <p>Download the course content of our Institute from below:</p>
+
+              <Link
+                to="https://www.tutorialspoint.com/reactjs/reactjs_tutorial.pdf"
+                download={true}
+                target="_blank"
+              >
+                <button className="course-dwn-btn">Download Course</button>
+              </Link>
             </div>
 
             <div className="pre-req-container" id="enroll-now">

@@ -158,6 +158,214 @@ const courses = [
   },
 ];
 
+const footerCourseCategory = [
+  { name: "EDM", link: "/services/edm" },
+  { name: "Digital Transformation", link: "/services/digital_transformation" },
+  { name: "Analytics", link: "/services/analytics" },
+  {
+    name: "Cloud and Platform Management",
+    link: "/services/cloud_platform_management",
+  },
+  {
+    name: "Coding & App Development",
+    link: "/services/coding_app_development",
+  },
+  { name: "Digital Marketing", link: "/services/digital_marketing" },
+];
+
+const footerTrendingCourse = [
+  { name: "Django", link: "/services/django" },
+  { name: "Data Science", link: "/services/data_science" },
+  { name: "Different Python Libraries", link: "/services/python_libraries" },
+  { name: "Salesforce Development", link: "/services/salesforce_development" },
+  { name: "Salesforce Lightning", link: "/services/salesforce_lightning" },
+  {
+    name: "Salesforce Administration",
+    link: "/services/salesforce_administration",
+  },
+  { name: "Salesforce CPQ", link: "/services/salesforce_cpq" },
+  { name: "Cloud Environments", link: "/services/cloud_environments" },
+  { name: "AWS", link: "/services/aws" },
+  { name: "Azure", link: "/services/azure" },
+  { name: "GCP", link: "/services/gcp" },
+  { name: "DevOps", link: "/services/devops" },
+  { name: "CHFI", link: "/services/chfi" },
+  { name: "CND", link: "/services/cnd" },
+  { name: "CEH", link: "/services/ceh" },
+  { name: "Angular", link: "/services/angular" },
+  { name: "React", link: "/services/react" },
+  { name: "Node Js", link: "/services/node_js" },
+  { name: "Mongo DB", link: "/services/mongo_db" },
+  { name: "Express Js", link: "/services/express_js" },
+  { name: "Vue Js", link: "/services/vue_js" },
+];
+
+const interviewQuestionsArray = [
+  {
+    name: "Python Interview Questions",
+    link: "https://www.google.com/search?q=Python+Interview+Questions",
+  },
+  {
+    name: "Data Science Interview Questions",
+    link: "https://www.google.com/search?q=Data+Science+Interview+Questions",
+  },
+  {
+    name: "Django Interview Questions",
+    link: "https://www.google.com/search?q=Django+Interview+Questions",
+  },
+  {
+    name: "Power BI Interview Questions",
+    link: "https://www.google.com/search?q=Power+BI+Interview+Questions",
+  },
+  {
+    name: "Tableau Interview Questions",
+    link: "https://www.google.com/search?q=Tableau+Interview+Questions",
+  },
+  {
+    name: "Snowflake Interview Questions",
+    link: "https://www.google.com/search?q=Snowflake+Interview+Questions",
+  },
+  {
+    name: "Salesforce Interview Questions",
+    link: "https://www.google.com/search?q=Salesforce+Interview+Questions",
+  },
+  {
+    name: "Cyber Security Interview Questions",
+    link: "https://www.google.com/search?q=Cyber+Security+Interview+Questions",
+  },
+  {
+    name: "Angular Interview Questions",
+    link: "https://www.google.com/search?q=Angular+Interview+Questions",
+  },
+  {
+    name: "React JS Interview Questions",
+    link: "https://www.google.com/search?q=React+JS+Interview+Questions",
+  },
+  {
+    name: "Vue JS Interview Questions",
+    link: "https://www.google.com/search?q=Vue+JS+Interview+Questions",
+  },
+  {
+    name: "Full Stack Interview Questions",
+    link: "https://www.google.com/search?q=Full+Stack+Interview+Questions",
+  },
+  {
+    name: "MEAN Stack Interview Questions",
+    link: "https://www.google.com/search?q=MEAN+Stack+Interview+Questions",
+  },
+  {
+    name: "MERN Stack Interview Questions",
+    link: "https://www.google.com/search?q=MERN+Stack+Interview+Questions",
+  },
+  {
+    name: "Cloud Computing Interview Questions",
+    link: "https://www.google.com/search?q=Cloud+Computing+Interview+Questions",
+  },
+  {
+    name: "AWS Interview Questions",
+    link: "https://www.google.com/search?q=AWS+Interview+Questions",
+  },
+  {
+    name: "Azure Interview Questions",
+    link: "https://www.google.com/search?q=Azure+Interview+Questions",
+  },
+  {
+    name: "GCP Interview Questions",
+    link: "https://www.google.com/search?q=GCP+Interview+Questions",
+  },
+  {
+    name: "DevOps Interview Questions",
+    link: "https://www.google.com/search?q=DevOps+Interview+Questions",
+  },
+  {
+    name: "Digital Marketing Interview Questions",
+    link: "https://www.google.com/search?q=Digital+Marketing+Interview+Questions",
+  },
+];
+
+const tutorialsArray = [
+  {
+    name: "Python Tutorial",
+    link: "https://www.google.com/search?q=Python+Tutorial",
+  },
+  {
+    name: "Data Science Tutorial",
+    link: "https://www.google.com/search?q=Data+Science+Tutorial",
+  },
+  {
+    name: "Django Tutorial",
+    link: "https://www.google.com/search?q=Django+Tutorial",
+  },
+  {
+    name: "Power BI Tutorial",
+    link: "https://www.google.com/search?q=Power+BI+Tutorial",
+  },
+  {
+    name: "Tableau Tutorial",
+    link: "https://www.google.com/search?q=Tableau+Tutorial",
+  },
+  {
+    name: "Snowflake Tutorial",
+    link: "https://www.google.com/search?q=Snowflake+Tutorial",
+  },
+  {
+    name: "Salesforce Tutorial",
+    link: "https://www.google.com/search?q=Salesforce+Tutorial",
+  },
+  {
+    name: "Cyber Security Tutorial",
+    link: "https://www.google.com/search?q=Cyber+Security+Tutorial",
+  },
+  {
+    name: "Angular Tutorial",
+    link: "https://www.google.com/search?q=Angular+Tutorial",
+  },
+  {
+    name: "React JS Tutorial",
+    link: "https://www.google.com/search?q=React+JS+Tutorial",
+  },
+  {
+    name: "Vue JS Tutorial",
+    link: "https://www.google.com/search?q=Vue+JS+Tutorial",
+  },
+  {
+    name: "Full Stack Tutorial",
+    link: "https://www.google.com/search?q=Full+Stack+Tutorial",
+  },
+  {
+    name: "MEAN Stack Tutorial",
+    link: "https://www.google.com/search?q=MEAN+Stack+Tutorial",
+  },
+  {
+    name: "MERN Stack Tutorial",
+    link: "https://www.google.com/search?q=MERN+Stack+Tutorial",
+  },
+  {
+    name: "Cloud Computing Tutorial",
+    link: "https://www.google.com/search?q=Cloud+Computing+Tutorial",
+  },
+  {
+    name: "AWS Tutorial",
+    link: "https://www.google.com/search?q=AWS+Tutorial",
+  },
+  {
+    name: "Azure Tutorial",
+    link: "https://www.google.com/search?q=Azure+Tutorial",
+  },
+  {
+    name: "GCP Tutorial",
+    link: "https://www.google.com/search?q=GCP+Tutorial",
+  },
+  {
+    name: "DevOps Tutorial",
+    link: "https://www.google.com/search?q=DevOps+Tutorial",
+  },
+  {
+    name: "Digital Marketing Tutorial",
+    link: "https://www.google.com/search?q=Digital+Marketing+Tutorial",
+  },
+];
+
 module.exports = {
   achievements,
   benefits,
@@ -165,4 +373,8 @@ module.exports = {
   techStackArray1,
   techStackArray2,
   courses,
+  footerCourseCategory,
+  footerTrendingCourse,
+  interviewQuestionsArray,
+  tutorialsArray,
 };

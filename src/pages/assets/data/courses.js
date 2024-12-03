@@ -406,7 +406,7 @@ const courses = [
     body: {
       prerequisites: {
         title: "Prerequisites",
-        fields: [
+        description: [
           "Basics of Python, Html, and CSS",
           "Intermediate-level JavaScript knowledge is required",
         ],
@@ -464,7 +464,7 @@ const courses = [
     body: {
       prerequisites: {
         title: "Prerequisites",
-        fields: [
+        description: [
           "Basics of Java, Html, and CSS",
           "Intermediate-level Spring Boot knowledge is required",
         ],
@@ -686,7 +686,7 @@ const courses = [
     body: {
       prerequisites: {
         title: "Prerequisites",
-        fields: [
+        description: [
           "Basics of Javascript, Html, and CSS",
           "Intermediate-level DOM Elements of Javascript, ES6+ Features knowledge is required",
         ],
@@ -850,7 +850,7 @@ const courses = [
     body: {
       prerequisites: {
         title: "Prerequisites",
-        fields: [
+        description: [
           "Basic Knowledge of JavaScript and familiarity with React",
           "Install and get comfortable with a modern editor like Visual Studio Code, including extensions for React Native development.",
           "For React Native, you’ll need to install tools like: Android Studio for Android emulation, Xcode (for macOS users) for iOS development, React Native CLI or Expo CLI for project creation and testing.",
@@ -1042,7 +1042,7 @@ const courses = [
     body: {
       prerequisites: {
         title: "Prerequisites",
-        fields: [
+        description: [
           "Familiarity with programming fundamentals like variables, loops, functions, and object-oriented programming (OOP) concepts is essential.",
           "Although Flutter training will usually introduce Dart, having basic knowledge of Dart syntax and concepts like classes, async/await, and collections is beneficial.",
           "Understanding the differences between iOS and Android platforms, app architecture, and user interface design is helpful but not mandatory.",
@@ -1202,7 +1202,7 @@ const courses = [
     body: {
       prerequisites: {
         title: "Prerequisites",
-        fields: [
+        description: [
           "Familiarity with programming fundamentals like variables, loops, functions, and object-oriented programming (OOP) concepts is essential.",
           "Although Flutter training will usually introduce Dart, having basic knowledge of Dart syntax and concepts like classes, async/await, and collections is beneficial.",
           "Understanding the differences between iOS and Android platforms, app architecture, and user interface design is helpful but not mandatory.",

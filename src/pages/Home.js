@@ -71,7 +71,9 @@ export default function Home() {
         <h2 className="title" style={{ marginBottom: "0px" }}>
           Benefits
         </h2>
-        <h3 style={{ marginTop: "0px", fontWeight: "500" }}>(Why DataTicks)</h3>
+        <h3 style={{ marginTop: "0px", fontWeight: "500", fontSize: "1rem" }}>
+          (Why DataTicks)
+        </h3>
         <div className="benefit-container">
           {benefits.map((benefit, ind) => (
             <BenefitCard
@@ -83,6 +85,7 @@ export default function Home() {
             />
           ))}
         </div>
+        <br />
       </section>
 
       {/* Achievements section */}

@@ -124,7 +124,7 @@ export default function Faculty() {
                 placeholder="Message"
                 name="message"
                 onChange={handleChange}
-                rows={10}
+                rows="4"
               />
             </div>
             <div className="">

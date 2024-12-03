@@ -63,17 +63,33 @@ export default function Carousel() {
     <section>
       <section className="home-section-5">
         <br />
+        <br />
         <h2 className="title">Course Category</h2>
         <div className="container-fluid">
           <div className="row mx-auto my-auto justify-content-center">
             <div className="col">
               <div className="row">
-                <div className="col-1 d-flex align-items-center justify-content-center">
-                  <a role="button" href="#recipeCarousel" data-bs-slide="prev">
-                    <div className="carousel-nav-icon">{"<"}</div>
-                  </a>
+                <div className="row">
+                  <div className="col-12 d-flex  align-items-center justify-content-end">
+                    <a
+                      className="swipe-link"
+                      role="button"
+                      href="#recipeCarousel"
+                      data-bs-slide="prev"
+                    >
+                      <div className="carousel-nav-icon">{"←"}</div>
+                    </a>
+                    <a
+                      className="swipe-link"
+                      role="button"
+                      href="#recipeCarousel"
+                      data-bs-slide="next"
+                    >
+                      <div className="carousel-nav-icon">{"→"}</div>
+                    </a>
+                  </div>
                 </div>
-                <div className="col-10">
+                <div className="col-12">
                   <div
                     id="recipeCarousel"
                     className="carousel slide"
@@ -94,11 +110,6 @@ export default function Carousel() {
                       ))}
                     </div>
                   </div>
-                </div>
-                <div className="col-1 d-flex align-items-center justify-content-center">
-                  <a role="button" href="#recipeCarousel" data-bs-slide="next">
-                    <div className="carousel-nav-icon">{">"}</div>
-                  </a>
                 </div>
               </div>
             </div>

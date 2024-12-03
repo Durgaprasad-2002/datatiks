@@ -1,8 +1,18 @@
 import React from "react";
 
+import "../styles.css";
+
 import { CiLocationOn, CiMail } from "react-icons/ci";
 import { IoCallOutline } from "react-icons/io5";
 import { FaTwitter, FaFacebookF, FaInstagram } from "react-icons/fa";
+import { Link } from "react-router-dom";
+
+import {
+  footerCourseCategory,
+  footerTrendingCourse,
+  interviewQuestionsArray,
+  tutorialsArray,
+} from "../assets/data/homeData";
 
 export default function Footer() {
   return (
@@ -11,46 +21,62 @@ export default function Footer() {
         <div className="footer-courses_sec_1">
           <h3>Trending Courses</h3>
           <p>
-            D Jango | Data Science | Different Python Libraries | Salesforce
-            Development | Salesforce Lightening | Salesforce Administration |
-            Salesforce CPQ | cloud Environments | AWS | Azure | GCP | Devops |
-            CHFI | CND | CEH | Angular | React | Node Js | Mongo DB | Express Js
-            | Vue Js | MongoDB |
+            {footerTrendingCourse.map((data, ind) => (
+              <>
+                <Link to={data.link} className="footer-link-items">
+                  <span>{data.name}</span>
+                </Link>
+                |{" "}
+              </>
+            ))}
           </p>
         </div>
         <div className="footer-courses_sec_1">
           <h3>Course Categories</h3>
           <p>
-            EDM | Digital Transformation | Analytics | Cloud and Platform
-            Management | Coding & App Development | Digital Marketing |
+            {footerCourseCategory.map((data, ind) => (
+              <>
+                <Link to={data.link} className="footer-link-items">
+                  <span>{data.name}</span>
+                </Link>
+                |{" "}
+              </>
+            ))}
           </p>
         </div>
         <hr />
         <div className="footer-courses_sec_1">
           <h3>Interview Questions</h3>
           <p>
-            Python Interview Questions | Data Science Interview Questions | D
-            Jango Interview Questions | Power BI Interview Questions | Tableau
-            Interview Questions | Snowflake Interview Questions | Salesforce
-            Interview Questions | Cyber Security Interview Questions | Angular
-            Interview Questions | React JS Interview Questions | Vue JS
-            Interview Questions | Full Stack Interview Questions | MEAN Stack
-            Interview Questions | MERN Stack Interview Questions | Cloud
-            Computing Interview Questions | AWS Interview Questions | Azure
-            Interview Questions | GCP Interview Questions | Devops Interview
-            Questions | Digital Marketing Interview Questions
+            {interviewQuestionsArray.map((data, ind) => (
+              <>
+                <Link
+                  to={data.link}
+                  className="footer-link-items"
+                  target="_blank"
+                >
+                  <span>{data.name}</span>
+                </Link>
+                |{" "}
+              </>
+            ))}
           </p>
         </div>
         <div className="footer-courses_sec_1">
           <h3>Tutorials</h3>
           <p>
-            Python Tutorial | Data Science Tutorial | D Jango Tutorial | Power
-            BI Tutorial | Tableau Tutorial | Snowflake Tutorial | Salesforce
-            Tutorial | Cyber Security Tutorial | Angular Tutorial | React Js
-            Tutorial | Vue JS Tutorial | Full Stack Tutorial | MEAN Stack
-            Tutorial | MERN Stack Tutorial | Cloud Computing Tutorial | AWS
-            Tutorial | Azure Tutorial | GCP Tutorial | Devops Tutorial | Digital
-            Marketing Tutorial
+            {tutorialsArray.map((data, ind) => (
+              <>
+                <Link
+                  to={data.link}
+                  className="footer-link-items"
+                  target="_blank"
+                >
+                  <span>{data.name}</span>
+                </Link>
+                |{" "}
+              </>
+            ))}
           </p>
         </div>
       </section>
@@ -84,10 +110,18 @@ export default function Footer() {
         <div className="footer-card">
           <h1>Our Links</h1>
           <ul>
-            <li>Services</li>
-            <li> Faculty</li>
-            <li>ServicesCorporate Patner</li>
-            <li>Contact Us</li>
+            <Link to="/services/react" style={{ textDecoration: "none" }}>
+              <li>Services</li>
+            </Link>
+            <Link to="/faculty" style={{ textDecoration: "none" }}>
+              <li> Faculty</li>
+            </Link>
+            <Link to="/corporate/partner" style={{ textDecoration: "none" }}>
+              <li>Corporate Patner</li>
+            </Link>
+            <Link to="/contact" style={{ textDecoration: "none" }}>
+              <li>Contact Us</li>
+            </Link>
           </ul>
         </div>
         <div className="footer-card">
@@ -107,14 +141,17 @@ export default function Footer() {
             Subscribe to our newsletter to receive the latest updates and offers
           </p>
           <div>
-            <h1>Follow Us</h1>
+            <h1 style={{ marginBottom: "15px" }}>Follow Us</h1>
             <div>
-              <FaFacebookF className="fl-icon" />
-              <FaInstagram className="fl-icon" />
-              <FaTwitter className="fl-icon" />
+              <FaFacebookF className="fl-icon facebook" />
+              <FaInstagram className="fl-icon instagram" />
+              <FaTwitter className="fl-icon twitter" />
             </div>
           </div>
         </div>
+      </section>
+      <section className="footer-contact">
+        <p className="copy-rights">© 2024 Dataticks. All rights reserved.</p>
       </section>
     </>
   );

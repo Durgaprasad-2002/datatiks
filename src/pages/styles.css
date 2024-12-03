@@ -59,6 +59,46 @@ body {
   box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
 }
 
+.lists a:hover {
+  color: var(--bg-dark-grey);
+}
+
+.nested-submenu {
+  list-style: none;
+  padding-left: 10px;
+  overflow: hidden;
+  animation: sc-tp-side-ani 0.3s ease both;
+}
+
+.nested-menu {
+  position: fixed;
+  top: 0;
+  right: 0px;
+  width: 100%;
+  max-width: 250px;
+  height: 100vh;
+  background-color: var(--bg-white);
+  display: flex;
+  flex-direction: column;
+  padding: 20px;
+  z-index: 200;
+  box-shadow: -5px 0px 10px rgba(0, 0, 0, 0.1);
+  transition: transform 0.3s ease-in-out;
+  overflow-x: auto;
+  animation: sc-tp-side-ani 0.3s ease both;
+}
+
+@keyframes sc-tp-side-ani {
+  from {
+    opacity: 0;
+    transform: translateX(50px);
+  }
+  to {
+    opacity: 1;
+    transform: translateX(0px);
+  }
+}
+
 .navbar-1 {
   .dropdown {
     position: absolute;
@@ -166,22 +206,6 @@ body {
   }
 
   /* Nested Menu Styles */
-  .nested-menu {
-    position: fixed;
-    top: 0;
-    right: 0px;
-    width: 100%;
-    max-width: 250px;
-    height: 100vh;
-    background-color: var(--bg-white);
-    display: flex;
-    flex-direction: column;
-    padding: 20px;
-    z-index: 200;
-    box-shadow: -5px 0px 10px rgba(0, 0, 0, 0.1);
-    transition: transform 0.3s ease-in-out;
-    overflow-x: auto;
-  }
 
   .back-button {
     margin-bottom: 20px;
@@ -673,6 +697,7 @@ body {
   flex-direction: column;
   align-items: center;
   margin: 20px 0px;
+  gap: 15px;
 }
 
 .benefit-card h4 {
@@ -781,21 +806,30 @@ body {
   text-align: center;
   padding: 20px 0px;
   margin-top: 40px;
+  --mask: radial-gradient(55.34px at 50% 76.5px, #000 99%, #0000 101%)
+      calc(50% - 60px) 0/120px 100%,
+    radial-gradient(55.34px at 50% -46.5px, #0000 99%, #000 101%) 50% 30px/120px
+      100% repeat-x;
+  -webkit-mask: var(--mask);
+  mask: var(--mask);
 }
 
 .course-img {
   width: 100%;
   object-fit: cover;
   height: auto;
+  border-radius: 5px;
 }
 
 .course-card h4 {
-  padding: 2px 5px;
-  vertical-align: middle;
-  height: 2.5rem;
-  font-size: 1rem;
-  font-weight: 700;
+  font-size: 1.1rem;
+  font-weight: 600;
+  font-family: Open Sans;
   color: var(--bg-red);
+  min-height: 50px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
 }
 
 @keyframes moveLeftStep {
@@ -821,7 +855,7 @@ body {
 }
 
 .course-card {
-  border-radius: 5px;
+  border-radius: 10px;
   overflow: hidden;
   background-color: var(--bg-white);
   min-width: 230px;
@@ -829,66 +863,13 @@ body {
   text-align: center;
   margin: 20px;
   box-shadow: 0px 0px 18px 1px var(--box-shadow-color);
+  border: 10px solid var(--bg-white);
 }
-
-/* 
-.home-section-5 {
-  background-color: #ffe8b58c;
-  text-align: center;
-  padding: 20px 0px;
-  margin-top: 40px;
-}
-
-.course-img {
-  width: 100%;
-  object-fit: cover;
-  height: auto;
-}
-
-.course-card h4 {
-  font-size: 1rem;
-  font-weight: 700;
-  color: var(--bg-red);
-}
-
-
-@keyframes moveLeftStep {
-  0% {
-    transform: translateX(0);
-  }
-  100% {
-    transform: translateX(-50%);
-  }
-}
-
-.container-container {
-  display: flex;
-  overflow: hidden;
-  width: 100%;
-  position: relative;
-}
-
-.course-container {
-  display: flex;
-  width: calc(200%);
-  animation: moveLeftStep 20s steps(6, end) infinite;
-}
-
-.course-card {
-  border-radius: 5px;
-  overflow: hidden;
-  background-color: var(--bg-white);
-  min-width: 300px;
-  border: 1px solid lightgray;
-  text-align: center;
-  margin: 10px;
-  box-shadow: 0px 0px 18px 1px var(--box-shadow-color);
-} */
 
 /* --------------------EnquiryForm--------------------------------- */
 
 .home-section-6 {
-  background-color: rgb(243, 243, 243);
+  background-color: rgb(245, 244, 244);
 }
 
 .enquiry-btn {
@@ -928,8 +909,7 @@ body {
   padding: 5px 10px;
   font-size: 0.9rem;
   width: auto;
-  /* max-width: 500px; */
-  height: 40px;
+  min-height: 40px;
   border-radius: 5px;
   font-family: Open sans;
 }
@@ -987,16 +967,28 @@ body {
   font-size: 0.9rem;
 }
 
+.footer-link-items {
+  text-decoration: none;
+  color: #d3d3d3;
+  padding-right: 5px;
+  margin: 2px;
+}
+
+.footer-link-items:hover {
+  text-decoration: underline 1px #d3d3d3;
+}
+
 .hide-div {
   display: none;
 }
 
 .footer-contact {
+  user-select: none;
   background-color: var(--footer-contact-bg);
   display: flex;
   flex-wrap: wrap;
   justify-content: space-evenly;
-  padding: 0px 2rem;
+  padding: 1rem 2rem;
   color: var(--color-white);
 }
 
@@ -1007,7 +999,10 @@ body {
 }
 
 .footer-card h1 {
+  height: min-content;
   font-size: 1.4rem;
+  border-left: 3.5px solid var(--bg-red);
+  padding-left: 5px;
 }
 
 .footer-card > h1::after {
@@ -1029,7 +1024,6 @@ body {
 
 .icon-contact {
   position: relative;
-  top: 5px;
   right: 5px;
   color: var(--bg-red);
   font-size: 1.3rem;
@@ -1057,7 +1051,7 @@ body {
 .fl-icon {
   color: var(--bg-red);
   margin-right: 10px;
-  font-size: 1.3rem;
+  font-size: 27px;
   background-color: var(--color-white);
   padding: 4px;
   border-radius: 3px;
@@ -1065,16 +1059,32 @@ body {
 }
 
 .fl-icon:hover {
-  /* animation: top-down 0.5s linear forwards; */
+  animation: top-down 0.3s ease forwards;
+}
+
+.facebook {
+  color: #0d81cf;
+}
+.twitter {
+  color: #0d81cf;
+}
+
+.copy-rights {
+  width: 100%;
+  text-align: center;
+  padding: 1rem 0px;
+  color: #d3d3d3;
+
+  border-top: 2px solid #2e3b4e;
+  margin: 0rem 0rem;
 }
 
 @keyframes top-down {
-  0%,
-  100% {
-    transform: translate3d(0px, 0px, 0px);
+  from {
+    scale: 1;
   }
-  50% {
-    transform: translate3d(-2px, -5px, -5px);
+  to {
+    scale: 1.2;
   }
 }
 /* -------------------Faculty--------------- */
@@ -1516,7 +1526,23 @@ html {
   border-color: #3498db;
 }
 
-.enroll-btn:hover {
+.course-dwn-btn {
+  width: fit-content;
+  height: auto;
+  border-radius: 3px;
+  padding: 5px 20px;
+  color: var(--bg-red);
+  font-size: 1rem;
+  font-weight: 500;
+  transition: all 0.3s ease-out;
+  background-color: var(--bg-white);
+  cursor: pointer;
+  border: 2px solid var(--bg-red);
+  text-align: center;
+}
+
+.enroll-btn:hover,
+.course-dwn-btn:hover {
   background-color: var(--bg-red);
   color: var(--bg-white);
 }
