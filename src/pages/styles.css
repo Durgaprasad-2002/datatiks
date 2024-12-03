@@ -22,6 +22,10 @@ body {
   font-family: Open Sans;
 }
 
+.remove-over {
+  overflow: hidden;
+}
+
 /* -------------Navbar------------------------ */
 
 .navbar-1 {
@@ -179,10 +183,6 @@ body {
     overflow-x: auto;
   }
 
-  .remove-over {
-    overflow: hidden;
-  }
-
   .back-button {
     margin-bottom: 20px;
     background: none;
@@ -218,6 +218,7 @@ body {
     list-style: none;
     padding-left: 10px;
     overflow: hidden;
+    animation: sc-tp-side-ani 0.3s ease both;
   }
 
   .nested-submenu li {
@@ -226,7 +227,6 @@ body {
 
   .nested-item:hover .nested-submenu {
     display: block;
-    animation: sc-tp-side-ani 0.3s ease both;
   }
 
   @keyframes sc-tp-side-ani {
@@ -472,7 +472,16 @@ body {
 .outer {
   margin: 0;
   padding: 0 0;
-  /* background-image: url("https://t4.ftcdn.net/jpg/05/07/14/89/360_F_507148971_dD1c0R6sVqlE71J3tnPpmNdvSYV9199Q.jpg"); */
+  background-image: url(https://plus.unsplash.com/premium_photo-1664299935896-8b7638a6f105?q=80&w=2071&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D);
+  background-attachment: fixed;
+  background-size: cover;
+  background-position: center;
+}
+
+.out-conatiner {
+  margin: 0;
+  padding: 0 0;
+  width: auto;
   background: linear-gradient(
     90deg,
     #1f1f1fe6 0,
@@ -489,10 +498,10 @@ body {
     rgba(39, 39, 39, 0.035) 86.67%,
     rgba(39, 39, 39, 0.008) 93.33%,
     #27272700
-  );
+  ) !important;
 }
 
-.container {
+.conatiner {
   color: var(--color-white);
   padding: 50px 10px;
   background-color: var(--bg-black);

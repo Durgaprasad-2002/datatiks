@@ -1,5 +1,8 @@
 import React, { useEffect } from "react";
 
+import "bootstrap/dist/css/bootstrap.min.css";
+import "bootstrap/dist/js/bootstrap.bundle.min.js";
+
 import "./Carousel.css";
 import "../../styles.css";
 
@@ -58,7 +61,8 @@ export default function Carousel() {
 
   return (
     <section>
-      <section className="bootstrap-iso home-section-5">
+      <section className="home-section-5">
+        <br />
         <h2 className="title">Course Category</h2>
         <div className="container-fluid">
           <div className="row mx-auto my-auto justify-content-center">

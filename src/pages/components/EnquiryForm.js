@@ -9,7 +9,9 @@ export default function EnquiryForm() {
   function handleChange(params) {}
   return (
     <div className="home-section-6 form-container">
+      <br />
       <h2 className="title">Enquiry</h2>
+      <br />
       <div>
         <button
           className={`enquiry-btn ${btnNum === 1 && "active-enquiry"}`}

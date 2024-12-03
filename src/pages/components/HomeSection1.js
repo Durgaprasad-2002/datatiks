@@ -67,7 +67,7 @@ export default function HomeSection1() {
   return (
     <>
       <section className="outer">
-        <div className="container">
+        <div className="conatiner out-conatiner">
           <h1 className="title-home-1">A Leading Service Provider of IT</h1>
           <ul className="title-home-2">
             {[
