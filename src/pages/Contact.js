@@ -10,6 +10,9 @@ import { IoCallOutline, IoMailOutline } from "react-icons/io5";
 import { toast } from "react-toastify";
 import axios from "axios";
 
+import { useInView } from "react-intersection-observer";
+import "animate.css";
+
 import "./styles.css";
 
 function Contact() {
@@ -19,6 +22,7 @@ function Contact() {
   }, []);
 
   // state hooks
+  const [ref2, inView2] = useInView({ triggerOnce: true, threshold: 0.4 });
   const form = useRef(null);
   const [loading, setLoading] = useState(false);
   const [formData, setFormData] = useState({
@@ -65,7 +69,12 @@ function Contact() {
           " We'd love to hear from you! Whether you have a question, feedback, or need assistance, we're here to help."
         }
       />
-      <section className="contact-conatiner">
+      <section
+        ref={ref2}
+        className={`contact-conatiner content-section ${
+          inView2 ? "animate__animated animate__zoomIn" : ""
+        }`}
+      >
         <div className="faculty-form-container-sec1">
           <h1>
             Contact <span className="col-red"> Us</span>{" "}

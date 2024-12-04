@@ -8,6 +8,9 @@ import Footer from "./components/Footer";
 import InputField from "./components/InputField";
 import HeaderSectionBackground from "./components/HeaderSectionBackground";
 
+import { useInView } from "react-intersection-observer";
+import "animate.css";
+
 function CorporatePartner() {
   //scrolling to top of page
   useEffect(() => {
@@ -15,6 +18,7 @@ function CorporatePartner() {
   }, []);
 
   // state hooks
+  const [ref2, inView2] = useInView({ triggerOnce: true, threshold: 0.2 });
   const form = useRef(null);
   const [loading, setLoading] = useState(false);
   const [formData, setFormData] = useState({
@@ -68,7 +72,12 @@ function CorporatePartner() {
         }
       />
 
-      <section className="corporate-form-container">
+      <section
+        ref={ref2}
+        className={`corporate-form-container content-section ${
+          inView2 ? "animate__animated animate__slideInUp" : ""
+        }`}
+      >
         <form className="form-corporate" onSubmit={handleSubmit} ref={form}>
           <div className="faculty-form-container-sec1">
             <h1>Personal Information</h1>

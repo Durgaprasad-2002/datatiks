@@ -5,6 +5,9 @@ import InputField from "./components/InputField";
 import Footer from "./components/Footer";
 import HeaderSectionBackground from "./components/HeaderSectionBackground";
 
+import { useInView } from "react-intersection-observer";
+import "animate.css";
+
 import axios from "axios";
 import { toast } from "react-toastify";
 import "./styles.css";
@@ -16,6 +19,7 @@ function Faculty() {
   }, []);
 
   // state hooks
+  const [ref2, inView2] = useInView({ triggerOnce: true, threshold: 0.4 });
   const form = useRef(null);
   const [loading, setLoading] = useState(false);
   const [file, setFile] = useState(null);
@@ -78,7 +82,12 @@ function Faculty() {
       />
 
       {/* body section */}
-      <section className="faculty-form-container">
+      <section
+        ref={ref2}
+        className={`faculty-form-container content-section ${
+          inView2 ? "animate__animated animate__fadeInUp" : ""
+        }`}
+      >
         <div className="faculty-form-container-sec1">
           <h1>
             Interested in <span className="col-red"> working</span>{" "}

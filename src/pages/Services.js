@@ -9,10 +9,14 @@ import { courses } from "./assets/data/courses";
 
 import { useParams, Link } from "react-router-dom";
 
+import { useInView } from "react-intersection-observer";
+import "animate.css";
+
 import "./styles.css";
 
 export default function Services() {
   // state Hooks
+  const [ref2, inView2] = useInView({ triggerOnce: true, threshold: 0.1 });
   const { course } = useParams();
   const [courseDetails, setCourseDetails] = useState(null);
   const [loading, setLoading] = useState(true);
@@ -105,7 +109,12 @@ export default function Services() {
           </ul>
         </div>
         {/* Body Section */}
-        <section className="services-body">
+        <section
+          ref={ref2}
+          className={`services-body content-section ${
+            inView2 ? "animate__animated animate__fadeInUp" : ""
+          }`}
+        >
           <div className="services-body-1">
             {/* Pre-Requisites Section */}
             <div className="pre-req-container" id="pre-requisites">

@@ -1,13 +1,13 @@
 import React, { useState, useEffect } from "react";
 
-function HeaderSectionBackground({ title1, title2, desc, name }) {
+function HeaderSectionBackground({ title1, title2, desc, name, textalign }) {
   //hooks
   const [posY, setposY] = useState(0);
 
   // handle the background-img scroll animation
   useEffect(() => {
     function Handle() {
-      setposY(() => document.documentElement.scrollTop / 3);
+      setposY(() => window.pageYOffset * 0.5);
     }
     window.addEventListener("scroll", Handle);
 
@@ -19,7 +19,9 @@ function HeaderSectionBackground({ title1, title2, desc, name }) {
   return (
     <section
       className={`${name}-header`}
-      style={{ backgroundPositionY: `${-posY}px` }}
+      style={{
+        backgroundPositionY: `${posY}px`,
+      }}
     >
       <div className="faculty-header-inner">
         <h1>

@@ -12,6 +12,9 @@ import {
   TrainingCard,
 } from "./components/HomeCards";
 
+import { useInView } from "react-intersection-observer";
+import "animate.css";
+
 import { achievements, benefits, trainings } from "./assets/data/homeData";
 
 import "./styles.css";
@@ -21,6 +24,9 @@ export default function Home() {
   useEffect(() => {
     document.documentElement.scrollTop = 0;
   }, []);
+
+  const [ref1, inView1] = useInView({ triggerOnce: true, threshold: 0.2 });
+  const [ref2, inView2] = useInView({ triggerOnce: true, threshold: 0.2 });
 
   // ref's for cards handling
   const cardRefs = useRef([]);
@@ -131,9 +137,25 @@ export default function Home() {
         </div>
       </section>
 
-      <Carousel />
+      <div
+        ref={ref1}
+        className={` content-section ${
+          inView1 ? "animate__animated animate__zoomInUp" : ""
+        }`}
+      >
+        <Carousel />
+      </div>
+
       {/* <TrendingCoursesCarousel setShowModal={setShowModal} /> */}
-      <EnquiryForm />
+      <div
+        ref={ref2}
+        className={` content-section ${
+          inView2 ? "animate__animated animate__slideInUp" : ""
+        }`}
+      >
+        <EnquiryForm />
+      </div>
+
       <Footer />
     </>
   );
