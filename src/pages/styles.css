@@ -109,10 +109,12 @@ body {
     padding: 10px;
     list-style: none;
     display: none;
+    animation: sc-tp-side-ani 0.3s ease both;
   }
 
   .services:hover .dropdown {
     display: block;
+    animation: sc-tp-side-ani 0.3s ease both;
   }
 
   .dropdown-item {
@@ -238,6 +240,7 @@ body {
     padding: 5px 10px;
     border-radius: 2px;
     transition: all 0.3s ease;
+    will-change: auto;
   }
 
   .nested-item span,
@@ -360,8 +363,15 @@ body {
   }
   /*----------------------Modifed for UI-------  */
 
+  .inner-list {
+    border-radius: 2px;
+    padding: 2px 0px 2px 3px;
+    transition: all 0.3s ease;
+  }
+
   .inner-list::before {
-    content: "⇒ ";
+    content: "⟩ ";
+    color: var(--bg-red);
   }
   .item-link {
     transition: all 0.3s ease-in-out;
@@ -369,6 +379,9 @@ body {
     color: var(--bg-dark-grey);
     position: relative;
     border-left: 2px solid var(--bg-white);
+  }
+  .inner-list:hover {
+    background-color: var(--bg-1);
   }
 
   .dropdown,
@@ -430,6 +443,7 @@ body {
 
   .show-links {
     display: flex;
+    animation: sc-tp-side-ani 0.3s ease both;
   }
 
   @media screen and (max-width: 700px) {
@@ -453,6 +467,7 @@ body {
       background-color: var(--bg-white);
       flex-direction: column;
       padding: 20px;
+      animation: sc-tp-side-ani 0.3s ease both;
     }
 
     .lists {
@@ -1051,18 +1066,24 @@ body {
   padding: 7px 15px;
   font-size: 1rem;
   border-radius: 5px;
-  border: 1px solid lightgray;
-  background-color: var(--bg-black);
+  border: 2px solid lightgray;
+  background-color: var(--bg-dark-grey);
   color: var(--bg-white);
-  transition: all 0.3s ease;
+  transition: all 0.3s ease-in-out;
 }
 
-.submit-btn:hover {
-  background-color: var(--bg-red);
+.submit-btn:disabled {
+  cursor: not-allowed;
+  background-color: darkgrey;
 }
 
-.submit-btn:active {
-  background-color: var(--bg-red-dark);
+.submit-btn:not(:disabled):hover {
+  background-color: #0d81cf;
+  border-color: #0d81cf;
+}
+
+.submit-btn:not(:disabled):active {
+  background-color: #06558b;
 }
 
 /* --------------------------------Footer------------------ */
@@ -1468,7 +1489,7 @@ html {
 
 .stat {
   position: sticky;
-  top: 74px;
+  top: 85px;
   z-index: 90;
   background-color: white;
   box-shadow: 0px 2px 5px rgba(0, 0, 0, 0.1);
