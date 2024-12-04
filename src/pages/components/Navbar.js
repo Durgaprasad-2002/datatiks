@@ -1,6 +1,7 @@
 import React, { useState, useEffect } from "react";
 import "../styles.css";
 import { Link } from "react-router-dom";
+import PopUpModal from "./PopUpModal";
 
 export default function Navbar() {
   const [toggle, setToggle] = useState(false);
@@ -88,6 +89,8 @@ export default function Navbar() {
 
   const [isScrolled, setIsScrolled] = useState(false);
 
+  const [showModal, setModal] = useState(false);
+
   useEffect(() => {
     if (toggle) {
       document.body.classList.add("remove-over");
@@ -165,6 +168,13 @@ export default function Navbar() {
             <Link to="/contact">
               <li className="nav-link">Contact Us</li>
             </Link>
+            <br />
+            <button
+              className="enroll-btn enroll-btn-2"
+              onClick={() => setModal(() => true)}
+            >
+              Enroll Now
+            </button>
           </ul>
         </div>
 
@@ -213,6 +223,7 @@ export default function Navbar() {
           <div className="toggle-bar"></div>
         </div>
       </nav>
+      <PopUpModal showModal={showModal} setModal={setModal} />
     </>
   );
 }

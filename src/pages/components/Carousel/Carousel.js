@@ -69,26 +69,6 @@ export default function Carousel() {
           <div className="row mx-auto my-auto justify-content-center">
             <div className="col">
               <div className="row">
-                <div className="row">
-                  <div className="col-12 d-flex  align-items-center justify-content-end">
-                    <a
-                      className="swipe-link"
-                      role="button"
-                      href="#recipeCarousel"
-                      data-bs-slide="prev"
-                    >
-                      <div className="carousel-nav-icon">{"←"}</div>
-                    </a>
-                    <a
-                      className="swipe-link"
-                      role="button"
-                      href="#recipeCarousel"
-                      data-bs-slide="next"
-                    >
-                      <div className="carousel-nav-icon">{"→"}</div>
-                    </a>
-                  </div>
-                </div>
                 <div className="col-12">
                   <div
                     id="recipeCarousel"
@@ -109,6 +89,26 @@ export default function Carousel() {
                         </div>
                       ))}
                     </div>
+                  </div>
+                </div>
+                <div className="row">
+                  <div className="col-12 d-flex  align-items-center justify-content-end">
+                    <a
+                      className="swipe-link"
+                      role="button"
+                      href="#recipeCarousel"
+                      data-bs-slide="prev"
+                    >
+                      <div className="carousel-nav-icon">{"←"}</div>
+                    </a>
+                    <a
+                      className="swipe-link"
+                      role="button"
+                      href="#recipeCarousel"
+                      data-bs-slide="next"
+                    >
+                      <div className="carousel-nav-icon">{"→"}</div>
+                    </a>
                   </div>
                 </div>
               </div>

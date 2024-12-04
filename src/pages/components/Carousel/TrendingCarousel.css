@@ -1,0 +1,103 @@
+@import url("https://fonts.googleapis.com/css?family=Libre+Franklin:300,400,600,700,800&display=swap");
+
+@import "bootstrap/dist/css/bootstrap.min.css";
+
+/* Ensure styles are scoped for trending carousel only */
+.trending-card-container {
+  border-radius: 10px;
+  overflow: hidden;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+  transition: all 0.3s ease-in-out;
+  background-color: white;
+  margin: 10px;
+}
+
+.trending-card-container:hover {
+  transform: translateY(-10px);
+}
+
+.trend-img {
+  width: 100%;
+  object-fit: cover;
+  height: 200px;
+  border-top-left-radius: 5px;
+  border-top-right-radius: 5px;
+}
+
+.trend-title {
+  font-size: 1.25rem;
+  font-weight: bold;
+  padding: 10px;
+  text-align: center;
+  background-color: #f8f9fa;
+  margin: 0;
+}
+
+.trend-btn-container {
+  display: flex;
+  justify-content: center;
+  gap: 10px;
+  padding: 15px 0;
+}
+
+.trend-btn {
+  background: none;
+  border: 1px solid #0d81cf;
+  padding: 8px 15px;
+  border-radius: 5px;
+  font-size: 0.9rem;
+  color: #0d81cf;
+  transition: all 0.3s ease-in-out;
+}
+
+.trend-btn:hover {
+  background-color: #0d81cf;
+  color: white;
+}
+
+/* Unique styles for Trending Carousel */
+.trending-carousel .carousel-inner .carousel-item.active,
+.trending-carousel .carousel-inner .carousel-item-next,
+.trending-carousel .carousel-inner .carousel-item-prev {
+  display: flex;
+}
+
+@media (max-width: 767px) {
+  .trending-carousel .carousel-inner .carousel-item > div {
+    display: none;
+  }
+  .trending-carousel .carousel-inner .carousel-item > div:first-child {
+    display: block;
+  }
+}
+
+@media (min-width: 768px) {
+  .trending-carousel .carousel-inner .carousel-item-end.active,
+  .trending-carousel .carousel-inner .carousel-item-next {
+    transform: translateX(33%);
+  }
+
+  .trending-carousel .carousel-inner .carousel-item-start.active,
+  .trending-carousel .carousel-inner .carousel-item-prev {
+    transform: translateX(-33%);
+  }
+}
+
+.trending-carousel .carousel-inner .carousel-item-end,
+.trending-carousel .carousel-inner .carousel-item-start {
+  transform: translateX(0);
+}
+
+/* Carousel navigation icons */
+.swipe-link {
+  text-decoration: none;
+  padding-left: 15px;
+}
+
+.carousel-nav-icon {
+  margin: 0;
+  padding: 0;
+  text-decoration: none;
+  color: black;
+  font-size: 2.5rem;
+}

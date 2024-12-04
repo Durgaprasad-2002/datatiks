@@ -11,9 +11,13 @@ import {
 } from "./components/HomeCards";
 import EnquiryForm from "./components/EnquiryForm";
 import Footer from "./components/Footer";
+import TrendingCoursesCarousel from "./components/Carousel/TrendingCoursesCarousel";
+import PopUpModal from "./components/PopUpModal";
 import "./styles.css";
 
 export default function Home() {
+  // ------------------------
+
   const cardRefs = useRef([]);
 
   useEffect(() => {
@@ -127,6 +131,8 @@ export default function Home() {
       </section>
 
       <Carousel />
+      {/* <TrendingCoursesCarousel setShowModal={setShowModal} /> */}
+      {/* <PopUpModal /> */}
       <EnquiryForm />
       <Footer />
     </>

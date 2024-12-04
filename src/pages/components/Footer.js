@@ -110,7 +110,7 @@ export default function Footer() {
         <div className="footer-card">
           <h1>Our Links</h1>
           <ul>
-            <Link to="/services/react" style={{ textDecoration: "none" }}>
+            <Link to="/services" style={{ textDecoration: "none" }}>
               <li>Services</li>
             </Link>
             <Link to="/faculty" style={{ textDecoration: "none" }}>
@@ -127,12 +127,55 @@ export default function Footer() {
         <div className="footer-card">
           <h1>Our Services</h1>
           <ul>
-            <li>EDM</li>
-            <li> Digital Transformation</li>
-            <li>Analytics</li>
-            <li>Cloud and Platform Management</li>
-            <li>Coding & App Development</li>
-            <li>Digital Marketing</li>
+            <Link
+              to="/category/frontend_development"
+              style={{ textDecoration: "none" }}
+            >
+              <li> Frontend Development</li>
+            </Link>
+            <Link
+              to="/category/backend_development"
+              style={{ textDecoration: "none" }}
+            >
+              <li>Backend Development</li>
+            </Link>
+            <Link
+              to="/category/cloud_computing_and_platforms"
+              style={{ textDecoration: "none" }}
+            >
+              <li>Cloud Computing & Platforms</li>
+            </Link>
+
+            <Link
+              to="/category/devops_and_infrastructure"
+              style={{ textDecoration: "none" }}
+            >
+              <li>DevOps & Infrastructure</li>
+            </Link>
+            <Link
+              to="/category/salesforce_development_and_administration"
+              style={{ textDecoration: "none" }}
+            >
+              <li> Salesforce Development & Administration</li>
+            </Link>
+            <Link
+              to="/category/data_science_and_analytics"
+              style={{ textDecoration: "none" }}
+            >
+              <li>Data Science & Analytics</li>
+            </Link>
+            <Link
+              to="/category/cybersecurity_and_ethical_hacking"
+              style={{ textDecoration: "none" }}
+            >
+              <li>Cybersecurity & Ethical Hacking</li>
+            </Link>
+            <Link
+              to="/category/digital_transformation_and_management"
+              style={{ textDecoration: "none" }}
+            >
+              <li>Digital Transformation & Management</li>
+            </Link>
           </ul>
         </div>
         <div className="footer-card">

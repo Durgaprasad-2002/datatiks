@@ -42,6 +42,7 @@ export default function EnquiryForm() {
         const { message } = data?.data;
         toast.success(message);
         form.current.reset();
+        window.location.reload();
       })
       .catch((err) => {
         console.log(err);

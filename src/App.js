@@ -7,7 +7,9 @@ import CorporatePartner from "./pages/CorporatePartner";
 import Contact from "./pages/Contact";
 import { ToastContainer } from "react-toastify";
 
-import Carousel from "./pages/components/Carousel/Carousel";
+import CourseMap from "./pages/CourseMap";
+import Category from "./pages/Category";
+
 import "react-toastify/dist/ReactToastify.css";
 
 function App() {
@@ -21,7 +23,8 @@ function App() {
           <Route path="/faculty" element={<Faculty />} />
           <Route path="/corporate/partner" element={<CorporatePartner />} />
           <Route path="/contact" element={<Contact />} />
-          <Route path="/carousel" element={<Carousel />} />
+          <Route path="/services" element={<CourseMap />} />
+          <Route path="/category/:category" element={<Category />} />
         </Routes>
       </BrowserRouter>
     </>

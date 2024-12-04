@@ -2238,4 +2238,304 @@ const courses = [
   },
 ];
 
-module.exports = { courses };
+const categories = [
+  {
+    name: "Frontend Development",
+    title: "Frontend Development",
+    description:
+      "Learn how to build user interfaces and web applications using modern technologies like React, MERN Stack, and React Native. Gain the skills to design and develop responsive, interactive, and dynamic front-end solutions that meet the needs of users across various devices and platforms. Frontend development is essential for creating the first impression of a website or application and is crucial for providing seamless user experiences.",
+    categoryId: "frontend_development",
+    subcategories: [
+      {
+        name: "React",
+        link: "/services/react",
+        title: "React Development",
+        description:
+          "Develop dynamic user interfaces using React, the most popular JavaScript library.",
+        courseId: "react",
+        img: "https://media.licdn.com/dms/image/C4E12AQEBVCR2SpRr9g/article-cover_image-shrink_720_1280/0/1625909824541?e=2147483647&v=beta&t=Y_zSoI8cPUR3wQvPyYK15PLWpQJJ0si6OvsuXFnIC18",
+      },
+      {
+        name: "MERN Stack",
+        link: "/services/mern_stack",
+        title: "MERN Stack Development",
+        description:
+          "Master MongoDB, Express.js, React, and Node.js for full-stack web development.",
+        courseId: "mern_stack",
+        img: "https://www.rlogical.com/wp-content/uploads/2023/05/why-choose-mern-stack-for-developing-web-apps.webp",
+      },
+      {
+        name: "MEAN Stack",
+        link: "/services/mean_stack",
+        title: "MEAN Stack Development",
+        description:
+          "Build scalable web applications using MongoDB, Express.js, Angular, and Node.js.",
+        courseId: "mean_stack",
+        img: "https://www.bytestechnolab.com/wp-content/uploads/2020/01/The-Wonders-Of-MEAN-Stack-–-How-This-Framework-Brings-Magic-To-Your-Modern-Web-App-Development.jpg",
+      },
+      {
+        name: "React Native",
+        link: "/services/react_native",
+        title: "React Native Development",
+        description:
+          "Create mobile applications using React Native for both Android and iOS.",
+        courseId: "react_native",
+        img: "https://cdn.shopaccino.com/igmguru/articles/Learn-React-Native.png?v=491",
+      },
+    ],
+  },
+  {
+    name: "Backend Development",
+    title: "Backend Development",
+    description:
+      "Understand server-side programming and build scalable and efficient backends using Java, Python, and other technologies. Backend development involves working with databases, server configuration, and API creation to ensure that the front-end and back-end of a web application work seamlessly together. You'll learn to manage data flow, user authentication, and data storage while ensuring the security and reliability of your application.",
+    categoryId: "backend_development",
+    subcategories: [
+      {
+        name: "Java Full Stack",
+        link: "/services/java_full_stack",
+        title: "Java Full Stack Development",
+        description:
+          "Develop full-stack web applications using Java for both front and backend.",
+        courseId: "java_full_stack",
+        img: "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTsDYcPzaIGLsBUQcguPXYv56JVpdDKyermHA&s",
+      },
+      {
+        name: "Python Full Stack",
+        link: "/services/python_full_stack",
+        title: "Python Full Stack Development",
+        description:
+          "Build full-stack web applications using Python and modern web technologies.",
+        courseId: "python_full_stack",
+        img: "https://ecareupskill.com/wp-content/uploads/2024/04/Python.png",
+      },
+      {
+        name: "Azure",
+        link: "/services/azure",
+        title: "Azure Cloud Development",
+        description:
+          "Learn how to build, deploy, and manage applications on Microsoft Azure.",
+        courseId: "azure",
+        img: "https://cdn.prod.website-files.com/65cc1a5539029072432d96ce/664e87adb2beaf8e46cc39cd_16x9-Azure-cloud.webp",
+      },
+      {
+        name: "Snowflake",
+        link: "/services/snowflake",
+        title: "Snowflake Data Engineering",
+        description:
+          "Learn to work with Snowflake for data storage, processing, and analytics.",
+        courseId: "snowflake",
+        img: "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRPCnQ9oQsbxoPIMrz3_hCifacxcOynyGO8lg&s",
+      },
+    ],
+  },
+  {
+    name: "Cloud Computing & Platforms",
+    title: "Cloud Computing & Platforms",
+    description:
+      "Explore the world of cloud computing and learn to work with platforms like AWS, Azure, and GCP to manage infrastructure and applications. Cloud computing enables scalable and flexible solutions for businesses and individuals by leveraging remote servers and storage. Learn to develop, deploy, and manage applications using various cloud services that can handle high levels of traffic and data storage needs efficiently.",
+    categoryId: "cloud_computing_and_platforms",
+    subcategories: [
+      {
+        name: "AWS Devops",
+        link: "/services/aws_Devops",
+        title: "AWS DevOps",
+        description:
+          "Learn how to manage cloud infrastructure and automate deployments using AWS DevOps.",
+        courseId: "aws_devops",
+        img: "https://www.multisoftvirtualacademy.com/images/new-img/article/article_images/AWS-DevOps%20Training.jpg",
+      },
+      {
+        name: "Azure Devops",
+        link: "/services/azure_devops",
+        title: "Azure DevOps",
+        description:
+          "Master DevOps practices on Microsoft Azure to automate and streamline development pipelines.",
+        courseId: "azure_devops",
+        img: "https://miro.medium.com/v2/resize:fit:800/1*Ome-oSxDNx7mQxJFZJ-NJg.png",
+      },
+      {
+        name: "GCP",
+        link: "/services/gcp",
+        title: "Google Cloud Platform",
+        description:
+          "Learn to deploy and manage applications using Google Cloud Platform services.",
+        courseId: "gcp",
+        img: "https://miro.medium.com/v2/resize:fit:1200/1*w-w1ReD3Lf6LTQXTcvcrIw.png",
+      },
+      {
+        name: "Blockchain",
+        link: "/services/blockchain",
+        title: "Blockchain Development",
+        description:
+          "Understand blockchain technology and how to develop decentralized applications.",
+        courseId: "blockchain",
+        img: "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTbvkSslxuSlokUzjTMm2X-gOfDrkvTGvp1Pw&s",
+      },
+    ],
+  },
+  {
+    name: "DevOps & Infrastructure",
+    title: "DevOps & Infrastructure",
+    description:
+      "Learn how to streamline development processes, manage infrastructure, and ensure system reliability through DevOps practices. DevOps focuses on automating and monitoring the processes between software development and IT teams, enabling more efficient and faster delivery of high-quality software. Learn how to manage infrastructure, improve workflow automation, and ensure scalability and reliability of systems and applications.",
+    categoryId: "devops_and_infrastructure",
+    subcategories: [
+      {
+        name: "ServiceNow",
+        link: "/services/servicenow",
+        title: "ServiceNow Development",
+        description:
+          "Learn to configure and customize ServiceNow, a leading IT service management platform.",
+        courseId: "servicenow",
+        img: "https://yt3.googleusercontent.com/Ja0QUDM6ig6c_4nkF1AXgpjWIDehZwog04ZReGg355fuotuBa8L9qSOuSPvkUMPrKP3nMR0Ke2A=s900-c-k-c0x00ffffff-no-rj",
+      },
+      {
+        name: "Cyber Security",
+        link: "/services/cyber_security",
+        title: "Cybersecurity",
+        description:
+          "Understand the principles of cybersecurity and how to protect systems from potential threats.",
+        courseId: "cyber_security",
+        img: "https://media.licdn.com/dms/image/v2/D5612AQE0r5WC8r0HQg/article-cover_image-shrink_720_1280/article-cover_image-shrink_720_1280/0/1657711469335?e=2147483647&v=beta&t=AA7ierE6T8n-g7EDphWBu9qKdqcsXkOXo4tj7xg146s",
+      },
+      {
+        name: "Testing",
+        link: "/services/testing",
+        title: "Software Testing",
+        description:
+          "Learn about different testing methodologies to ensure the quality of software applications.",
+        courseId: "testing",
+        img: "https://www.clariwell.in/resources/best-software-testing-courses-in-pune.webp",
+      },
+    ],
+  },
+  {
+    name: "Salesforce Development & Administration",
+    title: "Salesforce Development & Administration",
+    description:
+      "Master Salesforce's development and administration tools to build and manage applications on the Salesforce platform. Salesforce is a powerful platform for customer relationship management (CRM) that enables organizations to manage their sales, customer service, and other business operations. Learn to create custom applications and automate processes on Salesforce to streamline business workflows.",
+    categoryId: "salesforce_development_and_administration",
+    subcategories: [
+      {
+        name: "Salesforce",
+        link: "/services/salesforce",
+        title: "Salesforce Development",
+        description:
+          "Learn how to develop custom applications and manage data on Salesforce.",
+        courseId: "salesforce",
+        img: "https://upload.wikimedia.org/wikipedia/commons/thumb/f/f9/Salesforce.com_logo.svg/1200px-Salesforce.com_logo.svg.png",
+      },
+      {
+        name: "Generative AI",
+        link: "/services/generative_ai",
+        title: "Generative AI",
+        description:
+          "Explore the world of Generative AI and learn how to create intelligent systems and applications.",
+        courseId: "generative_ai",
+        img: "https://eu-images.contentstack.com/v3/assets/blt6b0f74e5591baa03/bltfd36e68ac7a0f3b2/651b29bb3671b45abcc7e4c8/Generative_AI_(2).png?disable=upscale&width=1200&height=630&fit=crop",
+      },
+      {
+        name: "AI/ML",
+        link: "/services/ai_ml",
+        title: "AI and Machine Learning",
+        description:
+          "Learn the fundamentals of AI and ML and how to apply them to real-world problems.",
+        courseId: "ai_ml",
+        img: "https://vertassets.blob.core.windows.net/image/e906484b/e906484b-80eb-4252-8546-dde3f7f2fdbe/375_250-digital_data_technology_gettyimages_1345658982.jpg",
+      },
+    ],
+  },
+  {
+    name: "Data Science & Analytics",
+    title: "Data Science & Analytics",
+    description:
+      "Dive into data science and learn how to analyze and interpret large datasets using tools like Tableau and Power BI. Data science is a multidisciplinary field that uses scientific methods, processes, and systems to extract knowledge and insights from data. You'll learn how to handle large datasets, perform data cleaning and analysis, and present findings to support data-driven decisions in various industries.",
+    categoryId: "data_science_and_analytics",
+    subcategories: [
+      {
+        name: "Tableau",
+        link: "/services/tableau",
+        title: "Tableau Analytics",
+        description:
+          "Learn how to visualize and analyze data using Tableau's powerful analytics platform.",
+        courseId: "tableau",
+        img: "https://www.selectdistinct.co.uk/wp-content/uploads/2023/03/Tableau-logo-removebg-preview.png",
+      },
+      {
+        name: "Powerbi",
+        link: "/services/powerbi",
+        title: "Power BI Analytics",
+        description:
+          "Gain proficiency in Power BI for data analysis, visualization, and business intelligence.",
+        courseId: "powerbi",
+        img: "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRK_ou7JAHI6PmZlX2P1ouxQCyD0JmED5yvzg&s",
+      },
+    ],
+  },
+  {
+    name: "Cybersecurity & Ethical Hacking",
+    title: "Cybersecurity & Ethical Hacking",
+    description:
+      "Learn how to protect systems, networks, and data from cyber threats by exploring ethical hacking techniques and tools. Ethical hacking involves testing the security of systems to identify vulnerabilities before malicious hackers can exploit them. Understand network security, cryptography, penetration testing, and other key areas of cybersecurity to protect organizations from cyberattacks.",
+    categoryId: "cybersecurity_and_ethical_hacking",
+    subcategories: [
+      {
+        name: "Sap Fi/Co",
+        link: "/services/sap_fico",
+        title: "SAP FI/CO",
+        description:
+          "Learn how to manage financial and controlling modules in SAP for enterprise resource planning.",
+        courseId: "sap_fico",
+        img: "https://www.brillicaservices.com/images/admin/dashboard/courses/6516b90b483b873cde53af91.png",
+      },
+      {
+        name: "Sap Hana",
+        link: "/services/sap_hana",
+        title: "SAP Hana",
+        description:
+          "Master the SAP Hana platform for real-time data processing and analytics.",
+        courseId: "sap_hana",
+        img: "https://go4hosting.in/blog/wp-content/uploads/2018/08/featured2-624x390.png",
+      },
+    ],
+  },
+  {
+    name: "Digital Transformation & Management",
+    title: "Digital Transformation & Management",
+    description:
+      "Learn about digital transformation and management practices in industries like marketing, healthcare, and technology. Digital transformation involves integrating digital technologies into all areas of business, fundamentally changing how businesses operate and deliver value to customers. Learn to manage the implementation of digital tools, process automation, and data-driven decision-making across different sectors.",
+    categoryId: "digital_transformation_and_management",
+    subcategories: [
+      {
+        name: "Digital Marketing",
+        link: "/services/digital_marketing",
+        title: "Digital Marketing",
+        description:
+          "Understand how to leverage digital channels for marketing and driving business growth.",
+        courseId: "digital_marketing",
+        img: "https://rioconn.in/wp-content/uploads/2024/05/digital-marketing-new-startup-project-online-search-engine-optimisation.jpg",
+      },
+      {
+        name: "Medical Coding",
+        link: "/services/medical_coding",
+        title: "Medical Coding",
+        description:
+          "Learn medical coding techniques to translate healthcare services into standard codes.",
+        courseId: "medical_coding",
+        img: "https://miro.medium.com/v2/resize:fit:474/1*OjxEKHkIN4h_QuPjPKNFbA.jpeg",
+      },
+      {
+        name: "Flutter",
+        link: "/services/flutter",
+        title: "Flutter Development",
+        description:
+          "Build beautiful, natively compiled applications for mobile, web, and desktop using Flutter.",
+        courseId: "flutter",
+        img: "https://cdn-images-1.medium.com/max/1200/1*5-aoK8IBmXve5whBQM90GA.png",
+      },
+    ],
+  },
+];
+
+module.exports = { courses, categories };
