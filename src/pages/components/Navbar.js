@@ -2,105 +2,40 @@ import React, { useState, useEffect } from "react";
 import "../styles.css";
 import { Link } from "react-router-dom";
 import PopUpModal from "./PopUpModal";
+import { navbarServices } from "../assets/data/homeData";
 
-export default function Navbar() {
+function Navbar() {
+  // state hooks
   const [toggle, setToggle] = useState(false);
-  const [showDropdown, setShowDropdown] = useState(false); // Desktop dropdown visibility
-  const [nestedMenu, setNestedMenu] = useState(null); // Mobile submenu tracking
-  const [activeSubcategory, setActiveSubcategory] = useState(null); // Track the active subcategory for mobile
+  const [showDropdown, setShowDropdown] = useState(false);
+  const [nestedMenu, setNestedMenu] = useState(null);
+  const [activeSubcategory, setActiveSubcategory] = useState(null);
+  const [isScrolled, setIsScrolled] = useState(false);
 
+  // handles state for Enroll modal
+  const [showModal, setModal] = useState(false);
+
+  //handles Toggles
   const handleToggle = () => setToggle((prev) => !prev);
 
+  //handles sub-categories for mobile view
   const openNestedMenu = (menu) => {
     if (toggle) setNestedMenu(menu);
   };
+
+  //handles closing of sub-categories for mobile view
   const closeNestedMenu = () => {
     setNestedMenu(null);
     setActiveSubcategory(null);
   };
 
-  const services = [
-    {
-      name: "Frontend Development",
-      subcategories: [
-        { name: "React", link: "/services/react" },
-        { name: "MERN Stack", link: "/services/mern_stack" },
-        { name: "MEAN Stack", link: "/services/mean_stack" },
-        { name: "React Native", link: "/services/react_native" },
-      ],
-    },
-    {
-      name: "Backend Development",
-      subcategories: [
-        { name: "Java Full Stack", link: "/services/java_full_stack" },
-        { name: "Python Full Stack", link: "/services/python_full_stack" },
-        { name: "Azure", link: "/services/azure" },
-        { name: "Snowflake", link: "/services/snowflake" },
-      ],
-    },
-    {
-      name: "Cloud Computing & Platforms",
-      subcategories: [
-        { name: "AWS Devops", link: "/services/aws_Devops" },
-        { name: "Azure Devops", link: "/services/azure_devops" },
-        { name: "GCP", link: "/services/gcp" },
-        { name: "Blockchain", link: "/services/blockchain" },
-      ],
-    },
-    {
-      name: "DevOps & Infrastructure",
-      subcategories: [
-        { name: "ServiceNow", link: "/services/servicenow" },
-        { name: "Cyber Security", link: "/services/cyber_security" },
-        { name: "Testing", link: "/services/testing" },
-      ],
-    },
-    {
-      name: "Salesforce Development & Administration",
-      subcategories: [
-        { name: "Salesforce", link: "/services/salesforce" },
-        { name: "Generative AI", link: "/services/generative_ai" },
-        { name: "AI/ML", link: "/services/ai_ml" },
-      ],
-    },
-    {
-      name: "Data Science & Analytics",
-      subcategories: [
-        { name: "Tableau", link: "/services/tableau" },
-        { name: "Powerbi", link: "/services/powerbi" },
-      ],
-    },
-    {
-      name: "Cybersecurity & Ethical Hacking",
-      subcategories: [
-        { name: "Sap Fi/Co", link: "/services/sap_fico" },
-        { name: "Sap Hana", link: "/services/sap_hana" },
-      ],
-    },
-    {
-      name: "Digital Transformation & Management",
-      subcategories: [
-        { name: "Digital Marketing", link: "/services/digital_marketing" },
-        { name: "Medical Coding", link: "/services/medical_coding" },
-        { name: "Flutter", link: "/services/flutter" },
-      ],
-    },
-  ];
-
-  const [isScrolled, setIsScrolled] = useState(false);
-
-  const [showModal, setModal] = useState(false);
-
+  // handles the navbar transform and the overflow for body when modal appears
   useEffect(() => {
-    if (toggle) {
-      document.body.classList.add("remove-over");
-    } else {
-      document.body.classList.remove("remove-over");
-    }
-    const handleScroll = () => {
-      // Check if the user has scrolled down more than 50px
-      setIsScrolled(window.scrollY > 50);
-    };
+    // add class when the modal opnes, to the body
+    if (toggle) document.body.classList.add("remove-over");
+    else document.body.classList.remove("remove-over");
+
+    const handleScroll = () => setIsScrolled(window.scrollY > 50);
 
     window.addEventListener("scroll", handleScroll);
 
@@ -133,14 +68,14 @@ export default function Navbar() {
             </Link>
             <li
               className="nav-link services"
-              onMouseEnter={() => setShowDropdown(true)} // Show dropdown on hover
-              onMouseLeave={() => setShowDropdown(false)} // Hide dropdown on leave
-              onClick={() => openNestedMenu("services")} // Open for mobile view
+              onMouseEnter={() => setShowDropdown(true)}
+              onMouseLeave={() => setShowDropdown(false)}
+              onClick={() => openNestedMenu("services")}
             >
               Services
               {showDropdown && (
                 <ul className="dropdown ">
-                  {services.map((service) => (
+                  {navbarServices.map((service) => (
                     <li key={service.name} className="dropdown-item">
                       <Link to="#" className="item-link">
                         {service.name}
@@ -185,7 +120,7 @@ export default function Navbar() {
               ← Back
             </button>
             <ul className="nested-lists">
-              {services.map((service) => (
+              {navbarServices.map((service) => (
                 <li key={service.name} className="nested-item">
                   <span
                     onClick={() =>
@@ -214,6 +149,7 @@ export default function Navbar() {
           </div>
         )}
 
+        {/* Toggle Button for mobile view */}
         <div
           className={`toggle-container ${toggle ? "closeToggle" : ""}`}
           onClick={handleToggle}
@@ -223,7 +159,10 @@ export default function Navbar() {
           <div className="toggle-bar"></div>
         </div>
       </nav>
+      {/* Modal for enroll */}
       <PopUpModal showModal={showModal} setModal={setModal} />
     </>
   );
 }
+
+export default React.memo(Navbar);

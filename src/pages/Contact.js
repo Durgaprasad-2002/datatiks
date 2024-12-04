@@ -1,18 +1,19 @@
 import React, { useState, useRef, useEffect } from "react";
 
-import { FaWhatsapp } from "react-icons/fa";
-import { IoCallOutline, IoMailOutline } from "react-icons/io5";
-import { toast } from "react-toastify";
-import axios from "axios";
-
 import Navbar from "./components/Navbar";
 import Footer from "./components/Footer";
 import InputField from "./components/InputField";
 import HeaderSectionBackground from "./components/HeaderSectionBackground";
 
+import { FaWhatsapp } from "react-icons/fa";
+import { IoCallOutline, IoMailOutline } from "react-icons/io5";
+import { toast } from "react-toastify";
+import axios from "axios";
+
 import "./styles.css";
 
-export default function Contact() {
+function Contact() {
+  // scrolls to top of page
   useEffect(() => {
     document.documentElement.scrollTop = 0;
   }, []);
@@ -36,7 +37,6 @@ export default function Contact() {
   // handle the form submission
   function handleSubmit(e) {
     e.preventDefault();
-
     setLoading(() => true);
     axios
       .post("http://localhost:5000/api/contact", { ...formData })
@@ -56,6 +56,7 @@ export default function Contact() {
   return (
     <>
       <Navbar />
+      {/* Header Section */}
       <HeaderSectionBackground
         name={"contact"}
         title1={"Contact"}
@@ -69,6 +70,7 @@ export default function Contact() {
           <h1>
             Contact <span className="col-red"> Us</span>{" "}
           </h1>
+          {/* Form for Contact */}
           <form onSubmit={handleSubmit} ref={form}>
             <div className="input-container">
               <InputField
@@ -122,6 +124,7 @@ export default function Contact() {
           </form>
         </div>
 
+        {/* Contact Details of Company */}
         <div className="contact-info-container">
           <div className="contact-info-container-inner">
             <div className="contact-info-container-sec">
@@ -153,6 +156,7 @@ export default function Contact() {
             </div>
           </div>
 
+          {/* Iframe for the Maps */}
           <div className="contact-info-container-sec">
             <iframe
               className="maps-iframe"
@@ -169,3 +173,5 @@ export default function Contact() {
     </>
   );
 }
+
+export default React.memo(Contact);

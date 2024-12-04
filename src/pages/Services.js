@@ -1,4 +1,4 @@
-import React, { useState, useEffect } from "react";
+import React, { useState, useEffect, useMemo, Suspense } from "react";
 import Navbar from "./components/Navbar";
 import Footer from "./components/Footer";
 import EnrollButton from "./components/EnrollButton";
@@ -7,28 +7,34 @@ import ExpandContainer from "./components/ExpandContainer";
 import CourseNotFound from "./components/CourseNotFound";
 import { courses } from "./assets/data/courses";
 
-import "./styles.css";
 import { useParams, Link } from "react-router-dom";
 
+import "./styles.css";
+
 export default function Services() {
-  useEffect(() => {
-    document.documentElement.scrollTop = 0;
-  }, []);
   // state Hooks
   const { course } = useParams();
   const [courseDetails, setCourseDetails] = useState(null);
   const [loading, setLoading] = useState(true);
   const [posY, setPosY] = useState(0);
 
+  //scrolling to top of page
+  useEffect(() => {
+    document.documentElement.scrollTop = 0;
+  }, [course]);
+
+  // fectching course
+  const foundCourse = useMemo(
+    () => courses.find((data) => data.courseId === course),
+    [courses, course]
+  );
   useEffect(() => {
     setLoading(true);
-    const foundCourse = courses.find((data) => data.courseId === course);
-
     setTimeout(() => {
       setCourseDetails(foundCourse || null);
       setLoading(false);
     }, 1000);
-  }, [course]);
+  }, [foundCourse]);
 
   useEffect(() => {
     const handleScroll = () => {
@@ -41,6 +47,7 @@ export default function Services() {
     };
   }, []);
 
+  //returns loader during fetching
   if (loading)
     return (
       <>
@@ -50,6 +57,7 @@ export default function Services() {
       </>
     );
 
+  // return CourseNotFound
   if (!courseDetails)
     return (
       <>
@@ -59,10 +67,13 @@ export default function Services() {
       </>
     );
 
+  // returns actual component UI
   return (
     <>
       <Navbar />
+
       <div className="outer-services">
+        {/* Header  Section*/}
         <section
           className="service-header"
           style={{ backgroundPositionY: `${posY}px` }}
@@ -72,6 +83,7 @@ export default function Services() {
             <p>{courseDetails?.heading?.description || "Course Description"}</p>
           </div>
         </section>
+        {/* Sticky Conatiner */}
         <div className="stat">
           <ul className="topics-container">
             {[
@@ -92,6 +104,7 @@ export default function Services() {
             ))}
           </ul>
         </div>
+        {/* Body Section */}
         <section className="services-body">
           <div className="services-body-1">
             {/* Pre-Requisites Section */}
@@ -188,6 +201,7 @@ export default function Services() {
               ))}
             </div>
 
+            {/* Course Content Section */}
             <div className="pre-req-container" id="course-content">
               <h3 className="course-section-title">
                 Course <span className="col-red">Content</span>
@@ -203,6 +217,7 @@ export default function Services() {
               </Link>
             </div>
 
+            {/* Enroll  Section */}
             <div className="pre-req-container" id="enroll-now">
               <h3 className="course-section-title">
                 Enroll <span className="col-red">Now!</span>
@@ -212,21 +227,24 @@ export default function Services() {
               </p>
             </div>
           </div>
+          {/* Watch demo and enroll form section */}
           <div className="services-body-2">
             <div className="static-container-services">
               <h3 className="course-section-title side-line">
                 Watch a <span className="col-red">Demo</span>
               </h3>
 
-              <iframe
-                className="iframe-video"
-                src="https://www.youtube.com/embed/Xl6O8jS1Hho?si=n09mI28Hq9y8-HEm"
-                title="YouTube video player"
-                frameBorder="0"
-                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
-                referrerPolicy="strict-origin-when-cross-origin"
-                allowFullScreen
-              ></iframe>
+              <Suspense fallback={<Loader />}>
+                <iframe
+                  className="iframe-video"
+                  src="https://www.youtube.com/embed/Xl6O8jS1Hho?si=n09mI28Hq9y8-HEm"
+                  title="YouTube video player"
+                  frameBorder="0"
+                  allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                  referrerPolicy="strict-origin-when-cross-origin"
+                  allowFullScreen
+                ></iframe>
+              </Suspense>
 
               <EnrollButton />
             </div>

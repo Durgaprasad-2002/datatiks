@@ -1,7 +1,7 @@
 import React from "react";
 import "../styles.css";
 
-export default function ExpandContainer({ ind, title, desc, id, type }) {
+function ExpandContainer({ ind, title, desc, id, type }) {
   return (
     <div className="expand-container" key={ind}>
       <input
@@ -16,3 +16,5 @@ export default function ExpandContainer({ ind, title, desc, id, type }) {
     </div>
   );
 }
+
+export default React.memo(ExpandContainer);

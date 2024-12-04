@@ -8,7 +8,8 @@ import Footer from "./components/Footer";
 import InputField from "./components/InputField";
 import HeaderSectionBackground from "./components/HeaderSectionBackground";
 
-export default function CorporatePartner() {
+function CorporatePartner() {
+  //scrolling to top of page
   useEffect(() => {
     document.documentElement.scrollTop = 0;
   }, []);
@@ -31,6 +32,7 @@ export default function CorporatePartner() {
     message: "",
   });
 
+  //handles input change
   function handleChange(e) {
     setFormData((prev) => ({ ...prev, [e.target.name]: e.target.value }));
   }
@@ -38,7 +40,6 @@ export default function CorporatePartner() {
   // handle the form submission
   function handleSubmit(e) {
     e.preventDefault();
-
     setLoading(() => true);
     axios
       .post("http://localhost:5000/api/corparate", { ...formData })
@@ -202,3 +203,5 @@ export default function CorporatePartner() {
     </>
   );
 }
+
+export default React.memo(CorporatePartner);

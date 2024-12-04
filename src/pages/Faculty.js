@@ -1,14 +1,16 @@
 import React, { useState, useRef, useEffect } from "react";
-import axios from "axios";
-import { toast } from "react-toastify";
-import "./styles.css";
 
 import Navbar from "./components/Navbar";
 import InputField from "./components/InputField";
 import Footer from "./components/Footer";
 import HeaderSectionBackground from "./components/HeaderSectionBackground";
 
-export default function Faculty() {
+import axios from "axios";
+import { toast } from "react-toastify";
+import "./styles.css";
+
+function Faculty() {
+  //scrolling to top of page
   useEffect(() => {
     document.documentElement.scrollTop = 0;
   }, []);
@@ -33,7 +35,6 @@ export default function Faculty() {
   // handle the form submission
   function handleSubmit(e) {
     e.preventDefault();
-
     const data = new FormData();
     data.append("file", file);
     data.append("name", formData.name);
@@ -66,6 +67,7 @@ export default function Faculty() {
   return (
     <>
       <Navbar />
+      {/* Header Section */}
       <HeaderSectionBackground
         name={"faculty"}
         title1={"Become an "}
@@ -75,6 +77,7 @@ export default function Faculty() {
         }
       />
 
+      {/* body section */}
       <section className="faculty-form-container">
         <div className="faculty-form-container-sec1">
           <h1>
@@ -159,3 +162,5 @@ export default function Faculty() {
     </>
   );
 }
+
+export default React.memo(Faculty);

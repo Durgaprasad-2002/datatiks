@@ -2,7 +2,7 @@ import React from "react";
 import "../styles.css";
 import { Link } from "react-router-dom";
 
-export default function CourseNotFound() {
+function CourseNotFound() {
   return (
     <>
       <div className="not-found">
@@ -18,3 +18,5 @@ export default function CourseNotFound() {
     </>
   );
 }
+
+export default React.memo(CourseNotFound);

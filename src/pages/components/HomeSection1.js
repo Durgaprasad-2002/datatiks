@@ -1,36 +1,42 @@
-import React from "react";
-import { useEffect, useState } from "react";
+import React, { useEffect, useState } from "react";
 
 import { IoSearch } from "react-icons/io5";
+import { useNavigate, Link } from "react-router-dom";
+import { toast } from "react-toastify";
 
-import { techStackArray1, techStackArray2 } from "../assets/data/homeData";
-import { Link } from "react-router-dom";
-
+import HomeSectionCarousel from "./HomeSectionCarousel";
+import {
+  techStackArray1,
+  techStackArray2,
+  TextCharacterArray,
+} from "../assets/data/homeData";
 import { courses } from "../assets/data/courses";
 
-import { useNavigate } from "react-router-dom";
-import { toast } from "react-toastify";
-import HomeSectionCarousel from "./HomeSectionCarousel";
+import "../styles.css";
 
 export default function HomeSection1() {
+  //navigation to another page
   const navigate = useNavigate();
+
+  //state hook
   const [search, setSearch] = useState("");
 
+  //handle seach change
   function handleSearch(e) {
     setSearch(() => e.target.value);
   }
 
+  //hanldes search submit
   async function handleSubmit() {
-    // Trim and normalize input
     const temp = search.trim().toLowerCase();
 
     // Search through courses
     const address = courses.find((course) => {
       const { courseId, heading } = course;
       return (
-        courseId.toLowerCase().includes(temp) || // Match courseId
-        heading.title.toLowerCase().includes(temp) || // Match title
-        heading.description.toLowerCase().includes(temp) // Match description
+        courseId.toLowerCase().includes(temp) ||
+        heading.title.toLowerCase().includes(temp) ||
+        heading.description.toLowerCase().includes(temp)
       );
     });
 
@@ -41,15 +47,16 @@ export default function HomeSection1() {
     }
   }
 
+  // invokes handlesubmit when enter key pressed
   function handleKeyDown(e) {
     if (e.key === "Enter") {
       handleSubmit();
     }
   }
 
+  // handles the animation for .title-home-2
   useEffect(() => {
     const textElements = document.querySelectorAll(".title-home-2 .text");
-
     const animateText = () => {
       textElements.forEach((element, index) => {
         setTimeout(() => {
@@ -62,9 +69,9 @@ export default function HomeSection1() {
 
       setTimeout(animateText, textElements.length * 300);
     };
-
     animateText();
   }, []);
+
   return (
     <>
       <section className="outer">
@@ -72,27 +79,7 @@ export default function HomeSection1() {
           <div className="section-1">
             <h1 className="title-home-1">A Leading Service Provider of IT</h1>
             <ul className="title-home-2">
-              {[
-                "T",
-                "r",
-                "a",
-                "i",
-                "n",
-                "i",
-                "n",
-                "g",
-                "s",
-                "",
-                "{}W",
-                "o",
-                "r",
-                "l",
-                "d",
-                "w",
-                "i",
-                "d",
-                "e",
-              ].map((data, ind) => (
+              {TextCharacterArray.map((data, ind) => (
                 <li className="text" key={ind}>
                   {data.replace("{}", " ")}
                 </li>
@@ -126,6 +113,7 @@ export default function HomeSection1() {
             </div>
           </div>
           <div className="section-1">
+            {/* Header section Carousel */}
             <HomeSectionCarousel />
           </div>
         </div>

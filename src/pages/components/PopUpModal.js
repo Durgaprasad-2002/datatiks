@@ -1,11 +1,13 @@
 import React, { useEffect, useState, useRef } from "react";
-import "../styles.css";
-
+import { IoMdCloseCircle } from "react-icons/io";
 import axios from "axios";
 import { toast } from "react-toastify";
 import InputField from "./InputField";
 
+import "../styles.css";
+
 export default function PopUpModal({ showModal, setModal }) {
+  //disables the overflow for body
   useEffect(() => {
     document.body.classList.toggle("remove-over", showModal);
   }, [showModal]);
@@ -50,10 +52,10 @@ export default function PopUpModal({ showModal, setModal }) {
     <div className={showModal ? "over-flow-container" : "hide-overflow-modal"}>
       <div className="over-flow-container-form">
         <button className="close-btn-modal" onClick={() => setModal(false)}>
-          X
+          <IoMdCloseCircle />
         </button>
 
-        <h3>Enroll Now</h3>
+        <h3 className="title-modal side-line">Enroll Now</h3>
         <form onSubmit={handleSubmit} ref={form}>
           <div className="input-container">
             <InputField

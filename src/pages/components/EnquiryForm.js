@@ -1,12 +1,13 @@
 import React, { useRef, useState } from "react";
-import "../styles.css";
-
 import InputField from "./InputField";
 
 import { toast } from "react-toastify";
 import axios from "axios";
 
-export default function EnquiryForm() {
+import "../styles.css";
+
+function EnquiryForm() {
+  //state hooks
   const form = useRef(null);
   const [loading, setLoading] = useState(false);
   const [btnNum, setbtnNum] = useState(1);
@@ -20,6 +21,7 @@ export default function EnquiryForm() {
     message: "",
   });
 
+  // handles input change
   function handleChange(event) {
     const { name, value } = event.target;
     setFormData((prevData) => ({
@@ -28,6 +30,7 @@ export default function EnquiryForm() {
     }));
   }
 
+  //handles form submit
   async function handleSubmit(event) {
     event.preventDefault();
     const dataToSend = {
@@ -149,3 +152,5 @@ export default function EnquiryForm() {
     </div>
   );
 }
+
+export default React.memo(EnquiryForm);

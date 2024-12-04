@@ -1,43 +1,43 @@
-import React, { useEffect, useRef, useState } from "react";
+import React, { useEffect, useRef } from "react";
 import Navbar from "./components/Navbar";
 import HomeSection1 from "./components/HomeSection1";
-// import CourseCarousel from "./components/CourseCarousel";
+import Footer from "./components/Footer";
 import Carousel from "./components/Carousel/Carousel";
-import { achievements, benefits, trainings } from "./assets/data/homeData";
+import TrendingCoursesCarousel from "./components/Carousel/TrendingCoursesCarousel";
+import EnquiryForm from "./components/EnquiryForm";
+
 import {
   BenefitCard,
   AcheivementCard,
   TrainingCard,
 } from "./components/HomeCards";
-import EnquiryForm from "./components/EnquiryForm";
-import Footer from "./components/Footer";
-import TrendingCoursesCarousel from "./components/Carousel/TrendingCoursesCarousel";
-import PopUpModal from "./components/PopUpModal";
+
+import { achievements, benefits, trainings } from "./assets/data/homeData";
+
 import "./styles.css";
 
 export default function Home() {
-  // ------------------------
-
-  const cardRefs = useRef([]);
-
+  //scrolls to top of pages
   useEffect(() => {
     document.documentElement.scrollTop = 0;
   }, []);
 
-  useEffect(() => {
-    let timeouts = []; // Track multiple timeouts for cleanup
+  // ref's for cards handling
+  const cardRefs = useRef([]);
 
-    // Observe cards with staggered delay
+  useEffect(() => {
+    // Tracking multiple timeouts for cleanup
+    let timeouts = [];
+
+    // Observe cards with delay
     const cardObserver = new IntersectionObserver(
       (entries) => {
         entries.forEach((entry) => {
           if (entry.isIntersecting) {
             const cardIndex = cardRefs.current.indexOf(entry.target);
-
             const timeout = setTimeout(() => {
               entry.target.classList.add("card-fade-in-visible");
             }, cardIndex * 50);
-
             timeouts.push(timeout);
           }
         });
@@ -48,17 +48,17 @@ export default function Home() {
       }
     );
 
-    // Attach observers
-
+    // attaching observers
     cardRefs.current.forEach((card) => cardObserver.observe(card));
 
-    // Cleanup
+    // cleanup's
     return () => {
       cardObserver.disconnect();
       timeouts.forEach(clearTimeout);
     };
   }, []);
 
+  // adding cards to refs for tracking
   const addToRefs = (el, refArray) => {
     if (el && !refArray.current.includes(el)) {
       refArray.current.push(el);
@@ -68,10 +68,11 @@ export default function Home() {
   return (
     <>
       <Navbar />
+      {/* header section */}
       <HomeSection1 />
 
       {/* Benefits section */}
-      <section className="home-section-2 fade-in">
+      <section className="home-section-2">
         <h2 className="title" style={{ marginBottom: "0px" }}>
           Benefits
         </h2>
@@ -93,7 +94,7 @@ export default function Home() {
       </section>
 
       {/* Achievements section */}
-      <section className="home-section-3 fade-in">
+      <section className="home-section-3 ">
         <h2 className="title">Achieve your goals</h2>
         <div className="benefit-container">
           {achievements.map((benefit, ind) => (
@@ -109,7 +110,7 @@ export default function Home() {
       </section>
 
       {/* Modes of Trainings section */}
-      <section className="home-section-4 fade-in">
+      <section className="home-section-4">
         <h2 className="title">Modes of Training</h2>
         <p className="desc">
           Work with the flexibility of selecting online or offline classes with
@@ -132,7 +133,6 @@ export default function Home() {
 
       <Carousel />
       {/* <TrendingCoursesCarousel setShowModal={setShowModal} /> */}
-      {/* <PopUpModal /> */}
       <EnquiryForm />
       <Footer />
     </>

@@ -1,8 +1,9 @@
 import React from "react";
-import "../styles.css";
 import { Link } from "react-router-dom";
 
-export default function CategoryNotFound() {
+import "../styles.css";
+
+function CategoryNotFound() {
   return (
     <>
       <div className="not-found">
@@ -18,3 +19,5 @@ export default function CategoryNotFound() {
     </>
   );
 }
+
+export default React.memo(CategoryNotFound);

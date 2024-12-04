@@ -4,7 +4,7 @@ import { toast } from "react-toastify";
 import axios from "axios";
 import "../styles.css";
 
-export default function EnrollButton() {
+function EnrollButton() {
   const [showButton, setShowButton] = useState(false);
   const form = useRef(null);
   const [loading, setLoading] = useState(false);
@@ -127,3 +127,5 @@ export default function EnrollButton() {
     </>
   );
 }
+
+export default React.memo(EnrollButton);

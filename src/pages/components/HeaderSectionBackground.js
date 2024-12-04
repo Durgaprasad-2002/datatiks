@@ -1,11 +1,6 @@
 import React, { useState, useEffect } from "react";
 
-export default function HeaderSectionBackground({
-  title1,
-  title2,
-  desc,
-  name,
-}) {
+function HeaderSectionBackground({ title1, title2, desc, name }) {
   //hooks
   const [posY, setposY] = useState(0);
 
@@ -35,3 +30,5 @@ export default function HeaderSectionBackground({
     </section>
   );
 }
+
+export default HeaderSectionBackground;

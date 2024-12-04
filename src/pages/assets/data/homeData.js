@@ -159,45 +159,82 @@ const courses = [
 ];
 
 const footerCourseCategory = [
-  { name: "EDM", link: "/services/edm" },
-  { name: "Digital Transformation", link: "/services/digital_transformation" },
-  { name: "Analytics", link: "/services/analytics" },
   {
-    name: "Cloud and Platform Management",
-    link: "/services/cloud_platform_management",
+    name: "Frontend Development",
+    link: "/category/frontend_development",
   },
   {
-    name: "Coding & App Development",
-    link: "/services/coding_app_development",
+    name: "Backend Development",
+    link: "/category/backend_development",
   },
-  { name: "Digital Marketing", link: "/services/digital_marketing" },
+  {
+    name: "Cloud Computing & Platforms",
+    link: "/category/cloud_computing_and_platforms",
+  },
+  {
+    name: "DevOps & Infrastructure",
+    link: "/category/devops_and_infrastructure",
+  },
+  {
+    name: "Salesforce Development & Administration",
+    link: "/category/salesforce_development_and_administration",
+  },
+  {
+    name: "Data Science & Analytics",
+    link: "/category/data_science_and_analytics",
+  },
+  {
+    name: "Cybersecurity & Ethical Hacking",
+    link: "/category/cybersecurity_and_ethical_hacking",
+  },
+  {
+    name: "Digital Transformation & Management",
+    link: "/category/digital_transformation_and_management",
+  },
 ];
 
 const footerTrendingCourse = [
-  { name: "Django", link: "/services/django" },
-  { name: "Data Science", link: "/services/data_science" },
-  { name: "Different Python Libraries", link: "/services/python_libraries" },
-  { name: "Salesforce Development", link: "/services/salesforce_development" },
-  { name: "Salesforce Lightning", link: "/services/salesforce_lightning" },
   {
-    name: "Salesforce Administration",
-    link: "/services/salesforce_administration",
+    name: "React",
+    link: "/services/react",
   },
-  { name: "Salesforce CPQ", link: "/services/salesforce_cpq" },
-  { name: "Cloud Environments", link: "/services/cloud_environments" },
-  { name: "AWS", link: "/services/aws" },
-  { name: "Azure", link: "/services/azure" },
-  { name: "GCP", link: "/services/gcp" },
-  { name: "DevOps", link: "/services/devops" },
-  { name: "CHFI", link: "/services/chfi" },
-  { name: "CND", link: "/services/cnd" },
-  { name: "CEH", link: "/services/ceh" },
-  { name: "Angular", link: "/services/angular" },
-  { name: "React", link: "/services/react" },
-  { name: "Node Js", link: "/services/node_js" },
-  { name: "Mongo DB", link: "/services/mongo_db" },
-  { name: "Express Js", link: "/services/express_js" },
-  { name: "Vue Js", link: "/services/vue_js" },
+  {
+    name: "Tableau",
+    link: "/services/tableau",
+  },
+  {
+    name: "Powerbi",
+    link: "/services/powerbi",
+  },
+  {
+    name: "Snowflake",
+    link: "/services/snowflake",
+  },
+  {
+    name: "Azure",
+    link: "/services/azure",
+  },
+  {
+    name: "Python Full Stack",
+    link: "/services/python_full_stack",
+  },
+  {
+    name: "Flutter",
+    link: "/services/flutter",
+  },
+  {
+    name: "ServiceNow",
+    link: "/services/servicenow",
+  },
+  { name: "Salesforce", link: "/services/salesforce" },
+  { name: "Blockchain", link: "/services/blockchain" },
+  { name: "ServiceNow", link: "/services/servicenow" },
+  { name: "Digital Marketing", link: "/services/digital_marketing" },
+  {
+    name: "Medical Coding",
+    link: "/services/medical_coding",
+  },
+  { name: "Sap Hana", link: "/services/sap_hana" },
 ];
 
 const interviewQuestionsArray = [
@@ -366,6 +403,196 @@ const tutorialsArray = [
   },
 ];
 
+const navbarServices = [
+  {
+    name: "Frontend Development",
+    subcategories: [
+      { name: "React", link: "/services/react" },
+      { name: "MERN Stack", link: "/services/mern_stack" },
+      { name: "MEAN Stack", link: "/services/mean_stack" },
+      { name: "React Native", link: "/services/react_native" },
+    ],
+  },
+  {
+    name: "Backend Development",
+    subcategories: [
+      { name: "Java Full Stack", link: "/services/java_full_stack" },
+      { name: "Python Full Stack", link: "/services/python_full_stack" },
+      { name: "Azure", link: "/services/azure" },
+      { name: "Snowflake", link: "/services/snowflake" },
+    ],
+  },
+  {
+    name: "Cloud Computing & Platforms",
+    subcategories: [
+      { name: "AWS Devops", link: "/services/aws_Devops" },
+      { name: "Azure Devops", link: "/services/azure_devops" },
+      { name: "GCP", link: "/services/gcp" },
+      { name: "Blockchain", link: "/services/blockchain" },
+    ],
+  },
+  {
+    name: "DevOps & Infrastructure",
+    subcategories: [
+      { name: "ServiceNow", link: "/services/servicenow" },
+      { name: "Cyber Security", link: "/services/cyber_security" },
+      { name: "Testing", link: "/services/testing" },
+    ],
+  },
+  {
+    name: "Salesforce Development & Administration",
+    subcategories: [
+      { name: "Salesforce", link: "/services/salesforce" },
+      { name: "Generative AI", link: "/services/generative_ai" },
+      { name: "AI/ML", link: "/services/ai_ml" },
+    ],
+  },
+  {
+    name: "Data Science & Analytics",
+    subcategories: [
+      { name: "Tableau", link: "/services/tableau" },
+      { name: "Powerbi", link: "/services/powerbi" },
+    ],
+  },
+  {
+    name: "Cybersecurity & Ethical Hacking",
+    subcategories: [
+      { name: "Sap Fi/Co", link: "/services/sap_fico" },
+      { name: "Sap Hana", link: "/services/sap_hana" },
+    ],
+  },
+  {
+    name: "Digital Transformation & Management",
+    subcategories: [
+      { name: "Digital Marketing", link: "/services/digital_marketing" },
+      { name: "Medical Coding", link: "/services/medical_coding" },
+      { name: "Flutter", link: "/services/flutter" },
+    ],
+  },
+];
+
+const CourseMapServices = [
+  {
+    name: "Frontend Development",
+    link: "/category/frontend_development",
+    subcategories: [
+      { name: "React", link: "/services/react" },
+      { name: "MERN Stack", link: "/services/mern_stack" },
+      { name: "MEAN Stack", link: "/services/mean_stack" },
+      { name: "React Native", link: "/services/react_native" },
+    ],
+  },
+  {
+    name: "Backend Development",
+    link: "/category/backend_development",
+    subcategories: [
+      { name: "Java Full Stack", link: "/services/java_full_stack" },
+      { name: "Python Full Stack", link: "/services/python_full_stack" },
+      { name: "Azure", link: "/services/azure" },
+      { name: "Snowflake", link: "/services/snowflake" },
+    ],
+  },
+  {
+    name: "Cloud Computing & Platforms",
+    link: "/category/cloud_computing_and_platforms",
+    subcategories: [
+      { name: "AWS Devops", link: "/services/aws_devops" },
+      { name: "Azure Devops", link: "/services/azure_devops" },
+      { name: "GCP", link: "/services/gcp" },
+      { name: "Blockchain", link: "/services/blockchain" },
+    ],
+  },
+  {
+    name: "DevOps & Infrastructure",
+    link: "/category/devops_and_infrastructure",
+    subcategories: [
+      { name: "ServiceNow", link: "/services/servicenow" },
+      { name: "Cyber Security", link: "/services/cyber_security" },
+      { name: "Testing", link: "/services/testing" },
+    ],
+  },
+  {
+    name: "Salesforce Development & Administration",
+    link: "/category/salesforce_development_and_administration",
+    subcategories: [
+      { name: "Salesforce", link: "/services/salesforce" },
+      { name: "Generative AI", link: "/services/generative_ai" },
+      { name: "AI/ML", link: "/services/ai_ml" },
+    ],
+  },
+  {
+    name: "Data Science & Analytics",
+    link: "/category/data_science_and_analytics",
+    subcategories: [
+      { name: "Tableau", link: "/services/tableau" },
+      { name: "Powerbi", link: "/services/powerbi" },
+    ],
+  },
+  {
+    name: "Cybersecurity & Ethical Hacking",
+    link: "/category/cybersecurity_and_ethical_hacking",
+    subcategories: [
+      { name: "Sap Fi/Co", link: "/services/sap_fico" },
+      { name: "Sap Hana", link: "/services/sap_hana" },
+    ],
+  },
+  {
+    name: "Digital Transformation & Management",
+    link: "/category/digital_transformation_and_management",
+    subcategories: [
+      { name: "Digital Marketing", link: "/services/digital_marketing" },
+      { name: "Medical Coding", link: "/services/medical_coding" },
+      { name: "Flutter", link: "/services/flutter" },
+    ],
+  },
+];
+
+const TextCharacterArray = [
+  "T",
+  "r",
+  "a",
+  "i",
+  "n",
+  "i",
+  "n",
+  "g",
+  "s",
+  "",
+  "{}W",
+  "o",
+  "r",
+  "l",
+  "d",
+  "w",
+  "i",
+  "d",
+  "e",
+];
+
+const homeCarouselData = [
+  {
+    img: "https://www.datatiks.com/uploads/45f6482fc1cadc7d8b223e77a2c12d2c.png",
+    title: "Career Guidance",
+  },
+
+  {
+    img: "https://www.datatiks.com/uploads/549e55d9849998c595fae1ba8e707f94.png",
+    title: "Real Time Projects",
+  },
+
+  {
+    img: "https://www.datatiks.com/uploads/350ae09e15ba9bf241ebe1be7b366694.png",
+    title: "Certification",
+  },
+  {
+    img: "https://www.datatiks.com/uploads/a0617d3e9b663f3d4e6a3f1cb7bf98c3.png",
+    title: "Placements",
+  },
+  {
+    img: "https://www.datatiks.com/uploads/f3f3b2a82f6cc7e82d198e176c50dfac.png",
+    title: "Job Support",
+  },
+];
 module.exports = {
   achievements,
   benefits,
@@ -377,4 +604,8 @@ module.exports = {
   footerTrendingCourse,
   interviewQuestionsArray,
   tutorialsArray,
+  navbarServices,
+  CourseMapServices,
+  TextCharacterArray,
+  homeCarouselData,
 };

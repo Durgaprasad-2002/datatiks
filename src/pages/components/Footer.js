@@ -1,12 +1,12 @@
 import React from "react";
 
-import "../styles.css";
-
+// icons
 import { CiLocationOn, CiMail } from "react-icons/ci";
 import { IoCallOutline } from "react-icons/io5";
 import { FaTwitter, FaFacebookF, FaInstagram } from "react-icons/fa";
 import { Link } from "react-router-dom";
 
+//data for the footer
 import {
   footerCourseCategory,
   footerTrendingCourse,
@@ -14,7 +14,9 @@ import {
   tutorialsArray,
 } from "../assets/data/homeData";
 
-export default function Footer() {
+import "../styles.css";
+
+function Footer() {
   return (
     <>
       <section className="footer-courses">
@@ -199,3 +201,5 @@ export default function Footer() {
     </>
   );
 }
+
+export default React.memo(Footer);
