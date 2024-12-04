@@ -276,13 +276,14 @@ body {
   .brand-img {
     width: 60px;
     height: auto;
-    transform: translateY(-10px);
+    /* transform: translateY(-10px); */
   }
 
   .lists {
     list-style: none;
     display: flex;
     padding: 0;
+    align-items: center;
   }
 
   a {
@@ -455,12 +456,14 @@ body {
     }
 
     .lists {
+      align-items: flex-start;
       flex-direction: column;
       margin: 0;
       margin-top: 40px;
     }
 
     .nav-link {
+      width: max-content;
       transition: all 0.3s ease-in-out;
       margin: 10px 0;
       padding: 5px 15px;
@@ -580,12 +583,20 @@ body {
 }
 
 .outer {
+  overflow-y: scroll;
+  -webkit-overflow-scrolling: touch;
+}
+
+.outer {
   margin: 0;
   padding: 0 0;
   background-image: url(https://images.pexels.com/photos/28378126/pexels-photo-28378126/free-photo-of-pastor.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2);
   background-attachment: fixed;
   background-size: cover;
+  -webkit-background-size: cover;
+  background-repeat: no-repeat;
   background-position: center;
+  overflow: hidden;
 }
 
 .out-conatiner {
@@ -1609,7 +1620,7 @@ html {
   padding: 5px 20px;
   margin: 0;
   border-radius: 30px;
-  transform: translateY(-8px);
+  /* transform: translateY(-8px); */
 }
 
 .en-btn-hide {
