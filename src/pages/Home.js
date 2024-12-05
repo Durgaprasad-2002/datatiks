@@ -27,6 +27,7 @@ export default function Home() {
 
   const [ref1, inView1] = useInView({ triggerOnce: true, threshold: 0.2 });
   const [ref2, inView2] = useInView({ triggerOnce: true, threshold: 0.2 });
+  const [ref3, inView3] = useInView({ triggerOnce: true, threshold: 0.2 });
 
   // ref's for cards handling
   const cardRefs = useRef([]);
@@ -146,7 +147,12 @@ export default function Home() {
         <Carousel />
       </div>
 
-      {/* <TrendingCoursesCarousel setShowModal={setShowModal} /> */}
+      <TrendingCoursesCarousel
+        ref={ref3}
+        className={` content-section ${
+          inView3 ? "animate__animated animate__zoomOutUp" : ""
+        }`}
+      />
       <div
         ref={ref2}
         className={` content-section ${

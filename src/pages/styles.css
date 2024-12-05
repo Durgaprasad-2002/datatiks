@@ -1471,7 +1471,7 @@ input[type="file"] {
   overflow: visible;
 }
 html {
-  scroll-padding-top: 140px;
+  scroll-padding-top: 150px;
   scroll-behavior: smooth;
 }
 
