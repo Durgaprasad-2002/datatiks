@@ -22,6 +22,7 @@ import "./styles.css";
 export default function Home() {
   //scrolls to top of pages
   useEffect(() => {
+    document.title = "DataTiks | Home";
     document.documentElement.scrollTop = 0;
   }, []);
 
@@ -147,12 +148,15 @@ export default function Home() {
         <Carousel />
       </div>
 
-      <TrendingCoursesCarousel
+      <div
         ref={ref3}
         className={` content-section ${
-          inView3 ? "animate__animated animate__zoomOutUp" : ""
+          inView3 ? "animate__animated animate__zoomInUp" : ""
         }`}
-      />
+      >
+        <TrendingCoursesCarousel />
+      </div>
+
       <div
         ref={ref2}
         className={` content-section ${

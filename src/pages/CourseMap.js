@@ -12,6 +12,7 @@ import { CourseMapServices } from "./assets/data/homeData";
 
 function CourseMap() {
   useEffect(() => {
+    document.title = `DataTiks | Services`;
     document.documentElement.scrollTop = 0;
   }, []);
 

@@ -1,6 +1,6 @@
 import React, { useState, useEffect } from "react";
 
-function HeaderSectionBackground({ title1, title2, desc, name, textalign }) {
+function HeaderSectionBackground({ title1, title2, desc, name, textLeft }) {
   //hooks
   const [posY, setposY] = useState(0);
 
@@ -24,10 +24,10 @@ function HeaderSectionBackground({ title1, title2, desc, name, textalign }) {
       }}
     >
       <div className="faculty-header-inner">
-        <h1>
+        <h1 style={{ textAlign: textLeft ? "left" : "center" }}>
           {title1} <span className="col-red">{title2}</span>{" "}
         </h1>
-        <p>{desc}</p>
+        <p style={{ textAlign: textLeft ? "left" : "center" }}>{desc}</p>
       </div>
     </section>
   );

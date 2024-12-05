@@ -24,6 +24,7 @@ export default function Services() {
 
   //scrolling to top of page
   useEffect(() => {
+    document.title = `DataTiks | Services > ${course}`;
     document.documentElement.scrollTop = 0;
   }, [course]);
 

@@ -18,6 +18,7 @@ function Category() {
 
   //scrolling to top of page
   useEffect(() => {
+    document.title = `DataTiks | Category > ${category}`;
     document.documentElement.scrollTop = 0;
   }, [category]);
 
@@ -69,7 +70,7 @@ function Category() {
         <div>
           <HeaderSectionBackground
             name={"faculty"}
-            textalign={"left"}
+            textLeft={true}
             title1={CategoryDetails?.name || "Category Title"}
             title2={""}
             desc={CategoryDetails?.description || "Category Description"}

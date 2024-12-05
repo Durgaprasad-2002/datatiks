@@ -28,6 +28,112 @@ body {
 
 /* -------------Navbar------------------------ */
 
+.nav-top {
+  background-color: var(--bg-dark-grey);
+  height: fit-content;
+  color: var(--bg-1);
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 10px;
+}
+
+.nav-top-desc-cont {
+  display: flex;
+  align-items: center;
+}
+
+.nav-top-icon {
+  color: var(--bg-red);
+  margin-left: 15px;
+  margin-right: 3px;
+  font-size: 1.2rem;
+  transform: translateY(-2px);
+}
+
+@media screen and (max-width: 600px) {
+  .nav-top {
+    display: none;
+  }
+}
+
+.side-body {
+  position: fixed;
+  left: 0px;
+  top: 40%;
+  z-index: 1000;
+}
+
+.show-side-bar {
+  display: block !important;
+  animation: sc-open 0.3s ease;
+  -webkit-animation: sc-open 0.3s ease;
+}
+
+.close-icon-side {
+  font-weight: bolder;
+}
+@keyframes sc-open {
+  from {
+    transform: translateX(-300px);
+  }
+  to {
+    transform: translateX(0px);
+  }
+}
+.hide-side-bar {
+  animation: sc-close 0.3s ease;
+  -webkit-animation: sc-close 0.3s ease;
+}
+
+@keyframes sc-close {
+  from {
+    display: block;
+    transform: translateX(0px);
+  }
+  to {
+    transform: translateX(-300px);
+    display: none !important;
+  }
+}
+.side-postioner {
+  display: none;
+  border-top-right-radius: 10px;
+  border-bottom-right-radius: 10px;
+  border: none;
+}
+.side-ele-btn {
+  transition: all 0.3s ease;
+  border-top-right-radius: 20px;
+  border-bottom-right-radius: 20px;
+  position: relative;
+  background-color: var(--bg-dark-grey);
+  border: none;
+  padding: 5px 7px;
+  font-weight: bold;
+  color: var(--bg-white);
+}
+.list-item {
+  font-weight: 600;
+  border: none;
+  cursor: pointer;
+  list-style: none;
+  background-color: #0d81cf;
+  color: white;
+  padding: 8px 16px;
+  font-size: 0.8rem;
+}
+
+.list-item:first-child {
+  border-top-right-radius: 15px;
+  background-color: green;
+}
+
+.list-item:last-child {
+  border-bottom-right-radius: 15px;
+  background-color: red;
+}
+
 .navbar-1 {
   z-index: 100;
   background-color: var(--bg-white);
@@ -48,7 +154,7 @@ body {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  padding-top: 30px;
+  padding-top: 25px;
   transition: transform 0.3s ease, box-shadow 0.3s ease;
 }
 
@@ -66,6 +172,7 @@ body {
   padding-left: 10px;
   overflow: hidden;
   animation: sc-tp-side-ani 0.3s ease both;
+  -webkit-animation: sc-tp-side-ani 0.3s ease both;
 }
 
 .nested-menu {
@@ -84,6 +191,7 @@ body {
   transition: transform 0.3s ease-in-out;
   overflow-x: auto;
   animation: sc-tp-side-ani 0.3s ease both;
+  -webkit-animation: sc-tp-side-ani 0.3s ease both;
 }
 
 @keyframes sc-tp-side-ani {
@@ -110,11 +218,13 @@ body {
     list-style: none;
     display: none;
     animation: sc-tp-side-ani 0.3s ease both;
+    -webkit-animation: sc-tp-side-ani 0.3s ease both;
   }
 
   .services:hover .dropdown {
     display: block;
     animation: sc-tp-side-ani 0.3s ease both;
+    -webkit-animation: sc-tp-side-ani 0.3s ease both;
   }
 
   .dropdown-item {
@@ -180,6 +290,7 @@ body {
       flex-direction: column;
       padding: 20px;
       animation: sc-tp-side-ani 0.3s ease both;
+      -webkit-animation: sc-tp-side-ani 0.3s ease both;
     }
     @keyframes sc-tp-side-ani {
       from {
@@ -255,6 +366,7 @@ body {
     padding-left: 10px;
     overflow: hidden;
     animation: sc-tp-side-ani 0.3s ease both;
+    -webkit-animation: sc-tp-side-ani 0.3s ease both;
   }
 
   .nested-submenu li {
@@ -360,6 +472,7 @@ body {
   .closeToggle .toggle-bar:nth-child(2) {
     position: absolute;
     animation: scr-hide 1s ease;
+    -webkit-animation: scr-hide 1s ease;
     display: none;
   }
   /*----------------------Modifed for UI-------  */
@@ -390,6 +503,7 @@ body {
     z-index: 100;
     border: 1px solid lightgray;
     animation: sc-tp-ani 0.5s ease;
+    -webkit-animation: sc-tp-ani 0.5s ease;
   }
 
   .dropdown-submenu {
@@ -445,6 +559,7 @@ body {
   .show-links {
     display: flex;
     animation: sc-tp-side-ani 0.3s ease both;
+    -webkit-animation: sc-tp-side-ani 0.3s ease both;
   }
 
   @media screen and (max-width: 700px) {
@@ -469,6 +584,7 @@ body {
       flex-direction: column;
       padding: 20px;
       animation: sc-tp-side-ani 0.3s ease both;
+      -webkit-animation: sc-tp-side-ani 0.3s ease both;
     }
 
     .lists {
@@ -512,6 +628,7 @@ body {
   justify-content: center;
   align-items: center;
   animation: fadeIn 0.3s ease-in-out forwards;
+  -webkit-animation: fadeIn 0.3s ease-in-out forwards;
 }
 
 .hide-overflow-modal {
@@ -1350,6 +1467,10 @@ input[type="file"] {
 
 /* -------------------------Corporate Partner--------------------- */
 
+.corporate-form-container {
+  background: rgb(245, 245, 245);
+}
+
 .corporate-header {
   background-image: url(./assets/imgs/corporate_partner.webp) !important;
 }
@@ -1654,6 +1775,7 @@ html {
   padding: 5px 20px;
   margin: 0;
   border-radius: 30px;
+
   /* transform: translateY(-8px); */
 }
 

@@ -18,6 +18,7 @@ import "./styles.css";
 function Contact() {
   // scrolls to top of page
   useEffect(() => {
+    document.title = `DataTiks | Contact`;
     document.documentElement.scrollTop = 0;
   }, []);
 

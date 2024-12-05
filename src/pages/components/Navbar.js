@@ -4,8 +4,14 @@ import { Link } from "react-router-dom";
 import PopUpModal from "./PopUpModal";
 import { navbarServices } from "../assets/data/homeData";
 
+import { IoIosCall, IoMdMail } from "react-icons/io";
+import { FaTwitter, FaFacebookF, FaInstagram } from "react-icons/fa";
+import { MdOutlineClose } from "react-icons/md";
+import { FaChevronRight } from "react-icons/fa";
+
 function Navbar() {
   // state hooks
+  const [showSide, setShowside] = useState(false);
   const [toggle, setToggle] = useState(false);
   const [showDropdown, setShowDropdown] = useState(false);
   const [nestedMenu, setNestedMenu] = useState(null);
@@ -46,6 +52,25 @@ function Navbar() {
 
   return (
     <>
+      <div className="nav-top">
+        <div className="nav-top-desc-cont">
+          {" "}
+          <span className="nav-top-icon">
+            <IoIosCall />
+          </span>
+          +91 9701000415{"    "}
+          {"   "}
+          <span className="nav-top-icon">
+            <IoMdMail />
+          </span>
+          datatikscompany@gmail.com
+        </div>
+        <div className="nav-top-icons-container">
+          <FaFacebookF className="fl-icon facebook" />
+          <FaInstagram className="fl-icon instagram" />
+          <FaTwitter className="fl-icon twitter" />
+        </div>
+      </div>
       <nav className={`navbar-1 ${isScrolled ? "scrolled" : ""}`}>
         <div className="brand">
           <Link to="/">
@@ -161,6 +186,28 @@ function Navbar() {
       </nav>
       {/* Modal for enroll */}
       <PopUpModal showModal={showModal} setModal={setModal} />
+      <div className="side-body">
+        <button
+          className="side-ele-btn"
+          onClick={() => setShowside((prev) => !prev)}
+        >
+          {" "}
+          {showSide ? (
+            <MdOutlineClose className="close-icon-side" />
+          ) : (
+            <FaChevronRight />
+          )}
+        </button>
+        <div
+          className={`side-postioner ${
+            showSide ? "show-side-bar" : "hide-side-bar"
+          }`}
+        >
+          <li className="list-item">WHATSAPP</li>
+          <li className="list-item">CALL</li>
+          <li className="list-item">ENQUIRY</li>
+        </div>
+      </div>
     </>
   );
 }

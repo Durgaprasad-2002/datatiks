@@ -15,6 +15,7 @@ import "./styles.css";
 function Faculty() {
   //scrolling to top of page
   useEffect(() => {
+    document.title = `DataTiks | Faculty`;
     document.documentElement.scrollTop = 0;
   }, []);
 
@@ -151,7 +152,6 @@ function Faculty() {
                 required
               />
               {file && file.name}
-              <br />
               <br />
             </div>
             <button className="submit-btn" type="submit" disabled={loading}>
