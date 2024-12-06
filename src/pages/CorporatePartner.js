@@ -19,7 +19,11 @@ function CorporatePartner() {
   }, []);
 
   // state hooks
-  const [ref2, inView2] = useInView({ triggerOnce: true, threshold: 0.2 });
+  const [ref2, inView2] = useInView({
+    triggerOnce: true,
+    // threshold: 0.2,
+    rootMargin: "0px 0px -180px 0px",
+  });
   const form = useRef(null);
   const [loading, setLoading] = useState(false);
   const [formData, setFormData] = useState({
@@ -81,116 +85,114 @@ function CorporatePartner() {
           }`}
         >
           <form className="form-corporate" onSubmit={handleSubmit} ref={form}>
-            <div className="corporate-box-1">
-              <div className="faculty-form-container-sec1">
-                <h1>Personal Information</h1>
-                <>
-                  <div className="input-container">
-                    <InputField
-                      type={"text"}
-                      placeholder={"Full Name"}
-                      name="name"
-                      required={true}
-                      handleChange={handleChange}
-                    />
-                  </div>
-                  <div className="input-container">
-                    <InputField
-                      type={"text"}
-                      placeholder={"Title"}
-                      name="title"
-                      required={true}
-                      handleChange={handleChange}
-                    />
-                  </div>
-                  <div className="input-container">
-                    <InputField
-                      type={"email"}
-                      placeholder={"Business Email "}
-                      name="email"
-                      required={true}
-                      handleChange={handleChange}
-                    />
-                  </div>
-                  <div className="input-container">
-                    <InputField
-                      type={"tel"}
-                      placeholder={"Business Phone"}
-                      name="mobileNo"
-                      required={true}
-                      handleChange={handleChange}
-                    />
-                  </div>
-                </>
-              </div>
-              <div className="faculty-form-container-sec1">
-                <h1>Company Information</h1>
-                <>
-                  <div className="input-container">
-                    <InputField
-                      type={"text"}
-                      placeholder={"Company"}
-                      name="company"
-                      required={true}
-                      handleChange={handleChange}
-                    />
-                  </div>
-                  <div className="input-container">
-                    <InputField
-                      type={"text"}
-                      placeholder={"Address"}
-                      name="address"
-                      required={true}
-                      handleChange={handleChange}
-                    />
-                  </div>
-                  <div className="input-container">
-                    <InputField
-                      type={"text"}
-                      placeholder={"City"}
-                      name="city"
-                      required={true}
-                      handleChange={handleChange}
-                    />
-                  </div>
-                  <div className="input-container">
-                    <InputField
-                      type={"text"}
-                      placeholder={"State"}
-                      name="state"
-                      required={true}
-                      handleChange={handleChange}
-                    />
-                  </div>
-                  <div className="input-container">
-                    <InputField
-                      type={"tel"}
-                      placeholder={"Zip Code"}
-                      name="zip"
-                      required={true}
-                      handleChange={handleChange}
-                    />
-                  </div>
-                  <div className="input-container">
-                    <InputField
-                      type={"text"}
-                      placeholder={"Province"}
-                      name="province"
-                      required={true}
-                      handleChange={handleChange}
-                    />
-                  </div>
-                  <div className="input-container">
-                    <InputField
-                      type={"text"}
-                      placeholder={"Country"}
-                      name="country"
-                      required={true}
-                      handleChange={handleChange}
-                    />
-                  </div>
-                </>
-              </div>
+            <div className="faculty-form-container-sec1">
+              <h1>Personal Information</h1>
+              <>
+                <div className="input-container">
+                  <InputField
+                    type={"text"}
+                    placeholder={"Full Name"}
+                    name="name"
+                    required={true}
+                    handleChange={handleChange}
+                  />
+                </div>
+                <div className="input-container">
+                  <InputField
+                    type={"text"}
+                    placeholder={"Title"}
+                    name="title"
+                    required={true}
+                    handleChange={handleChange}
+                  />
+                </div>
+                <div className="input-container">
+                  <InputField
+                    type={"email"}
+                    placeholder={"Business Email "}
+                    name="email"
+                    required={true}
+                    handleChange={handleChange}
+                  />
+                </div>
+                <div className="input-container">
+                  <InputField
+                    type={"tel"}
+                    placeholder={"Business Phone"}
+                    name="mobileNo"
+                    required={true}
+                    handleChange={handleChange}
+                  />
+                </div>
+              </>
+            </div>
+            <div className="faculty-form-container-sec1">
+              <h1>Company Information</h1>
+              <>
+                <div className="input-container">
+                  <InputField
+                    type={"text"}
+                    placeholder={"Company"}
+                    name="company"
+                    required={true}
+                    handleChange={handleChange}
+                  />
+                </div>
+                <div className="input-container">
+                  <InputField
+                    type={"text"}
+                    placeholder={"Address"}
+                    name="address"
+                    required={true}
+                    handleChange={handleChange}
+                  />
+                </div>
+                <div className="input-container">
+                  <InputField
+                    type={"text"}
+                    placeholder={"City"}
+                    name="city"
+                    required={true}
+                    handleChange={handleChange}
+                  />
+                </div>
+                <div className="input-container">
+                  <InputField
+                    type={"text"}
+                    placeholder={"State"}
+                    name="state"
+                    required={true}
+                    handleChange={handleChange}
+                  />
+                </div>
+                <div className="input-container">
+                  <InputField
+                    type={"tel"}
+                    placeholder={"Zip Code"}
+                    name="zip"
+                    required={true}
+                    handleChange={handleChange}
+                  />
+                </div>
+                <div className="input-container">
+                  <InputField
+                    type={"text"}
+                    placeholder={"Province"}
+                    name="province"
+                    required={true}
+                    handleChange={handleChange}
+                  />
+                </div>
+                <div className="input-container">
+                  <InputField
+                    type={"text"}
+                    placeholder={"Country"}
+                    name="country"
+                    required={true}
+                    handleChange={handleChange}
+                  />
+                </div>
+              </>
             </div>
 
             <div className="faculty-form-container-sec1">

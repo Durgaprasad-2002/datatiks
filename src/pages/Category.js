@@ -18,12 +18,16 @@ function Category() {
 
   //scrolling to top of page
   useEffect(() => {
-    document.title = `DataTiks | Category > ${category}`;
+    document.title = `DataTiks | Category | ${category}`;
     document.documentElement.scrollTop = 0;
   }, [category]);
 
   // state hooks
-  const [ref2, inView2] = useInView({ triggerOnce: true, threshold: 0.3 });
+  const [ref2, inView2] = useInView({
+    triggerOnce: true,
+    // threshold: 0.3,
+    rootMargin: "0px 0px -100px 0px",
+  });
   const [CategoryDetails, setCategoryDetails] = useState(null);
   const [loading, setLoading] = useState(true);
 

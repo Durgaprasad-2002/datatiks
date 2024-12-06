@@ -23,8 +23,13 @@ function HeaderSectionBackground({ title1, title2, desc, name, textLeft }) {
         backgroundPositionY: `${posY}px`,
       }}
     >
-      <div className="faculty-header-inner">
-        <h1 style={{ textAlign: textLeft ? "left" : "center" }}>
+      <div className={`faculty-header-inner${textLeft ? " left" : " center"}`}>
+        <h1
+          style={{
+            fontSize: "2rem",
+            marginBottom: "20px",
+          }}
+        >
           {title1} <span className="col-red">{title2}</span>{" "}
         </h1>
         <p style={{ textAlign: textLeft ? "left" : "center" }}>{desc}</p>

@@ -20,7 +20,11 @@ function Faculty() {
   }, []);
 
   // state hooks
-  const [ref2, inView2] = useInView({ triggerOnce: true, threshold: 0.4 });
+  const [ref2, inView2] = useInView({
+    triggerOnce: true,
+    // threshold: 0.4,
+    rootMargin: "0px 0px -150px 0px",
+  });
   const form = useRef(null);
   const [loading, setLoading] = useState(false);
   const [file, setFile] = useState(null);

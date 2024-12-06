@@ -16,7 +16,11 @@ import "./styles.css";
 
 export default function Services() {
   // state Hooks
-  const [ref2, inView2] = useInView({ triggerOnce: true, threshold: 0.1 });
+  const [ref2, inView2] = useInView({
+    triggerOnce: true,
+    // threshold: 0.1,
+    rootMargin: "0px 0px -100px 0px",
+  });
   const { course } = useParams();
   const [courseDetails, setCourseDetails] = useState(null);
   const [loading, setLoading] = useState(true);
@@ -24,7 +28,7 @@ export default function Services() {
 
   //scrolling to top of page
   useEffect(() => {
-    document.title = `DataTiks | Services > ${course}`;
+    document.title = `DataTiks | Services | ${course}`;
     document.documentElement.scrollTop = 0;
   }, [course]);
 

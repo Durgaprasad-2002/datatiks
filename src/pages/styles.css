@@ -60,7 +60,7 @@ body {
 .side-body {
   position: fixed;
   left: 0px;
-  top: 40%;
+  bottom: 40%;
   z-index: 1000;
 }
 
@@ -1368,6 +1368,10 @@ body {
   background: rgba(15, 26, 38, 0.8);
 }
 
+.faculty-header-inner.left {
+  align-items: flex-start;
+}
+
 .content-section {
   height: max-content;
   opacity: 0;
@@ -2232,7 +2236,7 @@ html {
 /* -------------------------Course Map -------------------------------- */
 
 .course-map-header {
-  margin: 30px 0px 20px 20px;
+  margin: 30px 0px 0px 20px;
   border-left: 4px solid red;
   padding-left: 5px;
 }

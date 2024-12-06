@@ -187,6 +187,15 @@ function Navbar() {
       {/* Modal for enroll */}
       <PopUpModal showModal={showModal} setModal={setModal} />
       <div className="side-body">
+        <div
+          className={`side-postioner ${
+            showSide ? "show-side-bar" : "hide-side-bar"
+          }`}
+        >
+          <li className="list-item">WHATSAPP</li>
+          <li className="list-item">CALL</li>
+          <li className="list-item">ENQUIRY</li>
+        </div>
         <button
           className="side-ele-btn"
           onClick={() => setShowside((prev) => !prev)}
@@ -198,15 +207,6 @@ function Navbar() {
             <FaChevronRight />
           )}
         </button>
-        <div
-          className={`side-postioner ${
-            showSide ? "show-side-bar" : "hide-side-bar"
-          }`}
-        >
-          <li className="list-item">WHATSAPP</li>
-          <li className="list-item">CALL</li>
-          <li className="list-item">ENQUIRY</li>
-        </div>
       </div>
     </>
   );
