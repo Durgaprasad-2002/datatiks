@@ -126,6 +126,7 @@ function Contact() {
             <div className="input-container">
               <textarea
                 name="message"
+                spellCheck="false"
                 onChange={handleChange}
                 className="text-area"
                 placeholder="Comment"

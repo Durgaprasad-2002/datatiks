@@ -206,6 +206,7 @@ function CorporatePartner() {
                     required={true}
                     onChange={handleChange}
                     rows="4"
+                    spellCheck="false"
                   />
                 </div>
               </>

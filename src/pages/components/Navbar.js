@@ -5,7 +5,12 @@ import PopUpModal from "./PopUpModal";
 import { navbarServices } from "../assets/data/homeData";
 
 import { IoIosCall, IoMdMail } from "react-icons/io";
-import { FaTwitter, FaFacebookF, FaInstagram } from "react-icons/fa";
+import {
+  FaTwitter,
+  FaFacebookF,
+  FaInstagram,
+  FaWhatsapp,
+} from "react-icons/fa";
 import { MdOutlineClose } from "react-icons/md";
 import { FaChevronRight } from "react-icons/fa";
 
@@ -88,7 +93,7 @@ function Navbar() {
           }`}
         >
           <ul className="lists">
-            <Link to="/">
+            <Link to="/" style={{ textDecoration: "none" }}>
               <li className="nav-link">Home</li>
             </Link>
             <li
@@ -192,9 +197,16 @@ function Navbar() {
             showSide ? "show-side-bar" : "hide-side-bar"
           }`}
         >
-          <li className="list-item">WHATSAPP</li>
-          <li className="list-item">CALL</li>
-          <li className="list-item">ENQUIRY</li>
+          <li className="list-item">
+            <FaWhatsapp className="side-icon" /> WHATSAPP
+          </li>
+          <li className="list-item">
+            {" "}
+            <IoIosCall className="side-icon" /> CALL
+          </li>
+          <li className="list-item">
+            <IoMdMail className="side-icon" /> ENQUIRY
+          </li>
         </div>
         <button
           className="side-ele-btn"

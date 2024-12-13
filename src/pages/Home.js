@@ -142,7 +142,7 @@ export default function Home() {
       <div
         ref={ref1}
         className={` content-section ${
-          inView1 ? "animate__animated animate__zoomInUp" : ""
+          inView1 ? "animate__animated animate__fadeInUp" : ""
         }`}
       >
         <Carousel />
@@ -151,7 +151,7 @@ export default function Home() {
       <div
         ref={ref3}
         className={` content-section ${
-          inView3 ? "animate__animated animate__zoomInUp" : ""
+          inView3 ? "animate__animated animate__zoomIn" : ""
         }`}
       >
         <TrendingCoursesCarousel />

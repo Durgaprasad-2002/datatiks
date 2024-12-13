@@ -17,6 +17,7 @@ export default function InputField({
       value={val}
       onChange={handleChange}
       required={required}
+      spellCheck="false"
     />
   );
 }

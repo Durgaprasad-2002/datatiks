@@ -55,7 +55,9 @@ export default function PopUpModal({ showModal, setModal }) {
           <IoMdCloseCircle />
         </button>
 
-        <h3 className="title-modal side-line">Enroll Now</h3>
+        <h3 className="title-modal side-line">
+          Enroll <span className="col-red">Now</span>
+        </h3>
         <form onSubmit={handleSubmit} ref={form}>
           <div className="input-container">
             <InputField

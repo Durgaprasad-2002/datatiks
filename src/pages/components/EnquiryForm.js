@@ -132,6 +132,7 @@ function EnquiryForm() {
         </div>
         <div className="input-container">
           <textarea
+            spellCheck="false"
             className="text-area"
             placeholder="Message"
             name="message"

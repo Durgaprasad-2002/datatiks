@@ -142,6 +142,7 @@ function Faculty() {
                 name="message"
                 onChange={handleChange}
                 rows="4"
+                spellCheck="false"
               />
             </div>
             <div className="">
