@@ -51,7 +51,7 @@ function CorporatePartner() {
     e.preventDefault();
     setLoading(() => true);
     axios
-      .post("http://localhost:5000/api/corparate", { ...formData })
+      .post(`${process.env.REACT_APP_API_KEY}/api/corparate`, { ...formData })
       .then((data) => {
         const { message } = data?.data;
         toast.success(message);

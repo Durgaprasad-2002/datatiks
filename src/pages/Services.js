@@ -249,7 +249,16 @@ export default function Services() {
               </h3>
 
               <Suspense fallback={<Loader />}>
-                <iframe
+              
+              <iframe src="https://drive.google.com/file/d/1bwW25EERYFkiP-IudsdVfCe4jxZAsxxy/preview" 
+                  className="iframe-video"
+                  frameborder="0" 
+                  allow="autoplay; encrypted-media" 
+                  allowfullscreen
+                >
+              </iframe>
+
+                {/* <iframe
                   className="iframe-video"
                   src="https://www.youtube.com/embed/Xl6O8jS1Hho?si=n09mI28Hq9y8-HEm"
                   title="YouTube video player"
@@ -257,7 +266,7 @@ export default function Services() {
                   allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
                   referrerPolicy="strict-origin-when-cross-origin"
                   allowFullScreen
-                ></iframe>
+                ></iframe> */}
               </Suspense>
 
               <EnrollButton />

@@ -40,7 +40,7 @@ function EnquiryForm() {
 
     setLoading(() => true);
     axios
-      .post("http://localhost:5000/api/enquiry", { ...dataToSend })
+      .post(`${process.env.REACT_APP_API_KEY}/api/enquiry`, { ...dataToSend })
       .then((data) => {
         const { message } = data?.data;
         toast.success(message);

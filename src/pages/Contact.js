@@ -48,7 +48,7 @@ function Contact() {
     e.preventDefault();
     setLoading(() => true);
     axios
-      .post("http://localhost:5000/api/contact", { ...formData })
+      .post(`${process.env.REACT_APP_API_KEY}/api/contact`, { ...formData })
       .then((data) => {
         const { message } = data?.data;
         toast.success(message);

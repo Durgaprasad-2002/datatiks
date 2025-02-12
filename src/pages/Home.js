@@ -157,14 +157,14 @@ export default function Home() {
         <TrendingCoursesCarousel />
       </div>
 
-      <div
+      {/* <div
         ref={ref2}
         className={` content-section ${
           inView2 ? "animate__animated animate__slideInUp" : ""
         }`}
       >
         <EnquiryForm />
-      </div>
+      </div> */}
 
       <Footer />
     </>

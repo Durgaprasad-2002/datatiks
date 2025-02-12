@@ -54,7 +54,7 @@ function Faculty() {
 
     setLoading(() => true);
     axios
-      .post("http://localhost:5000/api/faculty", data, {
+      .post(`${process.env.REACT_APP_API_KEY}/api/faculty`, data, {
         headers: {
           "Content-Type": "multipart/form-data",
         },

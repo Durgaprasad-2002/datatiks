@@ -1,4 +1,5 @@
 import { BrowserRouter, Routes, Route } from "react-router-dom";
+import "./App.css";
 
 import Home from "./pages/Home";
 import Services from "./pages/Services";
@@ -16,7 +17,9 @@ import { Suspense } from "react";
 function App() {
   return (
     <>
+      {/* <div className="body-container"> */}
       <ToastContainer position="top-center" hideProgressBar />
+      {/* <div className="body-holder"> */}
       <Suspense fallback={<Loader />}>
         <BrowserRouter>
           <Routes>
@@ -30,6 +33,8 @@ function App() {
           </Routes>
         </BrowserRouter>
       </Suspense>
+      {/* </div> */}
+      {/* </div> */}
     </>
   );
 }

@@ -13,6 +13,7 @@ import {
 } from "react-icons/fa";
 import { MdOutlineClose } from "react-icons/md";
 import { FaChevronRight } from "react-icons/fa";
+import EnquiryHomeModal from "./EnquiryHomeModal";
 
 function Navbar() {
   // state hooks
@@ -220,6 +221,7 @@ function Navbar() {
           )}
         </button>
       </div>
+      <EnquiryHomeModal />
     </>
   );
 }

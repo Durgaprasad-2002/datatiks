@@ -60,47 +60,49 @@ const sliderImageUrl = [
 const Slider = () => {
   const [showModal, setModal] = useState(false);
   return (
-    <div className="parent">
-      <h2 className="title">Trending Courses</h2>
-      <Carousel
-        responsive={responsive}
-        autoPlay={true}
-        swipeable={true}
-        draggable={true}
-        showDots={false}
-        infinite={true}
-        partialVisible={false}
-        dotListClass="custom-dot-list-style"
-      >
-        {sliderImageUrl.map((imageUrl, index) => {
-          return (
-            <div className="slider" key={index}>
-              <img src={imageUrl.img} alt="movie" />
-              <h3 className="trending-title">{imageUrl.title}</h3>
-              <div className="buttons-container-trending">
-                <Link to={imageUrl.link}>
-                  <button className="trend-btn"> Curriculum</button>
-                </Link>
+    <>
+      <div className="parent">
+        <h2 className="title">Trending Courses</h2>
+        <Carousel
+          responsive={responsive}
+          autoPlay={true}
+          swipeable={true}
+          draggable={true}
+          showDots={false}
+          infinite={true}
+          partialVisible={false}
+          dotListClass="custom-dot-list-style"
+        >
+          {sliderImageUrl.map((imageUrl, index) => {
+            return (
+              <div className="slider" key={index}>
+                <img src={imageUrl.img} alt="movie" />
+                <h3 className="trending-title">{imageUrl.title}</h3>
+                <div className="buttons-container-trending">
+                  <Link to={imageUrl.link}>
+                    <button className="trend-btn"> Curriculum</button>
+                  </Link>
 
-                <button
-                  className="trend-btn"
-                  onClick={() => setModal((prev) => !prev)}
-                >
-                  {" "}
-                  Enroll Now
-                </button>
+                  <button
+                    className="trend-btn"
+                    onClick={() => setModal((prev) => !prev)}
+                  >
+                    {" "}
+                    Enroll Now
+                  </button>
+                </div>
               </div>
-            </div>
-          );
-        })}
-      </Carousel>
-      <div className="view-course-btn-container">
-        <Link to="/services">
-          <button className="view-course-btn"> VIEW ALL COURSES</button>
-        </Link>
+            );
+          })}
+        </Carousel>
+        <div className="view-course-btn-container">
+          <Link to="/services">
+            <button className="view-course-btn"> VIEW ALL COURSES</button>
+          </Link>
+        </div>
+        <PopUpModal showModal={showModal} setModal={setModal} />
       </div>
-      <PopUpModal showModal={showModal} setModal={setModal} />
-    </div>
+    </>
   );
 };
 export default Slider;
