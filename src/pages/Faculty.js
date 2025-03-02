@@ -15,7 +15,7 @@ import "./styles.css";
 function Faculty() {
   //scrolling to top of page
   useEffect(() => {
-    document.title = `DataTiks | Faculty`;
+    document.title = `Sunadh Technologies | Faculty`;
     document.documentElement.scrollTop = 0;
   }, []);
 

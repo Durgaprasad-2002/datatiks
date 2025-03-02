@@ -18,7 +18,7 @@ import "./styles.css";
 function Contact() {
   // scrolls to top of page
   useEffect(() => {
-    document.title = `DataTiks | Contact`;
+    document.title = `Sunadh Technologies | Contact`;
     document.documentElement.scrollTop = 0;
   }, []);
 

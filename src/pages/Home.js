@@ -5,6 +5,7 @@ import Footer from "./components/Footer";
 import Carousel from "./components/Carousel/Carousel";
 import TrendingCoursesCarousel from "./components/Carousel/TrendingCoursesCarousel";
 import EnquiryForm from "./components/EnquiryForm";
+import { Link } from "react-router-dom";
 
 import {
   BenefitCard,
@@ -22,7 +23,7 @@ import "./styles.css";
 export default function Home() {
   //scrolls to top of pages
   useEffect(() => {
-    document.title = "DataTiks | Home";
+    document.title = "Sunadh Technologies | Home";
     document.documentElement.scrollTop = 0;
   }, []);
 
@@ -141,21 +142,23 @@ export default function Home() {
 
       <div
         ref={ref1}
-        className={` content-section ${
+        className={`content-section ${
           inView1 ? "animate__animated animate__fadeInUp" : ""
         }`}
       >
         <Carousel />
+        
       </div>
 
-      <div
+      {/* <div
         ref={ref3}
         className={` content-section ${
           inView3 ? "animate__animated animate__zoomIn" : ""
         }`}
       >
         <TrendingCoursesCarousel />
-      </div>
+      </div> */}
+     
 
       {/* <div
         ref={ref2}

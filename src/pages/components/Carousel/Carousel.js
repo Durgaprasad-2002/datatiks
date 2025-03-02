@@ -5,6 +5,7 @@ import "bootstrap/dist/js/bootstrap.bundle.min.js";
 
 import "./Carousel.css";
 import "../../styles.css";
+import { Link } from "react-router-dom";
 
 function CourseCard({ course }) {
   return (
@@ -115,6 +116,11 @@ export default function Carousel() {
             </div>
           </div>
         </div>
+         <div className="view-course-btn-container">
+                <Link to="/services">
+                  <button className="view-course-btn"> VIEW ALL COURSES</button>
+                </Link>
+              </div>
       </section>
     </section>
   );

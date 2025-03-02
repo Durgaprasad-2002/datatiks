@@ -6,6 +6,7 @@ import Loader from "./components/Loader";
 import ExpandContainer from "./components/ExpandContainer";
 import CourseNotFound from "./components/CourseNotFound";
 import { courses } from "./assets/data/courses";
+import {VideoUrls} from "./assets/data/videoUtils"
 
 import { useParams, Link } from "react-router-dom";
 
@@ -28,9 +29,15 @@ export default function Services() {
 
   //scrolling to top of page
   useEffect(() => {
-    document.title = `DataTiks | Services | ${course}`;
+    document.title = `Sunadh Technologies | Services | ${course}`;
     document.documentElement.scrollTop = 0;
   }, [course]);
+
+
+  const courseUtils = useMemo(
+    () => VideoUrls.find((data) => data.id=== course),
+    [courses, course]
+  );
 
   // fectching course
   const foundCourse = useMemo(
@@ -98,7 +105,7 @@ export default function Services() {
             {[
               "Pre-Requisites",
               "Who can Learn",
-              "Why DataTiks",
+              "Why Sunadh Technologies",
               "FAQs",
               "Course Content",
               "Enroll Now",
@@ -158,7 +165,7 @@ export default function Services() {
             {/* Why DataTiks Section */}
             <div className="pre-req-container" id="why-datatiks">
               <h3 className="course-section-title">
-                Why <span className="col-red">DataTiks</span>
+                Why <span className="col-red">Sunadh Technologies</span>
               </h3>
               <ExpandContainer
                 ind={courseDetails?.body?.Why?.description}
@@ -223,7 +230,7 @@ export default function Services() {
               <p>Download the course content of our Institute from below:</p>
 
               <Link
-                to="https://www.tutorialspoint.com/reactjs/reactjs_tutorial.pdf"
+                to={courseUtils?.content_url}
                 download={true}
                 target="_blank"
               >
@@ -244,31 +251,23 @@ export default function Services() {
           {/* Watch demo and enroll form section */}
           <div className="services-body-2">
             <div className="static-container-services">
-              <h3 className="course-section-title side-line">
-                Watch a <span className="col-red">Demo</span>
-              </h3>
-
-              <Suspense fallback={<Loader />}>
-              
-              <iframe src="https://drive.google.com/file/d/1bwW25EERYFkiP-IudsdVfCe4jxZAsxxy/preview" 
-                  className="iframe-video"
-                  frameborder="0" 
-                  allow="autoplay; encrypted-media" 
-                  allowfullscreen
-                >
-              </iframe>
-
-                {/* <iframe
-                  className="iframe-video"
-                  src="https://www.youtube.com/embed/Xl6O8jS1Hho?si=n09mI28Hq9y8-HEm"
-                  title="YouTube video player"
-                  frameBorder="0"
-                  allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
-                  referrerPolicy="strict-origin-when-cross-origin"
-                  allowFullScreen
-                ></iframe> */}
-              </Suspense>
-
+              { courseUtils?.video_id && 
+                (<>
+                  <h3 className="course-section-title side-line">
+                    Watch a <span className="col-red">Demo</span>
+                  </h3>
+                  <Suspense fallback={<Loader />}>
+                    <iframe src={`https://drive.google.com/file/d/${courseUtils.video_id}/preview`}
+                      className="iframe-video"
+                      frameborder="0"
+                      allow="autoplay; encrypted-media"
+                      allowfullscreen
+                    >
+                    </iframe>
+                  </Suspense>
+                </>)
+              }
+            
               <EnrollButton />
             </div>
           </div>

@@ -196,7 +196,7 @@ function Footer() {
         </div>
       </section>
       <section className="footer-contact">
-        <p className="copy-rights">© 2024 Dataticks. All rights reserved.</p>
+        <p className="copy-rights">© 2025 Sunadh Technologies. All rights reserved.</p>
       </section>
     </>
   );

@@ -14,7 +14,7 @@ import "animate.css";
 function CorporatePartner() {
   //scrolling to top of page
   useEffect(() => {
-    document.title = `DataTiks | Corporate Partner`;
+    document.title = `Sunadh | Corporate Partner`;
     document.documentElement.scrollTop = 0;
   }, []);
 
@@ -73,7 +73,7 @@ function CorporatePartner() {
         title1={"Partner With Us"}
         title2={"Contact Form"}
         desc={
-          "Thank you for your interest in working with DATATIKS. Please complete the form below to tell us more about you and your company."
+          "Thank you for your interest in working with Sunadh. Please complete the form below to tell us more about you and your company."
         }
       />
 

@@ -18,7 +18,7 @@ function Category() {
 
   //scrolling to top of page
   useEffect(() => {
-    document.title = `DataTiks | Category | ${category}`;
+    document.title = `Sunadh | Category | ${category}`;
     document.documentElement.scrollTop = 0;
   }, [category]);
 

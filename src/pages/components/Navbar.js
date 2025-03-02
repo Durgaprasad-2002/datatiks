@@ -3,6 +3,7 @@ import "../styles.css";
 import { Link } from "react-router-dom";
 import PopUpModal from "./PopUpModal";
 import { navbarServices } from "../assets/data/homeData";
+import brandLogo from "../assets/imgs/Sunadh-Logo.webp"
 
 import { IoIosCall, IoMdMail } from "react-icons/io";
 import {
@@ -82,7 +83,7 @@ function Navbar() {
           <Link to="/">
             <img
               className="brand-img"
-              src="https://www.datatiks.com/uploads/e8d1a40cfe85879a6006a0ac852007c0.png"
+              src={brandLogo}
               alt="brand-logo"
             />
           </Link>

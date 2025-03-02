@@ -26,7 +26,7 @@ const courses = [
       },
       Why: {
         description:
-          "With a React JS course training in Hyderabad-India course from Datatiks, you will be able to get the following advantages:",
+          "With a React JS course training in Hyderabad-India course from Sunadh Technologies, you will be able to get the following advantages:",
         fields: [
           "secure your company's network is made easier with React JS course training in Hyderabad-India training",
           "significant reduction in both time and expense due to these practical solutions",
@@ -48,7 +48,7 @@ const courses = [
         {
           qn: "How do I enroll for this course?",
           ans: [
-            "You can contact our support number at +91 99899 99969/ Directly can go through DataTiks.website or directly walk-in to Office in Hyderabad",
+            "You can contact our support number at +91 99899 99969/ Directly can go through Sunadh Technologies.website or directly walk-in to Office in Hyderabad",
           ],
         },
         {
@@ -70,7 +70,7 @@ const courses = [
       ],
       enroll: {
         description:
-          "Enroll in this course based on React JS course training in Hyderabad-India to get started on your path to becoming an expert. React JS course training in Hyderabad-India has become necessary for front-end developers who want to work in the industry. The React and front-end programming world will be exposed through the lens of our course. In the hands-on sessions, you will learn about the architecture, components, and advanced ideas involved in building rich online apps using React.JS, Flux, and Redux. This class will likely fill up rapidly, so get your registration in Datatiks as soon as possible!",
+          "Enroll in this course based on React JS course training in Hyderabad-India to get started on your path to becoming an expert. React JS course training in Hyderabad-India has become necessary for front-end developers who want to work in the industry. The React and front-end programming world will be exposed through the lens of our course. In the hands-on sessions, you will learn about the architecture, components, and advanced ideas involved in building rich online apps using React.JS, Flux, and Redux. This class will likely fill up rapidly, so get your registration in Sunadh Technologies as soon as possible!",
       },
     },
   },
@@ -104,7 +104,7 @@ const courses = [
       },
       Why: {
         description:
-          "With a Tableau course from Datatiks, you will be able to get the following advantages:",
+          "With a Tableau course from Sunadh Technologies, you will be able to get the following advantages:",
         fields: [
           "secure your company's network is made easier with Tableau training",
           "significant reduction in both time and expense due to this practical solutions",
@@ -138,13 +138,13 @@ const courses = [
         {
           qn: "What type of projects are provided as part of Training?",
           ans: [
-            "DataTiks is offering you the most refreshed, significant, and high-esteem genuine projects as a part of the training program. Along these lines, you can implement the learning that you have acquired in a real-world industry setup. All preparing accompany.",
+            "Sunadh Technologies is offering you the most refreshed, significant, and high-esteem genuine projects as a part of the training program. Along these lines, you can implement the learning that you have acquired in a real-world industry setup. All preparing accompany.",
           ],
         },
         {
-          qn: "What are the different modes of training in DataTiks?",
+          qn: "What are the different modes of training in Sunadh Technologies?",
           ans: [
-            "We provide Both Online,Hybrid and Classroom Training in DataTiks",
+            "We provide Both Online,Hybrid and Classroom Training in Sunadh Technologies",
           ],
         },
         {
@@ -190,7 +190,7 @@ const courses = [
       },
       Why: {
         description:
-          "With a Power BI course from Datatiks, you will be able to get the following advantages:",
+          "With a Power BI course from Sunadh Technologies, you will be able to get the following advantages:",
         fields: [
           "secure your company's network is made easier with Power BI training",
           "significant reduction in both time and expense due to this practical solutions",
@@ -204,27 +204,27 @@ const courses = [
       },
       Faq: [
         {
-          qn: "Why should I get trained from DataTiks?",
+          qn: "Why should I get trained from Sunadh Technologies?",
           ans: [
-            "DataTiks is the expert among Business Intelligence tools preparation stages. Power BI is a strong Business Intelligence tool from Microsoft that allows you to remove information from various and fluctuated information sources and convert it into business.",
+            "Sunadh Technologies is the expert among Business Intelligence tools preparation stages. Power BI is a strong Business Intelligence tool from Microsoft that allows you to remove information from various and fluctuated information sources and convert it into business.",
           ],
         },
         {
           qn: "How do I enroll for this course?",
           ans: [
-            "You can contact our support number at +91 99899 99969/ Directly can go through DataTiks.website or directly walk-in to Office in Hyderabad",
+            "You can contact our support number at +91 99899 99969/ Directly can go through Sunadh Technologies.website or directly walk-in to Office in Hyderabad",
           ],
         },
         {
-          qn: "What assistance can you provide from DataTiks if I need to understand the topics better?",
+          qn: "What assistance can you provide from Sunadh Technologies if I need to understand the topics better?",
           ans: [
-            "DataTiks is the best training institute in Hyderabad which is providing 24/7 support, and you can raise a ticket with the dedicated support team whenever. You can profit from email support for every one of your questions. On the off chance that your questions are not replied to, you can straightforwardly contact our mentors.",
+            "Sunadh Technologies is the best training institute in Hyderabad which is providing 24/7 support, and you can raise a ticket with the dedicated support team whenever. You can profit from email support for every one of your questions. On the off chance that your questions are not replied to, you can straightforwardly contact our mentors.",
           ],
         },
         {
           qn: "What about Power BI Training in Hyderbad Demo Classes?",
           ans: [
-            "You can attend demo classes at DataTiks and understand the method of teaching before enrolling yourself in the Power BI course.",
+            "You can attend demo classes at Sunadh Technologies and understand the method of teaching before enrolling yourself in the Power BI course.",
           ],
         },
         {
@@ -270,7 +270,7 @@ const courses = [
       },
       Why: {
         description:
-          "With a Snowflake course from Datatiks, you will be able to get the following advantages:",
+          "With a Snowflake course from Sunadh Technologies, you will be able to get the following advantages:",
         fields: [
           "secure your company's network is made easier with Snowflake training",
           "significant reduction in both time and expense due to this practical solutions",
@@ -302,9 +302,9 @@ const courses = [
           ],
         },
         {
-          qn: "How do I enroll for the course in DataTiks?",
+          qn: "How do I enroll for the course in Sunadh Technologies?",
           ans: [
-            "You can contact our support number at +91 99899 99969/ Directly can go through DataTiks.website or directly walk-in to Office in Hyderabad",
+            "You can contact our support number at +91 99899 99969/ Directly can go through Sunadh Technologies.website or directly walk-in to Office in Hyderabad",
           ],
         },
       ],
@@ -340,7 +340,7 @@ const courses = [
       },
       Why: {
         description:
-          "With a Azure training in Hyderabad-India. course from Datatiks, you will be able to get the following advantages:",
+          "With a Azure training in Hyderabad-India. course from Sunadh Technologies, you will be able to get the following advantages:",
         fields: [
           "secure your company's network is made easier with Azure training in Hyderabad-India. training",
           "significant reduction in both time and expense due to this practical solutions",
@@ -422,7 +422,7 @@ const courses = [
       },
       Why: {
         description:
-          "With a Python Full Stack course training in Hyderabad-India course from Datatiks, you will be able to get the following advantages:",
+          "With a Python Full Stack course training in Hyderabad-India course from Sunadh Technologies, you will be able to get the following advantages:",
         fields: [
           "secure your company's network is made easier with Python Full Stack course training in Hyderabad-India training",
           "significant reduction in both time and expense due to these practical solutions",
@@ -442,15 +442,15 @@ const courses = [
           ],
         },
         {
-          qn: "How do I enroll for the course in DataTiks?",
+          qn: "How do I enroll for the course in Sunadh Technologies?",
           ans: [
-            "You can contact our support number at +91 99899 99969/ Directly can go through DataTiks. Website or directly walk-in to Office in Hyderabad",
+            "You can contact our support number at +91 99899 99969/ Directly can go through Sunadh Technologies. Website or directly walk-in to Office in Hyderabad",
           ],
         },
       ],
       enroll: {
         description:
-          "Enroll in this course based on Python Full Stack course training in Hyderabad-India to get started on your path to becoming an expert. Python Full Stack course training in Hyderabad-India has become necessary for front-end developers who want to work in the industry. The React and front-end programming world will be exposed through the lens of our course. In the hands-on sessions, you will learn about the architecture, components, and advanced ideas involved in building rich online apps using Python, Html, CSS and Python Frameworks. This class will likely fill up rapidly, so get your registration in Datatiks as soon as possible!",
+          "Enroll in this course based on Python Full Stack course training in Hyderabad-India to get started on your path to becoming an expert. Python Full Stack course training in Hyderabad-India has become necessary for front-end developers who want to work in the industry. The React and front-end programming world will be exposed through the lens of our course. In the hands-on sessions, you will learn about the architecture, components, and advanced ideas involved in building rich online apps using Python, Html, CSS and Python Frameworks. This class will likely fill up rapidly, so get your registration in Sunadh Technologies as soon as possible!",
       },
     },
   },
@@ -480,7 +480,7 @@ const courses = [
       },
       Why: {
         description:
-          "With a Java Full Stack course training in Hyderabad-India course from Datatiks, you will be able to get the following advantages:",
+          "With a Java Full Stack course training in Hyderabad-India course from Sunadh Technologies, you will be able to get the following advantages:",
         fields: [
           "secure your company's network is made easier with Java Full Stack course training in Hyderabad-India training",
           "significant reduction in both time and expense due to these practical solutions",
@@ -500,15 +500,15 @@ const courses = [
           ],
         },
         {
-          qn: "How do I enroll for the course in DataTiks?",
+          qn: "How do I enroll for the course in Sunadh Technologies?",
           ans: [
-            "You can contact our support number at +91 99899 99969/ Directly can go through DataTiks. Website or directly walk-in to Office in Hyderabad",
+            "You can contact our support number at +91 99899 99969/ Directly can go through Sunadh Technologies. Website or directly walk-in to Office in Hyderabad",
           ],
         },
       ],
       enroll: {
         description:
-          "Enroll in this course based on Java Full Stack course training in Hyderabad-India to get started on your path to becoming an expert. Java Full Stack course training in Hyderabad-India has become necessary for front-end developers who want to work in the industry. The Spring Boot and front-end programming world will be exposed through the lens of our course. In the hands-on sessions, you will learn about the architecture, components, and advanced ideas involved in building rich online apps using Java, Html, CSS and Java Frameworks. This class will likely fill up rapidly, so get your registration in Datatiks as soon as possible!",
+          "Enroll in this course based on Java Full Stack course training in Hyderabad-India to get started on your path to becoming an expert. Java Full Stack course training in Hyderabad-India has become necessary for front-end developers who want to work in the industry. The Spring Boot and front-end programming world will be exposed through the lens of our course. In the hands-on sessions, you will learn about the architecture, components, and advanced ideas involved in building rich online apps using Java, Html, CSS and Java Frameworks. This class will likely fill up rapidly, so get your registration in Sunadh Technologies as soon as possible!",
       },
     },
   },
@@ -539,7 +539,7 @@ const courses = [
       },
       Why: {
         description:
-          "With a MERN Stack course training in Hyderabad-India course from Datatiks, you will be able to get the following advantages:",
+          "With a MERN Stack course training in Hyderabad-India course from Sunadh Technologies, you will be able to get the following advantages:",
         fields: [
           "secure your company's network is made easier with MERN Stack course training in Hyderabad-India training",
           "significant reduction in both time and expense due to these practical solutions",
@@ -559,9 +559,9 @@ const courses = [
           ],
         },
         {
-          qn: "How do I enroll for the course in DataTiks?",
+          qn: "How do I enroll for the course in Sunadh Technologies?",
           ans: [
-            "You can contact our support number at +91 99899 99969/ Directly can go through DataTiks. Website or directly walk-in to Office in Hyderabad",
+            "You can contact our support number at +91 99899 99969/ Directly can go through Sunadh Technologies. Website or directly walk-in to Office in Hyderabad",
           ],
         },
         {
@@ -672,7 +672,7 @@ const courses = [
       ],
       enroll: {
         description:
-          "Enroll in this course based on MERN Stack course training in Hyderabad-India to get started on your path to becoming an expert. MERN Stack course training in Hyderabad-India has become necessary for front-end developers who want to work in the industry. The Back-end and front-end programming world will be exposed through the lens of our course. In the hands-on sessions, you will learn about the architecture, components, and advanced ideas involved in building rich websites using Html, CSS and Javascript Frameworks. This class will likely fill up rapidly, so get your registration in Datatiks as soon as possible!",
+          "Enroll in this course based on MERN Stack course training in Hyderabad-India to get started on your path to becoming an expert. MERN Stack course training in Hyderabad-India has become necessary for front-end developers who want to work in the industry. The Back-end and front-end programming world will be exposed through the lens of our course. In the hands-on sessions, you will learn about the architecture, components, and advanced ideas involved in building rich websites using Html, CSS and Javascript Frameworks. This class will likely fill up rapidly, so get your registration in Sunadh Technologies as soon as possible!",
       },
     },
   },
@@ -702,7 +702,7 @@ const courses = [
       },
       Why: {
         description:
-          "With a MEAN Stack course training in Hyderabad-India course from Datatiks, you will be able to get the following advantages:",
+          "With a MEAN Stack course training in Hyderabad-India course from Sunadh Technologies, you will be able to get the following advantages:",
         fields: [
           "secure your company's network is made easier with MEAN Stack course training in Hyderabad-India training",
           "significant reduction in both time and expense due to these practical solutions",
@@ -722,9 +722,9 @@ const courses = [
           ],
         },
         {
-          qn: "How do I enroll for the course in DataTiks?",
+          qn: "How do I enroll for the course in Sunadh Technologies?",
           ans: [
-            "You can contact our support number at +91 99899 99969/ Directly can go through DataTiks. Website or directly walk-in to Office in Hyderabad",
+            "You can contact our support number at +91 99899 99969/ Directly can go through Sunadh Technologies. Website or directly walk-in to Office in Hyderabad",
           ],
         },
 
@@ -836,7 +836,7 @@ const courses = [
       ],
       enroll: {
         description:
-          "Enroll in this course based on MEAN Stack course training in Hyderabad-India to get started on your path to becoming an expert. MEAN Stack course training in Hyderabad-India has become necessary for front-end developers who want to work in the industry. The Back-end and front-end programming world will be exposed through the lens of our course. In the hands-on sessions, you will learn about the architecture, components, and advanced ideas involved in building rich websites using Html, CSS and Javascript Frameworks. This class will likely fill up rapidly, so get your registration in Datatiks as soon as possible!",
+          "Enroll in this course based on MEAN Stack course training in Hyderabad-India to get started on your path to becoming an expert. MEAN Stack course training in Hyderabad-India has become necessary for front-end developers who want to work in the industry. The Back-end and front-end programming world will be exposed through the lens of our course. In the hands-on sessions, you will learn about the architecture, components, and advanced ideas involved in building rich websites using Html, CSS and Javascript Frameworks. This class will likely fill up rapidly, so get your registration in Sunadh Technologies as soon as possible!",
       },
     },
   },
@@ -867,7 +867,7 @@ const courses = [
       },
       Why: {
         description:
-          "With a React Native course training in Hyderabad-India course from Datatiks, you will be able to get the following advantages:",
+          "With a React Native course training in Hyderabad-India course from Sunadh Technologies, you will be able to get the following advantages:",
         fields: [
           "secure your company's network is made easier with React Native course training in Hyderabad-India training",
           "significant reduction in both time and expense due to these practical solutions",
@@ -887,9 +887,9 @@ const courses = [
           ],
         },
         {
-          qn: "How do I enroll for the course in DataTiks?",
+          qn: "How do I enroll for the course in Sunadh Technologies?",
           ans: [
-            "You can contact our support number at +91 99899 99969/ Directly can go through DataTiks. Website or directly walk-in to Office in Hyderabad",
+            "You can contact our support number at +91 99899 99969/ Directly can go through Sunadh Technologies. Website or directly walk-in to Office in Hyderabad",
           ],
         },
         {
@@ -1028,7 +1028,7 @@ const courses = [
       ],
       enroll: {
         description:
-          "Enroll in this course based on React Native course training in Hyderabad-India to get started on your path to becoming an expert. React Native course training in Hyderabad-India has become necessary for cross-platform Application developers who want to work in the industry. In the hands-on sessions, you will learn about the architecture, components, and advanced ideas involved in building rich mobile applications using React Native. This class will likely fill up rapidly, so get your registration in Datatiks as soon as possible!",
+          "Enroll in this course based on React Native course training in Hyderabad-India to get started on your path to becoming an expert. React Native course training in Hyderabad-India has become necessary for cross-platform Application developers who want to work in the industry. In the hands-on sessions, you will learn about the architecture, components, and advanced ideas involved in building rich mobile applications using React Native. This class will likely fill up rapidly, so get your registration in Sunadh Technologies as soon as possible!",
       },
     },
   },
@@ -1059,7 +1059,7 @@ const courses = [
       },
       Why: {
         description:
-          "With a Flutter course training in Hyderabad-India course from Datatiks, you will be able to get the following advantages:",
+          "With a Flutter course training in Hyderabad-India course from Sunadh Technologies, you will be able to get the following advantages:",
         fields: [
           "secure your company's network is made easier with Flutter course training in Hyderabad-India training",
           "significant reduction in both time and expense due to these practical solutions",
@@ -1079,9 +1079,9 @@ const courses = [
           ],
         },
         {
-          qn: "How do I enroll for the course in DataTiks?",
+          qn: "How do I enroll for the course in Sunadh Technologies?",
           ans: [
-            "You can contact our support number at +91 99899 99969/ Directly can go through DataTiks Website or directly walk-in to Office in Hyderabad.",
+            "You can contact our support number at +91 99899 99969/ Directly can go through Sunadh Technologies Website or directly walk-in to Office in Hyderabad.",
           ],
         },
         {
@@ -1188,7 +1188,7 @@ const courses = [
 
       enroll: {
         description:
-          "Enroll in this course based on Flutter course training in Hyderabad-India to get started on your path to becoming an expert. Flutter course training in Hyderabad-India has become necessary for cross-platform Application developers who want to work in the industry. In the hands-on sessions, you will learn about the architecture, components, and advanced ideas involved in building rich mobile applications using Flutter. This class will likely fill up rapidly, so get your registration in Datatiks as soon as possible!",
+          "Enroll in this course based on Flutter course training in Hyderabad-India to get started on your path to becoming an expert. Flutter course training in Hyderabad-India has become necessary for cross-platform Application developers who want to work in the industry. In the hands-on sessions, you will learn about the architecture, components, and advanced ideas involved in building rich mobile applications using Flutter. This class will likely fill up rapidly, so get your registration in Sunadh Technologies as soon as possible!",
       },
     },
   },
@@ -1219,7 +1219,7 @@ const courses = [
       },
       Why: {
         description:
-          "With a Flutter course training in Hyderabad-India course from Datatiks, you will be able to get the following advantages:",
+          "With a Flutter course training in Hyderabad-India course from Sunadh Technologies, you will be able to get the following advantages:",
         fields: [
           "secure your company's network is made easier with Flutter course training in Hyderabad-India training",
           "significant reduction in both time and expense due to these practical solutions",
@@ -1239,9 +1239,9 @@ const courses = [
           ],
         },
         {
-          qn: "How do I enroll for the course in DataTiks?",
+          qn: "How do I enroll for the course in Sunadh Technologies?",
           ans: [
-            "You can contact our support number at +91 99899 99969/ Directly can go through DataTiks Website or directly walk-in to Office in Hyderabad.",
+            "You can contact our support number at +91 99899 99969/ Directly can go through Sunadh Technologies Website or directly walk-in to Office in Hyderabad.",
           ],
         },
         {
@@ -1348,7 +1348,7 @@ const courses = [
 
       enroll: {
         description:
-          "Enroll in this course based on Flutter course training in Hyderabad-India to get started on your path to becoming an expert. Flutter course training in Hyderabad-India has become necessary for cross-platform Application developers who want to work in the industry. In the hands-on sessions, you will learn about the architecture, components, and advanced ideas involved in building rich mobile applications using Flutter. This class will likely fill up rapidly, so get your registration in Datatiks as soon as possible!",
+          "Enroll in this course based on Flutter course training in Hyderabad-India to get started on your path to becoming an expert. Flutter course training in Hyderabad-India has become necessary for cross-platform Application developers who want to work in the industry. In the hands-on sessions, you will learn about the architecture, components, and advanced ideas involved in building rich mobile applications using Flutter. This class will likely fill up rapidly, so get your registration in Sunadh Technologies as soon as possible!",
       },
     },
   },
