@@ -147,7 +147,6 @@ export default function Home() {
         }`}
       >
         <Carousel />
-        
       </div>
 
       {/* <div
@@ -158,7 +157,6 @@ export default function Home() {
       >
         <TrendingCoursesCarousel />
       </div> */}
-     
 
       {/* <div
         ref={ref2}

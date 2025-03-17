@@ -6,7 +6,8 @@ import Loader from "./components/Loader";
 import ExpandContainer from "./components/ExpandContainer";
 import CourseNotFound from "./components/CourseNotFound";
 import { courses } from "./assets/data/courses";
-import {VideoUrls} from "./assets/data/videoUtils"
+import { VideoUrls } from "./assets/data/videoUtils";
+import PopUpModal from "./components/PopUpModal";
 
 import { useParams, Link } from "react-router-dom";
 
@@ -16,6 +17,8 @@ import "animate.css";
 import "./styles.css";
 
 export default function Services() {
+  // handles state for Enroll modal
+  const [showModal, setModal] = useState(false);
   // state Hooks
   const [ref2, inView2] = useInView({
     triggerOnce: true,
@@ -33,9 +36,8 @@ export default function Services() {
     document.documentElement.scrollTop = 0;
   }, [course]);
 
-
   const courseUtils = useMemo(
-    () => VideoUrls.find((data) => data.id=== course),
+    () => VideoUrls.find((data) => data.id === course),
     [courses, course]
   );
 
@@ -163,7 +165,7 @@ export default function Services() {
             </div>
 
             {/* Why DataTiks Section */}
-            <div className="pre-req-container" id="why-datatiks">
+            <div className="pre-req-container" id="why-sunadh-technologies">
               <h3 className="course-section-title">
                 Why <span className="col-red">Sunadh Technologies</span>
               </h3>
@@ -251,28 +253,36 @@ export default function Services() {
           {/* Watch demo and enroll form section */}
           <div className="services-body-2">
             <div className="static-container-services">
-              { courseUtils?.video_id && 
-                (<>
+              {courseUtils?.video_id && (
+                <>
                   <h3 className="course-section-title side-line">
                     Watch a <span className="col-red">Demo</span>
                   </h3>
                   <Suspense fallback={<Loader />}>
-                    <iframe src={`https://drive.google.com/file/d/${courseUtils.video_id}/preview`}
+                    <iframe
+                      src={`https://drive.google.com/file/d/${courseUtils.video_id}/preview`}
                       className="iframe-video"
                       frameborder="0"
                       allow="autoplay; encrypted-media"
                       allowfullscreen
-                    >
-                    </iframe>
+                    ></iframe>
                   </Suspense>
-                </>)
-              }
-            
-              <EnrollButton />
+                </>
+              )}
+
+              <div className={`en-btn`} style={{ marginTop: "5px" }}>
+                <button
+                  className={"enroll-btn"}
+                  onClick={() => setModal(() => true)}
+                >
+                  Enroll Now
+                </button>
+              </div>
             </div>
           </div>
         </section>
       </div>
+      <PopUpModal showModal={showModal} setModal={setModal} />
       <Footer />
     </>
   );

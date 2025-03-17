@@ -3,7 +3,7 @@ import "../styles.css";
 import { Link } from "react-router-dom";
 import PopUpModal from "./PopUpModal";
 import { navbarServices } from "../assets/data/homeData";
-import brandLogo from "../assets/imgs/Sunadh-Logo.webp"
+import brandLogo from "../assets/imgs/Sunadh-Logo.webp";
 
 import { IoIosCall, IoMdMail } from "react-icons/io";
 import {
@@ -81,11 +81,7 @@ function Navbar() {
       <nav className={`navbar-1 ${isScrolled ? "scrolled" : ""}`}>
         <div className="brand">
           <Link to="/">
-            <img
-              className="brand-img"
-              src={brandLogo}
-              alt="brand-logo"
-            />
+            <img className="brand-img" src={brandLogo} alt="brand-logo" />
           </Link>
         </div>
 
