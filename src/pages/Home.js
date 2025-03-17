@@ -149,14 +149,14 @@ export default function Home() {
         <Carousel />
       </div>
 
-      {/* <div
+      <div
         ref={ref3}
         className={` content-section ${
           inView3 ? "animate__animated animate__zoomIn" : ""
         }`}
       >
         <TrendingCoursesCarousel />
-      </div> */}
+      </div>
 
       {/* <div
         ref={ref2}

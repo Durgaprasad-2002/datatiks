@@ -9,37 +9,45 @@ import { Link } from "react-router-dom";
 
 function CourseCard({ course }) {
   return (
-    <div className="course-card">
-      <img src={course.img} alt="img" className="course-img" />
-      <h4>{course.title}</h4>
-    </div>
+    <Link to={course.link} style={{ textDecoration: "none" }}>
+      <div className="course-card">
+        <img src={course.img} alt="img" className="course-img" />
+        <h4>{course.title}</h4>
+      </div>
+    </Link>
   );
 }
 
 const courses = [
   {
-    title: "EDM",
+    title: "Tableau",
     img: "https://www.datatiks.com/uploads/dc7cc0b960886014a604e916781fb85a.jpg",
+    link: "/services/tableau",
   },
   {
-    title: "Analytics",
+    title: "Snowflake",
     img: "https://www.datatiks.com/uploads/5bb384f444c2efe0ea649536f77335a3.jpg",
+    link: "/services/snowflake",
   },
   {
-    title: "Digital Marketing",
+    title: "Azure Data Engineer",
     img: "https://www.datatiks.com/uploads/3836fc47fea3f446050cbbe73f371240.jpg",
+    link: "/services/azure_devops",
   },
   {
-    title: "Cloud And Platform Management",
+    title: "Python Full Stack",
     img: "https://www.datatiks.com/uploads/2183ca90748c1648b942df6a147ef92e.jpg",
+    link: "/services/python_full_stack",
   },
   {
-    title: "Cloud And App Development",
+    title: "Generative AI",
     img: "https://www.datatiks.com/uploads/4decf1713c3218b846f24a05987f0935.jpg",
+    link: "/services/generative_ai",
   },
   {
-    title: "Digital Transformation",
+    title: "GCP",
     img: "https://www.datatiks.com/uploads/5bd2295df089ef8573d9d5a665b4701b.jpg",
+    link: "/services/gcp",
   },
 ];
 
@@ -116,11 +124,11 @@ export default function Carousel() {
             </div>
           </div>
         </div>
-         <div className="view-course-btn-container">
-                <Link to="/services">
-                  <button className="view-course-btn"> VIEW ALL COURSES</button>
-                </Link>
-              </div>
+        <div className="view-course-btn-container">
+          <Link to="/services">
+            <button className="view-course-btn"> VIEW ALL COURSES</button>
+          </Link>
+        </div>
       </section>
     </section>
   );

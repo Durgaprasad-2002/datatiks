@@ -2371,3 +2371,35 @@ html {
   background-color: var(--bg-red);
   color: var(--bg-white);
 }
+
+.star-container {
+  display: flex;
+  justify-content: flex-start;
+  gap: 4px;
+  margin-bottom: 10px;
+}
+
+.feedback-desc {
+  display: -webkit-box;
+  -webkit-line-clamp: 6;
+  -webkit-box-orient: vertical;
+  overflow: hidden;
+  height: 150px;
+  max-height: 150px;
+  text-overflow: ellipsis;
+}
+
+.feeback-title {
+  font-size: 22px;
+}
+
+.feeback-company {
+  font-size: 18px;
+  color: rgb(180, 180, 180);
+}
+
+.star-logo {
+  max-height: 15px;
+  max-width: 15px;
+  object-fit: contain;
+}
