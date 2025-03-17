@@ -1086,10 +1086,19 @@ a {
 }
 
 .course-img {
+  height: 200px;
+  max-height: 200px;
   width: 100%;
-  object-fit: cover;
-  height: auto;
+  object-fit: fill;
   border-radius: 5px;
+}
+
+.custom-dot-list-style li button {
+  background-color: gray !important;
+}
+
+.custom-dot-list-style li.react-multi-carousel-dot--active button {
+  background-color: var(--bg-red) !important;
 }
 
 .course-card h4 {
